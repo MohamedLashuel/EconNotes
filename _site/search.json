@@ -97,13 +97,13 @@
   {
     "objectID": "econometrics/models/ols.html",
     "href": "econometrics/models/ols.html",
-    "title": "About",
+    "title": "OLS Regression",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
     "crumbs": [
       "Econometrics",
       "Models",
-      "About"
+      "OLS Regression"
     ]
   },
   {
@@ -212,6 +212,66 @@
       "Econometrics",
       "Statistics",
       "Random Variables"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html#model",
+    "href": "econometrics/models/ols.html#model",
+    "title": "OLS Regression",
+    "section": "",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html#estimation",
+    "href": "econometrics/models/ols.html#estimation",
+    "title": "OLS Regression",
+    "section": "Estimation",
+    "text": "Estimation\nChoose \\(\\hat{\\beta}\\) to minimize the sum of squared error terms (\\(RSS\\)). By derivative, \\(\\hat{\\beta} = (X^TX)^{-1}X^Ty\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html#assumptions",
+    "href": "econometrics/models/ols.html#assumptions",
+    "title": "OLS Regression",
+    "section": "Assumptions",
+    "text": "Assumptions\n\nRandom Sample: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn’t really matter if you’re sampling a small fraction)\nX has full rank: None of \\(X\\)’s variables are linear combinations of each other. If this is not satisfied, \\(X^TX\\) is singular and \\(\\hat{\\beta}\\) cannot be computed\nHomoskedasticity: \\(Var(e|X)\\) is constant, not a function of (\\(X\\)). If not satisfied (heteroskedasticity) \\(\\hat{\\beta}\\) is inefficient and standard errors are biased\nErrors are uncorrelated: \\(Cov(e_i, e_j|X) = 0\\). This will not be satisfied if there is autocorrelation or spatial correlation. If so, \\(\\hat{\\beta}\\) is inefficient and standard errors are biased.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html#error",
+    "href": "econometrics/models/ols.html#error",
+    "title": "OLS Regression",
+    "section": "Error",
+    "text": "Error\nThe error term represents all factors that we have not included in our regression.\nBy nature of least-squares maximization, \\(\\beta_0\\) will be set so that \\(E(e) = 0\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html#causality",
+    "href": "econometrics/models/ols.html#causality",
+    "title": "OLS Regression",
+    "section": "Causality",
+    "text": "Causality\nWe can infer causality if strict exogeneity is true: \\(E(e|X) = 0\\) as opposed to \\(e\\) being a function of \\(X\\).\n\n\n\n\n\n\nExample\n\n\n\n\n\nSuppose we regress ice cream sales (\\(y\\)) on shark attacks (\\(x\\)). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When \\(x\\) is high, error is high, and when \\(x\\) is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
     ]
   }
 ]

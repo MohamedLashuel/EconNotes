@@ -1,11 +1,33 @@
 ---
-title: "About"
+title: "OLS Regression"
 ---
 
-This is a Quarto website.
+## Model
+Let $y_{n\times1} = \beta_0 + \beta_1 {x_1}_{n\times1} + \cdots + \beta_kx_k + e_{n\times1}$ where $x_i$ are independent variables which explain the dependent variable $y$ and $e$ represents the error term.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Formulate this as $y = \beta X + e$ (instead of having a constant term, one independent variable is a vector of all ones)
 
-```{r}
-1 + 1
-```
+## Estimation
+Choose $\hat{\beta}$ to minimize the sum of squared error terms ($RSS$). By derivative, $\hat{\beta} = (X^TX)^{-1}X^Ty$.
+
+## Assumptions
+1. **Random Sample**: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn't really matter if you're sampling a small fraction)
+2. **X has full rank**: None of $X$'s variables are linear combinations of each other. If this is not satisfied, $X^TX$ is singular and $\hat{\beta}$ cannot be computed
+3. **Homoskedasticity**: $Var(e|X)$ is constant, not a function of ($X$). If not satisfied (heteroskedasticity) $\hat{\beta}$ is inefficient and standard errors are biased
+4. **Errors are uncorrelated**: $Cov(e_i, e_j|X) = 0$. This will not be satisfied if there is autocorrelation or spatial correlation. If so, $\hat{\beta}$ is inefficient and standard errors are biased.
+
+## Error
+The error term represents all factors that we have not included in our regression.
+
+By nature of least-squares maximization, $\beta_0$ will be set so that $E(e) = 0$.
+
+## Causality
+We can infer causality if **strict exogeneity** is true: $E(e|X) = 0$ as opposed to $e$ being a function of $X$.
+
+::: {.callout-note collapse="true"}
+## Example
+
+Suppose we regress ice cream sales ($y$) on shark attacks ($x$). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When $x$ is high, error is high, and when $x$ is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.
+:::
+
+In practice, this means making sure there is no unaccounted for third variable correlated with $y$ and $X$.

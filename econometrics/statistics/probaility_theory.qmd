@@ -57,6 +57,6 @@ Properties of expected value:
 
 ### Covariance
 
-**Covariance** of random variables $X$ and $Y$ denoted $\sigma_{X, Y}$ measures how well $X$ and $Y$ vary together and is calculated as $(E(X - \mu_X)(Y - \mu_Y))$ or $E(XY) - \mu_X\mu_Y$
+**Covariance** of random variables $X$ and $Y$ denoted $\sigma_{X, Y}$ measures how well $X$ and $Y$ vary together and is calculated as $E((X - \mu_X)(Y - \mu_Y))$ or $E(XY) - \mu_X\mu_Y$
 
 **Correlation** $\rho_{X, Y}$ is standardized covariance $\frac{\sigma_{X, Y}}{\sigma_X\sigma_Y}$ and measures how related $X$ and $Y$ are
