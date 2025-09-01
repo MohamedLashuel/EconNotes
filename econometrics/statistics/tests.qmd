@@ -1,0 +1,11 @@
+---
+title: "tests"
+---
+
+## Distribution Tests
+
+### Test for Normality (Jarque-Bera)
+
+**Test statistic** $JB = \frac{N}{6}\left(S^2 + \frac{(K-3)^2}{4}\right)$ where $N$ is number of observations or degrees of freedom, $S$ is skewness, and $K$ is kurtosis
+
+**Statistic Distribution**: $\chi^2_{2}$ with sufficient sample size (MATLAB uses over 2000)

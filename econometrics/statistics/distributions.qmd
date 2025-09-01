@@ -1,0 +1,25 @@
+---
+title: "Distributions"
+---
+
+```{r}
+densityPlot = function(vals, cap){
+  df = tibble(x = vals)
+  ggplot(df) + 
+    geom_density(aes(x = x)) +
+    ggtitle(cap, str_glue("n = {length(vals)}"))
+}
+
+set.seed(100)
+```
+
+### Normal Distribution
+
+```{r}
+rnorm(50000) %>% 
+  densityPlot("Standard normal distribution")
+```
+
+**Statistics:** Has skewness 0 (symmetric) and kurtosis 3
+
+**PDF:** $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-(x-\mu)^2}{2\sigma^2}\right)$

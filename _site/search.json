@@ -1,0 +1,217 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NoteSite",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "notes/about.html",
+    "href": "notes/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Notes",
+      "About"
+    ]
+  },
+  {
+    "objectID": "econometrics/CopyOfindex.html",
+    "href": "econometrics/CopyOfindex.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Econometrics",
+      "About"
+    ]
+  },
+  {
+    "objectID": "micro/CopyOfindex.html",
+    "href": "micro/CopyOfindex.html",
+    "title": "Micro",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Micro",
+      "Micro"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/CopyOfindex.html",
+    "href": "econometrics/models/CopyOfindex.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "About"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/expected_value.html",
+    "href": "econometrics/math/expected_value.html",
+    "title": "Random Variables",
+    "section": "",
+    "text": "Expected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\n\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\) - Also equals \\(E(X^2) - \\mu_X^2\\) - \\(Var(aX + b) = a^2Var(X)\\)\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\n\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\((E(X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/refresh.html",
+    "href": "econometrics/math/refresh.html",
+    "title": "Refresher",
+    "section": "",
+    "text": "The order of any finite sum can be changed freely: \\(\\sum_{a \\in A}\\sum_{b \\in B} f(a, b) = \\sum_{b \\in B}\\sum_{a \\in A} f(a, b)\\)",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Refresher"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/refresh.html#summations",
+    "href": "econometrics/math/refresh.html#summations",
+    "title": "Refresher",
+    "section": "",
+    "text": "The order of any finite sum can be changed freely: \\(\\sum_{a \\in A}\\sum_{b \\in B} f(a, b) = \\sum_{b \\in B}\\sum_{a \\in A} f(a, b)\\)",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Refresher"
+    ]
+  },
+  {
+    "objectID": "econometrics/models/ols.html",
+    "href": "econometrics/models/ols.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "About"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/expected_value.html#expected-value",
+    "href": "econometrics/math/expected_value.html#expected-value",
+    "title": "Random Variables",
+    "section": "",
+    "text": "Expected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\n\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\) - Also equals \\(E(X^2) - \\mu_X^2\\) - \\(Var(aX + b) = a^2Var(X)\\)\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\n\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\((E(X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/probability_theory.html",
+    "href": "econometrics/math/probability_theory.html",
+    "title": "Probability Theory",
+    "section": "",
+    "text": "\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)*P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Probability Theory"
+    ]
+  },
+  {
+    "objectID": "econometrics/math/probability_theory.html#properties-of-probability",
+    "href": "econometrics/math/probability_theory.html#properties-of-probability",
+    "title": "Probability Theory",
+    "section": "",
+    "text": "\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)*P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
+    "crumbs": [
+      "Econometrics",
+      "Math",
+      "Probability Theory"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/tests.html",
+    "href": "econometrics/statistics/tests.html",
+    "title": "tests",
+    "section": "",
+    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "tests"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/tests.html#distribution-tests",
+    "href": "econometrics/statistics/tests.html#distribution-tests",
+    "title": "tests",
+    "section": "",
+    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "tests"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/distributions.html",
+    "href": "econometrics/statistics/distributions.html",
+    "title": "Distributions",
+    "section": "",
+    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Distributions"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/probaility_theory.html",
+    "href": "econometrics/statistics/probaility_theory.html",
+    "title": "Random Variables",
+    "section": "",
+    "text": "Probability Mass Function \\(p_X(x)\\) for a discrete variable \\(X\\) is defined as \\(P(X = x)\\)\nProbability Density Function \\(f_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(\\int_a^b f_X(x)dx = P(a \\le X \\le b)\\)\nCumulative Density Function \\(F_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(F(a) = P(X \\le a)\\)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "href": "econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "title": "Random Variables",
+    "section": "Properties of Probability",
+    "text": "Properties of Probability\n\n\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "econometrics/statistics/probaility_theory.html#expected-value",
+    "href": "econometrics/statistics/probaility_theory.html#expected-value",
+    "title": "Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\nExpected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\nProperties of expected value:\n\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)\n\\(E(g(X)) = \\sum_{x \\in X} P(X = x)g(x)\\) or \\(\\int_{X} f_X(x)g(x)dx\\)\n\nConditional Expected Value \\(E(X | Y = y)\\) is a function of \\(y\\) which gives the expected value of \\(X\\) conditional to \\(Y = y\\). It is calculated as \\(\\sum_{x \\in X}xP(X = x | Y = y)\\) or \\(\\int_X xf_X(x | Y = y) dx\\)\n\nIf \\(X\\) and \\(Y\\) are independent, \\(E(X | Y) = E(X)\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\nOther moments of X\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\)\n\nAlso equals \\(E(X^2) - \\mu_X^2\\)\n\\(Var(aX + b) = a^2Var(X)\\)\n\\(Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)\\)\n\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\nCovariance\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\((E(X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  }
+]

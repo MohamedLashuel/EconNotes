@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "NoteSite"
+  navbar:
+    left:
+      - text: "Econometrics"
+        href: "econometrics/CopyOfindex.qmd"
+      - text: "Micro"
+        href: "micro/CopyOfindex.qmd"
+  sidebar:
+    - title: "Econometrics"
+      contents: "econometrics"
+    - title: "Micro"
+      contents: "micro"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    execute:
+      echo: false
+
+editor: source
+
