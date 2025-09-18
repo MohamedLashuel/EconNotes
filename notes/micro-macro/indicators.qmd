@@ -1,0 +1,63 @@
+---
+title: "Economic Indicators"
+---
+
+## GDP
+
+$$Y = C + I + G + NX$$
+
+Where:
+
+- $Y$ is GDP
+- $C$ is dollar value of consumption
+- $I$ is value of investment (only investment which creates capital, not like buying real estate)
+- $G$ is value of government spending
+- $NX$ is value of net exports, exports - imports
+  - Note that imports are already counted in consumption, so imports don't affect GDP
+  
+GDP is the economy's total expenditure, and also its total income.
+
+- Intermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant
+- The sale of used goods is not counted
+- Transfer payments (e.g. taxes, welfare) are not counted
+- Unsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment
+- Some goods/services not sold in markets use imputed (estimated) values. Housing is one example.
+
+**Real GDP** is GDP controlled for prices. The current method is chain-weighting: use last year's prices to calculate the value for this year's output to make a "chain" which can be used to compare any two years.
+
+## Inflation
+
+### CPI
+
+CPI is the price of a "basket" of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.
+
+Issues:
+
+- Substitution effect: If apples become more expensive, people will buy fewer apples, but the CPI assumes that apple consumption remains the same
+- When the quality of goods increases, this is not reflected in the CPI
+- New goods are ignored by the CPI
+
+Because of these issues, CPI overstates inflation, probably by less than 1 percentage point
+
+### GDP Deflator
+
+**GDP deflator** is the ratio of nominal GDP to real GDP
+
+**PCE** is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.
+
+## Unemployment
+
+All adults (16 and older) are split into three categories:
+
+- **Employed**, including those on temporary leave, unpaid workers in family business, self-employed
+- **Unemployed**: those who are not employed, available for work, and tried to find employment in the last four weeks or are waiting to be recalled to a job they had been laid off from
+- **Not in the labor force**: Neither employed nor unemployed. For example, full-time students, homemakers, retirees, discouraged worker (someone who would be unemployed, but gave up on finding a job)
+  - Thus, the **labor force** is equal to employed + unemployed
+  
+**Unemployment Rate**: Percent of labor force that is unemployed
+
+**Labor Force Participation Rate**: Percent of adult population in the labor force
+
+## Interest
+
+**Federal Funds Rate (FFR)**: The interest rate banks give each other on overnight loans of federal funds (reserves they hold at the Fed). Most interest rates track the FFR

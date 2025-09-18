@@ -3,25 +3,36 @@ title: "OLS Regression"
 ---
 
 ## Model
+
 Let $y_{n\times1} = \beta_0 + \beta_1 {x_1}_{n\times1} + \cdots + \beta_kx_k + e_{n\times1}$ where $x_i$ are independent variables which explain the dependent variable $y$ and $e$ represents the error term.
 
 Formulate this as $y = \beta X + e$ (instead of having a constant term, one independent variable is a vector of all ones)
 
 ## Estimation
+
 Choose $\hat{\beta}$ to minimize the sum of squared error terms ($RSS$). By derivative, $\hat{\beta} = (X^TX)^{-1}X^Ty$.
 
 ## Assumptions
+
 1. **Random Sample**: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn't really matter if you're sampling a small fraction)
 2. **X has full rank**: None of $X$'s variables are linear combinations of each other. If this is not satisfied, $X^TX$ is singular and $\hat{\beta}$ cannot be computed
 3. **Homoskedasticity**: $Var(e|X)$ is constant, not a function of ($X$). If not satisfied (heteroskedasticity) $\hat{\beta}$ is inefficient and standard errors are biased
 4. **Errors are uncorrelated**: $Cov(e_i, e_j|X) = 0$. This will not be satisfied if there is autocorrelation or spatial correlation. If so, $\hat{\beta}$ is inefficient and standard errors are biased.
 
+
+## Estimator properties
+
+1. $\hat\beta_i$ increases in variance with greater variance of $y$, lower variance of $x$, lower sample size $N$, and correlation with other variables
+2. If error is normally distributed, so is $\hat\beta_i$ (conditional on $X$)
+
 ## Error
+
 The error term represents all factors that we have not included in our regression.
 
 By nature of least-squares maximization, $\beta_0$ will be set so that $E(e) = 0$.
 
 ## Causality
+
 We can infer causality if **strict exogeneity** is true: $E(e|X) = 0$ as opposed to $e$ being a function of $X$.
 
 ::: {.callout-note collapse="true"}
@@ -31,3 +42,37 @@ Suppose we regress ice cream sales ($y$) on shark attacks ($x$). The error inclu
 :::
 
 In practice, this means making sure there is no unaccounted for third variable correlated with $y$ and $X$.
+
+## Measures
+
+Three "sum of squares" measures:
+
+- **Explained sum of squares** or $ESS$ is $\sum_i (\hat{y}_i - y_i)^2$
+- **Residual sum of squares** or $RSS$ is $\sum_i (\hat{u}_i)^2$
+- **Total sum of squares** or $TSS$ is $\sum_i (y_i - \bar{y})^2$
+
+**R-squared** or $R^2$ is $\frac{ESS}{TSS}$ and measures goodness of fit. Should only be used to compare models if they have the same $K$
+
+**Adjusted R-squared** or $\bar{R}^2$ is $1 - \frac{RSS/(N - K)}{TSS/(N - 1)}$ and measures goodness of fit with a penalty for adding variables.
+
+**Variable Inflation Factor (VIF)** for variable $x_j$ is $\frac{1}{1-R_j^2}$ where $R_j^2$ is the $R^2$ of $x_j$ on all other independent variables. Measures multicollinearity, over 10 is bad and should be taken out
+
+## Inference
+
+### A single coefficient / linear combination
+
+**Null Hypothesis**: $\beta_i = c$
+
+**Test statistic**: $\frac{\hat\beta_i - c}{\textrm{se}(\beta_i)}$
+
+**Distribution**: $t_{n - k}$ if errors are normally distributed, or $n$ is large
+
+*For a linear combination*: $\beta_i$ can be replaced with $a_i\beta_i + a_j\beta_j + \cdots$
+
+### Joint hypotheses
+
+**Null Hypothesis**: $a_i\beta_i = c_1,\ a_j\beta_j + a_k\beta_k = c_2, \cdots$
+
+**Test statistic**: $\frac{\left(RSS_R - RSS_U\right) / J}{RSS_U / (n - k)}$, where $RSS_R$ is the $RSS$ of a regression where $H_0$ is assumed, $RSS_U$ is the $RSS$ of the normal regression, and $J$ is the number of restrictions
+
+**Distribution**: $F_{J, n-k}$ if errors are normally distributed, or $n$ is large

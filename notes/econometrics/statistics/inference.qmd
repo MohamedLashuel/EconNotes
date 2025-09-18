@@ -1,0 +1,49 @@
+---
+title: "Inference"
+---
+
+## Estimating Statistics
+
+### Mean
+
+The sample mean $\bar{x} = (\sum_i x_i)/N$ is an unbiased estimator of the population mean $\mu$. 
+
+**Standard Error**: $\hat{\sigma}/\sqrt{N}$
+
+**Distribution**: Normal if $x$ is normally distributed
+
+*The Central Limit Theorem (CLT)*: $\bar{x} \overset{a}{\sim} N(\mu, \sigma^2/N)$. In practice $N \ge 30$ is good enough
+
+### Variance
+
+Sample variance $\hat{\sigma}^2 = \frac{\sum_i (x_i - \bar{x})^2}{N - 1}$  is an unbiased estimator of the population variance $\sigma^2$.
+
+### Higher moments
+
+With sufficiently large sample sizes (law of large numbers), the $a$th standardized central moment (like skewness or kurtosis) can be estimated as $\frac{ \sum_i (x_i - \bar{x})^a}{N\hat{\sigma}^a}$
+
+## Inference
+
+### Confidence intervals
+
+A confidence interval for $a$ can be constructed as $a \pm c*\textrm{se}(a)$ where $c$ is the critical value according to the chosen level of confidence $\alpha$
+
+### Hypothesis testing
+
+The $p$-value is the probability that a value as or more extreme than the one we observed occurs, assuming $H_0$ is true. In practice, this is usually done by knowing the distribution the value follows if $H_0$ is true and testing the probability of the value on that distribution.
+
+"Extreme" takes into account the direction we intended at the start: if we want to test $H_a: \mu > c$, only values larger than $\bar{x}$ count as more extreme. In the case of a two-tailed test, the probability of a more extreme value on both tails needs to be computed.
+
+Reject the null hypothesis if $p < \alpha$.
+
+## Testing statistics
+
+### Testing the population mean
+
+**Hypothesis**: $H_0: \mu = c$
+
+**Test statistic**: $\frac{\bar x - c}{\textrm{se}(\bar{x})}$
+
+**Distribution**: $t_{N - 1}$ if the population is normal or the CLT applies.
+
+*If the population standard deviation is known*: Use the normal distribution instead

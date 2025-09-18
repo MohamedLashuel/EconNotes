@@ -3,17 +3,11 @@ project:
 
 website:
   title: "NoteSite"
-  navbar:
-    left:
-      - text: "Econometrics"
-        href: "econometrics/CopyOfindex.qmd"
-      - text: "Micro"
-        href: "micro/CopyOfindex.qmd"
   sidebar:
     - title: "Econometrics"
-      contents: "econometrics"
-    - title: "Micro"
-      contents: "micro"
+      contents: "notes/econometrics"
+    - title: "Micro/Macro"
+      contents: "notes/micro-macro"
 
 format:
   html:

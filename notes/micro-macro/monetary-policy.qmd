@@ -1,0 +1,26 @@
+---
+title: "Monetary Policy"
+format: html
+---
+
+## Inflation
+
+The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don't set it to 0 percent mainly because:
+
+- A positive target acts as a buffer against deflation. Light deflation is worse than medium inflation
+- The economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)
+
+## Unemployment
+
+The Fed targets maximum employment. But there is a tradeoff between inflation and unemployment. If aggregate demand is increased, due to supply and demand, output increases (more employment), but price increases (increased inflation rate). If aggregate demand is decreased, the reverse happens.
+
+This tradeoff exists only in the short run.  In the long run, employment and inflation return to normal levels.
+
+## Interest Rate
+
+Raising the interest rate "tightens" the economy, slowing it down, generally leading to less inflation and more unemployment. Lowering the rate "eases" or "expands" it, generally leading to more inflation and less unemployment. The Fed has indirect control over the interest rate by targeting the federal funds rate:
+
+- Open market operations: Buying Treasury securities from banks, increasing their reserves, increases the supply for loanable funds, decreasing the interest rate
+- Changing the discount rate, the rate the Fed gives to banks on overnight loans, to make more or less discount loans and change banks' reserve amounts
+- Changing the reserve requirements, the percent of deposits banks are required to hold on-hand
+- Interest rate on reserve balances (IORB)

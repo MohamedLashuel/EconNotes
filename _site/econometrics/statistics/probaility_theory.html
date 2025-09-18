@@ -176,13 +176,30 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Statistics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Software</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../econometrics/software/stata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stata</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Statistics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../econometrics/statistics/distributions.html" class="sidebar-item-text sidebar-link">
@@ -304,7 +321,7 @@ window.Quarto = {
 </section>
 <section id="covariance" class="level3">
 <h3 class="anchored" data-anchor-id="covariance">Covariance</h3>
-<p><strong>Covariance</strong> of random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> denoted <span class="math inline">\(\sigma_{X, Y}\)</span> measures how well <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> vary together and is calculated as <span class="math inline">\((E(X - \mu_X)(Y - \mu_Y))\)</span> or <span class="math inline">\(E(XY) - \mu_X\mu_Y\)</span></p>
+<p><strong>Covariance</strong> of random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> denoted <span class="math inline">\(\sigma_{X, Y}\)</span> measures how well <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> vary together and is calculated as <span class="math inline">\(E((X - \mu_X)(Y - \mu_Y))\)</span> or <span class="math inline">\(E(XY) - \mu_X\mu_Y\)</span></p>
 <p><strong>Correlation</strong> <span class="math inline">\(\rho_{X, Y}\)</span> is standardized covariance <span class="math inline">\(\frac{\sigma_{X, Y}}{\sigma_X\sigma_Y}\)</span> and measures how related <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are</p>
 
 

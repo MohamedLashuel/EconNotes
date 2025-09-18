@@ -1,0 +1,182 @@
+---
+title: "Stata"
+---
+
+## Data
+
+**use** "*datapath*" [, clear]
+
+Assumes .dta if no extension on datapath. If clear specified, clears the current dataset first
+
+**import excel** "*datapath*" [, clear sheet(*sheet*) firstrow]
+
+firstrow causes the first row to be read as variable names
+
+**save** "*datapath*" [,replace]
+
+If replace specified, replaces the file currently at *datapath*
+
+**clear**
+
+Clear the current dataset
+
+## Options
+
+**set** *option* *value*
+
+Common use cases:
+
+- *set more off*: Stata stops asking you to inspect output page-by-page
+
+**cd** "*dir*"
+
+**log** using "*filepath*", replace
+
+Starts logging output to the file at *filepath*. If no file extension specified, uses the native .smcl format which has stata-specific features but can't be viewed easily in other programs as plaintext
+
+**log** (off | on)
+
+Enables or disables logging
+
+**log** close
+
+Closes the log
+
+## Common features
+
+These are supported by most commands.
+
+**if** *cond*
+
+Filters rows to only those where *cond* is true
+
+**in** *range*
+
+Only acts on rows in the range (usually of the form e.g. 2/10)
+
+**\_n**
+
+Holds the number of the current observation
+
+**\_N**
+
+Holds the total number of observations
+
+## Processing
+
+**sample** *n*
+
+**gen** *var*=*expr*
+
+**drop** [*var*]
+
+Drops a variable. The no-variable version is useful with *if* to drop observations
+
+**replace** *var*=*x*
+
+**label** var *variable*
+
+**format** *%format* *...vars*
+
+**tsset** *var*
+
+Marks the data as a time series with time index *var*
+
+## Investigation
+
+**summarize** [*...vars*]
+
+Summary statistics
+
+**describe** [*...vars*]
+
+Variable data types, format, labels
+
+**list** [*...vars*]
+
+**tab** *...vars*
+
+Creates a frequency table
+
+**tabstat** *...vars*, [by(*var*) stats(*...statistics*)]
+
+Like summarize, but you specify variables, a var to group by, and statistics to display (default is just mean)
+
+## Mathematical Expressions
+
+### Time/Date
+
+**mdy**(*m*, *d*, *y*), **hms**, **tq**, etc.
+
+Convert time components to stata's internal representation. All of these are also valid display formats.
+
+**quarterly**(*str*, *mask*), **weekly**, etc.
+
+Formats *str* to a time representation. *mask* gives the order of component appearances, e.g. *YQ*
+
+**year**(*date*), **month**, **hh**, etc.
+
+Extracts the component from the date
+
+## Programming
+
+**global** *name* [ = ] *stuff*
+
+Creates a macro: When *name* is seen in your program it will be substituted with *stuff*. Using = evaluates the right side first.
+
+```
+program define *name*
+  args *arg1* *arg2* ...
+  *content*
+end
+```
+
+Defines a program (basically a function)
+
+## Analysis
+
+**corr** [*...vars*]
+
+Creates a correlation matrix
+
+### Tests
+
+**sktest** var
+
+Skewness/kurtosis test for normality
+
+### Regressions
+
+**regress** *yvar* *...xvars*
+
+## Post-Regression
+
+**predict** *var*, residuals
+
+Stores residuals in *var*
+
+**estat hettest**, iid
+
+Tests for heteroskedasticity assuming error is i.i.d.
+
+**estat dwatson**
+
+Tests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelation
+
+**estat bgodfrey**, lags(*n*)
+
+Tests for autocorrelation with specified number *n* of lags
+
+## Variable Prefixes
+
+**D1**.*var*
+
+Calculates the first difference of *var*
+
+## Graphing
+
+**histogram** *var* [, percent]
+
+**twoway**(*type* *var1* *var2*)
+
+*type* can be scatter, line, etc.

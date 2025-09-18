@@ -1,0 +1,37 @@
+---
+title: "Elasticity and Goods"
+---
+
+Elasticity represents the proportional change of one variable to another at a point, expressed in absolute value. For example, suppose that when price is 5, when price increases by 1% then demand decreases by 2%. Then at the price of 5, the price elasticity of demand is |-2/1| = 2.
+
+## Formulas
+
+If we want to find the elasticity of $y$ with respect to $x$:
+
+**Arc formula**: Calculate % change from $y_1$ to $y_2$ as $\frac{y_2 - y_1}{y_1}$ (and same with $x$, then divide)
+
+**Point formula**: The elasticity at a point $(x, y)$ is $\frac{dy}{dx} * \frac{x}{y}$
+
+## Demand elasticity
+
+**Price elasticity of demand**: % change in quantity demanded / % change in price
+
+**Income elasticity of demand**: % change in quantity demanded / % change in income
+
+**Cross-elasticity of demand**: % change in quantity demanded / % change in price of other good
+
+## Determinants of demand elasticity
+
+- **Substitutability**: Goods with closer substitutes are more elastic
+- **Percentage of income**: Goods that cost a higher percentage of income tend to be more elastic, because people are less indifferent on spending money on them
+- **Necessity vs. luxury**: Necessities are less elastic than luxury goods, but the availability of substitutes matter more: if you have many food options, you will be highly responsive to changes in price of any given one
+- **Width of market**: Bread produced by a specific bakery is more elastic than bread in general
+- **Time**: Whether a short-run or long-run view is taken. E.g. Motorists can't respond quickly to an increase in the price of oil because they are "locked in" to having their cars
+
+## Types of goods
+
+- **Inferior good**: As income increases, demand decreases (e.g. generic brand)
+  - **Giffen good**: As price increases, demand increases (e.g. staple foods crowd out other options)
+- **Normal good**: As income increases, demand increases
+  - **Luxury/superior good**: Price elasticity of demand > 1 (e.g. a luxury car)
+  - **Basic/necessity good**: Price elasticity of demand < 1 but positive (e.g. shoe polish)
