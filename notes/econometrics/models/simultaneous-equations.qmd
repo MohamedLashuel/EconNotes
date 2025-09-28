@@ -1,0 +1,42 @@
+---
+title: "Simultaneous Equations"
+---
+
+## Model
+
+We have $M$ endogenous variables $y_{1..M}$, $K$ exogenous variables $x_{1..K}$, and $M$ simultaneous equations of the form:
+
+$$y_i = \sum_{j\neq i}^M \alpha_j y_j + \sum_{j=1}^K \beta_j x_j + e_i$$
+(Where variables can be excluded by setting the corresponding coefficient to 0)
+
+## Estimation
+
+Suppose we want to estimate the parameters of $y_1$. In order to do this, $y_1$ must be *identified*.
+
+OLS will be biased due to endogeneity. Rearrange the equations to solve the other $y_i$ in terms of only exogenous variables:
+
+$$y_i = \sum_{j=1}^K \pi_ij x_j + \nu_i$$
+
+(Reduced-form equations can be solved with regular OLS, but they do not allow you to estimate coefficients for the other endogenous variables).
+
+Now solve all reduced-form equations with OLS to get $$\hat{y_2}, \hat{y_3}$$, etc.
+
+Finally, estimate the TSLS:
+
+$$y_1 = \sum_{j\neq i}^M \alpha_j \hat{y}_j + \sum_{j=1}^K \beta_j x_j + e_i$$
+
+## Identification
+
+There are two main ways to tell if an equation is identified. The *order condition*, which is necessary, and the *rank condition*, which is necessary and sufficient. 
+
+The order condition is that the equation should exclude at least $M - 1$ regressors, endogenous or exogenous.
+
+## Inference
+
+### Exogeneity of regressor (Hausman test)
+
+**Null Hypothesis**: $x_i$ is exogenous
+
+**Test Statistic**: $\frac{\hat\beta_{i, 2SLS} - \hat\beta_{i, OLS}}{Var(\hat\beta_{i, 2SLS}) - Var(\hat\beta_{i, OLS})}$ where $\hat\beta_{i, OLS}$ is the estimate of $\beta_i$ using OLS, and the same for 2SLS
+
+**Distribution**: $\chi^2_1$

@@ -12,13 +12,16 @@ Formulate this as $y = \beta X + e$ (instead of having a constant term, one inde
 
 Choose $\hat{\beta}$ to minimize the sum of squared error terms ($RSS$). By derivative, $\hat{\beta} = (X^TX)^{-1}X^Ty$.
 
+## Cautions
+
+- If two regressors are highly correlated, the variance of their coefficients will be very high
+
 ## Assumptions
 
 1. **Random Sample**: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn't really matter if you're sampling a small fraction)
 2. **X has full rank**: None of $X$'s variables are linear combinations of each other. If this is not satisfied, $X^TX$ is singular and $\hat{\beta}$ cannot be computed
 3. **Homoskedasticity**: $Var(e|X)$ is constant, not a function of ($X$). If not satisfied (heteroskedasticity) $\hat{\beta}$ is inefficient and standard errors are biased
 4. **Errors are uncorrelated**: $Cov(e_i, e_j|X) = 0$. This will not be satisfied if there is autocorrelation or spatial correlation. If so, $\hat{\beta}$ is inefficient and standard errors are biased.
-
 
 ## Estimator properties
 

@@ -506,7 +506,7 @@
     "href": "notes/econometrics/software/stata.html#analysis",
     "title": "Stata",
     "section": "Analysis",
-    "text": "Analysis\ncorr […vars]\nCreates a correlation matrix\nregress yvar …xvars",
+    "text": "Analysis\ncorr […vars]\nCreates a correlation matrix\n\nTests\nsktest var\nSkewness/kurtosis test for normality\n\n\nRegressions\nregress yvar …xvars",
     "crumbs": [
       "Econometrics",
       "Software",
@@ -601,7 +601,7 @@
     "href": "notes/econometrics/statistics/distributions.html",
     "title": "Distributions",
     "section": "",
-    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)",
+    "text": "Normal\n\n\n\n\n\n\n\n\n\nA bell curve with mean \\(\\mu\\) and standard deviation \\(\\sigma^2\\). The sum or average of a large enough random sample is approximately normal.\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)\n\n\nBinomial\n\n\n\n\n\n\n\n\n\nThe sum of \\(n\\) i.i.d. Bernoulli variables with probability \\(p\\). A Bernoulli variable takes value 1 with probability \\(p\\) and 0 otherwise.\nPMF: \\(\\binom{n}{x}p^x(1-p)^{n-x}\\)\nExpected Value: \\(np\\)\nVariance: \\(np(1-p)\\)\n\n\nPoisson\n\n\n\n\n\n\n\n\n\nRepresents the number of events occuring over an interval of time or space where the events occur independently at a constant rate. The parameter \\(\\lambda\\) is the expected number of events over that interval.\nExpected Value: \\(\\lambda\\)\nVariance: \\(\\lambda\\)\nPMF: \\(\\frac{e^{-\\lambda}\\lambda^x}{x!}\\)\n\n\nChi-squared\n\n\n\n\n\n\n\n\n\nThe sum of \\(m\\) independent squared standard normal variables, with \\(m\\) degrees of freedom. Converges to a normal distribution by CLT\nExpected value: \\(m\\)\nVariance: \\(2m\\)\n\n\nt\n\n\n\n\n\n\n\n\n\nIf \\(Z \\sim N(0, 1)\\) and \\(V \\sim \\chi^2_m\\) and both are independent, then \\(\\frac{Z}{\\sqrt{V / m}}\\) is \\(t_m\\)\n\n\nF\n\n\n\n\n\n\n\n\n\nIf \\(V_1 \\sim \\chi^2_n\\) and \\(V_2 \\sim \\chi^2_M\\) and both are independent, then \\(\\frac{V_1/n}{V_2/m}\\) is \\(F_{n, m}\\)",
     "crumbs": [
       "Econometrics",
       "Statistics",
@@ -661,7 +661,7 @@
     "href": "notes/econometrics/models/ols.html#cautions",
     "title": "OLS Regression",
     "section": "Cautions",
-    "text": "Cautions\n\nIndependent variables should not be highly correlated. It will be difficult to tell from where changes in \\(y\\) come from, increasing \\(\\beta\\) variance",
+    "text": "Cautions\n\nIf two regressors are highly correlated, the variance of their coefficients will be very high",
     "crumbs": [
       "Econometrics",
       "Models",
@@ -685,7 +685,7 @@
     "href": "notes/micro-macro/fiscal-policy.html",
     "title": "Fiscal Policy",
     "section": "",
-    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced prices. It’s generally agreed that the first two are bigger effects than the third.",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.",
     "crumbs": [
       "Micro Macro",
       "Fiscal Policy"
@@ -696,7 +696,7 @@
     "href": "notes/micro-macro/fiscal-policy.html#taxes",
     "title": "Fiscal Policy",
     "section": "",
-    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced prices. It’s generally agreed that the first two are bigger effects than the third.",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.",
     "crumbs": [
       "Micro Macro",
       "Fiscal Policy"
@@ -707,7 +707,7 @@
     "href": "to_add.html",
     "title": "NoteSite",
     "section": "",
-    "text": "Testing the stochastic assumptions\nDistributions (book appendix B)\nResearch about effects of corporate taxes\nMinimum wage research / NIT, EITC, UBI"
+    "text": "Testing the stochastic assumptions\nDistributions (book appendix B)\nMore tests (in that one doc)\nResearch about effects of corporate taxes\nMinimum wage research / NIT, EITC, UBI"
   },
   {
     "objectID": "notes/micro-macro/monetary-policy.html",
@@ -890,6 +890,193 @@
       "Econometrics",
       "Software",
       "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#post-regression",
+    "href": "notes/econometrics/software/stata.html#post-regression",
+    "title": "Stata",
+    "section": "Post-Regression",
+    "text": "Post-Regression\npredict var, residuals\nStores residuals in var\nestat hettest, iid\nTests for heteroskedasticity assuming error is i.i.d.\nestat dwatson\nTests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelation\nestat bgodfrey, lags(n)\nTests for autocorrelation with specified number n of lags",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#variable-prefixes",
+    "href": "notes/econometrics/software/stata.html#variable-prefixes",
+    "title": "Stata",
+    "section": "Variable Prefixes",
+    "text": "Variable Prefixes\nD1.var\nCalculates the first difference of var",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/simultaneous-equations.html",
+    "href": "notes/econometrics/models/simultaneous-equations.html",
+    "title": "Simultaneous Equations",
+    "section": "",
+    "text": "We have \\(M\\) endogenous variables \\(y_{1..M}\\), \\(K\\) exogenous variables \\(x_{1..K}\\), and \\(M\\) simultaneous equations of the form:\n\\[y_i = \\sum_{j\\neq i}^M \\alpha_j y_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\] (Where variables can be excluded by setting the corresponding coefficient to 0)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/simultaneous-equations.html#model",
+    "href": "notes/econometrics/models/simultaneous-equations.html#model",
+    "title": "Simultaneous Equations",
+    "section": "",
+    "text": "We have \\(M\\) endogenous variables \\(y_{1..M}\\), \\(K\\) exogenous variables \\(x_{1..K}\\), and \\(M\\) simultaneous equations of the form:\n\\[y_i = \\sum_{j\\neq i}^M \\alpha_j y_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\] (Where variables can be excluded by setting the corresponding coefficient to 0)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/simultaneous-equations.html#estimation",
+    "href": "notes/econometrics/models/simultaneous-equations.html#estimation",
+    "title": "Simultaneous Equations",
+    "section": "Estimation",
+    "text": "Estimation\nSuppose we want to estimate the parameters of \\(y_1\\). In order to do this, \\(y_1\\) must be identified.\nOLS will be biased due to endogeneity. Rearrange the equations to solve the other \\(y_i\\) in terms of only exogenous variables:\n\\[y_i = \\sum_{j=1}^K \\pi_ij x_j + \\nu_i\\]\n(Reduced-form equations can be solved with regular OLS, but they do not allow you to estimate coefficients for the other endogenous variables).\nNow solve all reduced-form equations with OLS to get \\[\\hat{y_2}, \\hat{y_3}\\], etc.\nFinally, estimate the TSLS:\n\\[y_1 = \\sum_{j\\neq i}^M \\alpha_j \\hat{y}_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\]",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/simultaneous-equations.html#identification",
+    "href": "notes/econometrics/models/simultaneous-equations.html#identification",
+    "title": "Simultaneous Equations",
+    "section": "Identification",
+    "text": "Identification\nThere are two main ways to tell if an equation is identified. The order condition, which is necessary, and the rank condition, which is necessary and sufficient.\nThe order condition is that the equation should exclude at least \\(M - 1\\) regressors, endogenous or exogenous.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/simultaneous-equations.html#inference",
+    "href": "notes/econometrics/models/simultaneous-equations.html#inference",
+    "title": "Simultaneous Equations",
+    "section": "Inference",
+    "text": "Inference\n\nExogeneity of regressor (Hausman test)\nNull Hypothesis: \\(x_i\\) is exogenous\nTest Statistic: \\(\\frac{\\hat\\beta_{i, 2SLS} - \\hat\\beta_{i, OLS}}{Var(\\hat\\beta_{i, 2SLS}) - Var(\\hat\\beta_{i, OLS})}\\) where \\(\\hat\\beta_{i, OLS}\\) is the estimate of \\(\\beta_i\\) using OLS, and the same for 2SLS\nDistribution: \\(\\chi^2_1\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/elasticity.html",
+    "href": "notes/micro-macro/elasticity.html",
+    "title": "Elasticity and Goods",
+    "section": "",
+    "text": "Elasticity represents the proportional change of one variable to another at a point, expressed in absolute value. For example, suppose that when price is 5, when price increases by 1% then demand decreases by 2%. Then at the price of 5, the price elasticity of demand is |-2/1| = 2.",
+    "crumbs": [
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/elasticity.html#formulas",
+    "href": "notes/micro-macro/elasticity.html#formulas",
+    "title": "Elasticity and Goods",
+    "section": "Formulas",
+    "text": "Formulas\nIf we want to find the elasticity of \\(y\\) with respect to \\(x\\):\nArc formula: Calculate % change from \\(y_1\\) to \\(y_2\\) as \\(\\frac{y_2 - y_1}{y_1}\\) (and same with \\(x\\), then divide)\nPoint formula: The elasticity at a point \\((x, y)\\) is \\(\\frac{dy}{dx} * \\frac{x}{y}\\)",
+    "crumbs": [
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/elasticity.html#demand-elasticity",
+    "href": "notes/micro-macro/elasticity.html#demand-elasticity",
+    "title": "Elasticity and Goods",
+    "section": "Demand elasticity",
+    "text": "Demand elasticity\nPrice elasticity of demand: % change in quantity demanded / % change in price\nIncome elasticity of demand: % change in quantity demanded / % change in income\nCross-elasticity of demand: % change in quantity demanded / % change in price of other good",
+    "crumbs": [
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/elasticity.html#determinants-of-demand-elasticity",
+    "href": "notes/micro-macro/elasticity.html#determinants-of-demand-elasticity",
+    "title": "Elasticity and Goods",
+    "section": "Determinants of demand elasticity",
+    "text": "Determinants of demand elasticity\n\nSubstitutability: Goods with closer substitutes are more elastic\nPercentage of income: Goods that cost a higher percentage of income tend to be more elastic, because people are less indifferent on spending money on them\nNecessity vs. luxury: Necessities are less elastic than luxury goods, but the availability of substitutes matter more: if you have many food options, you will be highly responsive to changes in price of any given one\nWidth of market: Bread produced by a specific bakery is more elastic than bread in general\nTime: Whether a short-run or long-run view is taken. E.g. Motorists can’t respond quickly to an increase in the price of oil because they are “locked in” to having their cars",
+    "crumbs": [
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/elasticity.html#types-of-goods",
+    "href": "notes/micro-macro/elasticity.html#types-of-goods",
+    "title": "Elasticity and Goods",
+    "section": "Types of goods",
+    "text": "Types of goods\n\nInferior good: As income increases, demand decreases (e.g. generic brand)\n\nGiffen good: As price increases, demand increases (e.g. staple foods crowd out other options)\n\nNormal good: As income increases, demand increases\n\nLuxury/superior good: Price elasticity of demand &gt; 1 (e.g. a luxury car)\nBasic/necessity good: Price elasticity of demand &lt; 1 but positive (e.g. shoe polish)",
+    "crumbs": [
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/iv.html",
+    "href": "notes/econometrics/models/iv.html",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "We want to estimate the OLS equation \\(y = X\\beta + \\alpha w + u\\), where \\(X\\) are exogenous and \\(w\\) is endogenous. We have instruments \\(Z\\) where:\n\nEach \\(z_i\\) is exogenous\nEach \\(z_i\\) affects \\(y\\), but only indirectly through \\(w\\)\n\nThe idea is to extract the exogenous part of \\(w\\) using \\(Z\\) to get an unbiased estimate of \\(\\alpha\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/iv.html#model",
+    "href": "notes/econometrics/models/iv.html#model",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "We want to estimate the OLS equation \\(y = X\\beta + \\alpha w + u\\), where \\(X\\) are exogenous and \\(w\\) is endogenous. We have instruments \\(Z\\) where:\n\nEach \\(z_i\\) is exogenous\nEach \\(z_i\\) affects \\(y\\), but only indirectly through \\(w\\)\n\nThe idea is to extract the exogenous part of \\(w\\) using \\(Z\\) to get an unbiased estimate of \\(\\alpha\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/iv.html#estimation",
+    "href": "notes/econometrics/models/iv.html#estimation",
+    "title": "Instrumental Variables",
+    "section": "Estimation",
+    "text": "Estimation\nSet up the first-stage regression \\(w = X\\beta + Z\\gamma + v\\) to obtain \\(\\hat{w}\\). Then solve the second-stage regression \\(y = X\\beta + \\alpha \\hat{w} + u\\). Note that normal standard errors will be wrong.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/iv.html#inference",
+    "href": "notes/econometrics/models/iv.html#inference",
+    "title": "Instrumental Variables",
+    "section": "Inference",
+    "text": "Inference\n\nInstrument Strength\nNull Hypothesis: \\(\\gamma_1 = 0, \\gamma_2 = 0 ...\\) (None of the instruments are strong)\nUse an \\(F\\)-test, reject the null if \\(F &gt; 10\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
     ]
   }
 ]

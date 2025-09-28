@@ -3,23 +3,101 @@ title: "Distributions"
 ---
 
 ```{r}
-densityPlot = function(vals, cap){
-  df = tibble(x = vals)
+numbersPlot = function(ggfun, vals, cap = ""){
+  if(class(vals) == "numeric"){
+    df = tibble(x = vals)
+    n = length(vals)
+    color_aes = NULL
+  } else {
+    df = as_tibble(vals) %>% 
+      pivot_longer(everything(), names_to = "distribution", values_to = "x")
+    n = length(vals[[1]])
+    color_aes = aes(color = distribution)
+  }
+  
   ggplot(df) + 
-    geom_density(aes(x = x)) +
-    ggtitle(cap, str_glue("n = {length(vals)}"))
+    ggfun(aes(x = x)) +
+    color_aes +
+    ggtitle(cap, str_glue("n = {n}"))
 }
+
+geom_bar2 = partial(geom_bar, width = 0.2, fill = "red", color = "black")
+
+densityPlot = partial(numbersPlot, geom_density)
+barPlot = partial(numbersPlot, geom_bar2)
 
 set.seed(100)
 ```
 
-### Normal Distribution
+### Normal
 
 ```{r}
 rnorm(50000) %>% 
   densityPlot("Standard normal distribution")
 ```
 
+A bell curve with mean $\mu$ and standard deviation $\sigma^2$. The sum or average of a large enough random sample is approximately normal.
+
 **Statistics:** Has skewness 0 (symmetric) and kurtosis 3
 
 **PDF:** $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-(x-\mu)^2}{2\sigma^2}\right)$
+
+### Binomial
+
+```{r}
+rbinom(5000, 10, 0.5) %>% 
+  barPlot("Binomial Distribution with n=10, p=0.5")
+```
+
+The sum of $n$ i.i.d. Bernoulli variables with probability $p$. A Bernoulli variable takes value 1 with probability $p$ and 0 otherwise.
+
+**PMF**: $\binom{n}{x}p^x(1-p)^{n-x}$
+
+**Expected Value**: $np$
+
+**Variance**: $np(1-p)$
+
+### Poisson
+
+```{r}
+rpois(50000, 3) %>% 
+  barPlot("Poisson distribution with parameter 3")
+```
+
+Represents the number of events occuring over an interval of time or space where the events occur independently at a constant rate. The parameter $\lambda$ is the expected number of events over that interval.
+
+**Expected Value**: $\lambda$
+
+**Variance**: $\lambda$
+
+**PMF**: $\frac{e^{-\lambda}\lambda^x}{x!}$
+
+### Chi-squared
+
+```{r}
+densityPlot(list(`df = 5` = rchisq(50000, 5), `df = 10` = rchisq(50000, 10)), "Chi-square distributions")
+```
+
+The sum of $m$ independent squared standard normal variables, with $m$ degrees of freedom. Converges to a normal distribution by CLT
+
+**Expected value**: $m$
+
+**Variance**: $2m$
+
+### t
+
+```{r}
+list(`t df=3` = rt(50000, 3), `t df=10` = rt(50000, 10), norm = rnorm(50000)) %>% 
+  densityPlot("t-distributions and normal distribution") +
+  coord_cartesian(xlim = c(-3, 3))
+```
+If $Z \sim N(0, 1)$ and $V \sim \chi^2_m$ and both are independent, then $\frac{Z}{\sqrt{V / m}}$ is $t_m$
+
+### F
+
+```{r}
+rf(50000, 8, 20) %>% 
+  densityPlot("F-distribution with degrees of freedom 8 and 20")
+```
+
+If $V_1 \sim \chi^2_n$ and $V_2 \sim \chi^2_M$ and both are independent, then $\frac{V_1/n}{V_2/m}$ is $F_{n, m}$

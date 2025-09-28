@@ -1,0 +1,24 @@
+---
+title: "Instrumental Variables"
+---
+
+## Model
+
+We want to estimate the OLS equation $y = X\beta + \alpha w + u$, where $X$ are exogenous and $w$ is endogenous. We have instruments $Z$ where:
+
+- Each $z_i$ is exogenous
+- Each $z_i$ affects $y$, but only indirectly through $w$
+
+The idea is to extract the exogenous part of $w$ using $Z$ to get an unbiased estimate of $\alpha$.
+
+## Estimation
+
+Set up the *first-stage regression* $w = X\beta + Z\gamma + v$ to obtain $\hat{w}$. Then solve the *second-stage regression* $y = X\beta + \alpha \hat{w} + u$. Note that normal standard errors will be wrong.
+
+## Inference
+
+### Instrument Strength
+
+**Null Hypothesis**: $\gamma_1 = 0, \gamma_2 = 0 ...$ (None of the instruments are strong)
+
+Use an $F$-test, reject the null if $F > 10$
