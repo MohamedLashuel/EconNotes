@@ -1,0 +1,111 @@
+---
+title: "Forecasting"
+---
+
+## Smoothing
+
+A time series can be smoothed by taking a moving average of observations. The smoothed data $\hat{T}$ can be expressed as $\frac 1 m \sum_{j=-k}^k y_{t+j}$, where $m$ is the window size and is equal to $2k+1$. This is called an $m$-MA.
+
+An even moving average can be taken, but it is non symmetric. It can be made symmetric by taking a 2-MA after an even MA (a $2 \times m$-MA or centered $m$-MA).
+
+MAs can also be weighted: $\hat{T} = \sum_{j=-k}^k a_jy_{t+j}$ where weights $a_j$ are symmetric around 0 and sum to 1. A simple MA is equivalent to all weights being $1/m$. A $2 \times 4$-MA is equivalent to a 5-MA with weights $\left[\frac 1 8, \frac 1 4, \frac 1 4, \frac 1 4, \frac 1 8\right]$ and leads to a smoother curve than a 5-MA.
+
+```{r}
+movingAverage = \(v, n) slider::slide_dbl(v, mean,
+                .before = (n - 1) / 2, .after = (n - 1) / 2, .complete = TRUE)
+aus_exports <- global_economy %>% 
+  dplyr::filter(Country == "Australia") %>% 
+  mutate(
+    `3-MA` = movingAverage(Exports, 3),
+    `5-MA` = movingAverage(Exports, 5)
+  )
+
+aus_exports %>% 
+  pivot_longer(c(Exports, `3-MA`, `5-MA`)) %>% 
+  ggplot() +
+  geom_line(aes(x = Year, y = value, color = name)) +
+  ggtitle("Australian Exports (raw and smoothed)")
+```
+## Decomposition
+
+A time-series can generally be decomposed into three parts:
+
+1. The overall trend over time
+2. A seasonal effect (e.g. electricity demand rises in July, then falls by September every year)
+3. The remainder/error
+
+Thus giving us the model $y_t = S_t + T_t + R_t$ or $y_t = S_t * T_t * R_t$
+
+```{r}
+dcmp = aus_production %>% 
+  model(stl = STL(Beer)) %>% 
+  components()
+
+autoplot(dcmp)
+```
+
+Seasonally adjusted data removes the seasonal component, leaving trend and remainder.
+
+The strength of trend is calculated as $F_T = \max \left(0, 1 - \frac{Var(R_t)}{Var(T_t + R_t)}\right)$. Similarly, $F_S = \max \left(0, 1 - \frac{Var(R_t)}{Var(S_t + R_t)}\right)$ is the strength of seasonality
+
+### Classical decomposition
+
+(For multiplicative decomposition, divide instead of subtracting)
+
+Let $m$ be the number of "seasons" in the data: 12 for monthly, 4 for quarterly, etc.
+
+1. Compute $\hat{T}$ with a moving average. If $m$ is odd, use an $m$-MA, and if $m$ is even, use a $2 \times m$-MA.
+2. Calculate the detrended data $y - \hat{T}_t$. Compute $\hat{S}_t$ as the average of all detrended values for that season (e.g. the average of all March values)
+3. Compute $\hat{R}_t$ as $y_t - \hat{T}_t - \hat{S}_t$.
+
+This is a simple method for illustrative purposes, not designed for real-world use. It is not robust to outliers, tends to oversmooth sharp turns, and assumes the seasonal component is constant.
+
+## Prediction
+
+### Assumptions
+
+1. Data are i.i.d.
+2. Homoskedasticity
+3. No autocorrelation in residuals
+4. Residuals are normally distributed (or, bootstrapping)
+
+Assumptions 2 through 4 are needed for correct standard errors (and forecast intervals)
+
+## Stationarity
+
+**Stationary** data has constant distribution at any point in time. 
+
+Data $y_t$ can often be made stationary by taking its difference $y'_t = y_t - y_{t-1}$. $y''_t$ is fine also, but generally don't go further than the second difference. There is also the seasonal difference $y'_t = y_t - y_{t-m}$, where $m$ is the number of seasons.
+
+**Unit root tests** can test for stationarity.
+
+## Model selection
+
+**Corrected AIC (AICc)**: $AIC + \frac{2(k+2)(k+3)}{T-k-3}$ where $AIC = T\log\left({\frac{RSS}{T}}\right)$. Corrects for AIC's bias to choose too many predictors at low $T$
+
+## Evaluation
+
+### Point forecasts
+
+**Mean Absolute Error (MAE)**: $\mathrm{mean} (e_t)$
+
+**Root Mean Squared Error (RMSE)**: $\sqrt{\mathrm{mean} (e_t^2)}$
+
+Scaled errors can be constructed using $q_t = \frac{e_t}{\frac{1}{T - m}\sum_{t=m+1}^T |y_t - y_{t - m}|}$ (error scaled by that of a seasonal one-step naive forecast on the training data) instead of $e_t$. Similarly, $q_t^2 = \frac{e_t^2}{\frac{1}{T - m}\sum_{t=m+1}^T (y_t - y_{t - m})^2}$
+
+**Mean Absolute Scaled Error (MASE)**: $\mathrm{mean} (q_t)$
+
+**Root Mean Squared Scaled Error (RMSSE)**: $\sqrt{\mathrm{mean} (q_t^2)}$
+
+### Interval forecasts
+
+**Quantile Score**: Scores how well a given percentile is predicted. For the $p$th percentile as a percentage (e.g. 0.10 to be 10th percentile), the quantile score for time $t$ is:
+
+$$Q_{p, t} = \begin{cases} 2(1-p)(f_{p,t} - y_t) & y_t < f_{p,t} \\ 2p(y_t - f_{p, t}) & y_t \ge f_{p,t} \end{cases}$$
+Where $f_{p,t}$ is our prediction of the $p$th percentile at time $t$. Intuitively, if $p = 0.1$, it weights errors above with 0.1 and errors below with 0.9, because the actual point is much more likely to be above than below.
+
+**Winkler Score**: Scores how well a prediction interval predicts data. For a $(100-\alpha)$% prediction interval at time $t$, The Winkler score $W_{\alpha, t}$ is the length of the interval plus $\frac 2 \alpha$ times the distance from $y_t$ to the interval (if $y_t$ is within the interval, the distance is 0)
+
+**CRPS**: Scores the whole prediction distribution. $CRPS$ score is the area between the predicted CDF and the observed CDF (which is a jump from 0 to 1 at the true value)
+
+

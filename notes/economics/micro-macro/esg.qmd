@@ -1,0 +1,17 @@
+---
+title: "ESG"
+---
+
+## Effect of ESG performance on financials
+
+ESG performance is positively correlated with financial performance variables such as ROA or ROE, moreso in the long-term and moreso during times of crisis.[^1] It is also negatively correlated with systematic risk and legal risk[^2]
+
+## ESG Theories
+
+- **Stakeholder Theory**: As opposed to the traditional theory of the firm (a firm should produce value for shareholders) the stakeholder theory states a firm should work for the best interests of all of its stakeholders (customers, employees, community, shareholders, etc.)
+- **Resource-Based View**: ESG performance can help companies develop intangible assets such as trust, giving them a competitive advantage
+- **Legitimacy Theory**: ESG performance helps increase company legitimacy, which can increase consumer demand and minimize harmful government action
+
+
+[^1]: https://www.stern.nyu.edu/sites/default/files/assets/documents/NYU-RAM_ESG-Paper_2021%20Rev_0.pdf
+[^2]: https://onlinelibrary.wiley.com/doi/full/10.1002/ijfe.70027

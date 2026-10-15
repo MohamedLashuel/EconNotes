@@ -1,0 +1,12 @@
+---
+title: "Fiscal Policy"
+---
+
+## Taxes
+
+### Corporate income taxes
+
+Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It's generally agreed that the first two are bigger effects than the third.[^1][^2]
+
+[^1]:https://home.treasury.gov/system/files/131/wp-101.pdf
+[^2]:https://www.nber.org/system/files/working_papers/w27058/w27058.pdf

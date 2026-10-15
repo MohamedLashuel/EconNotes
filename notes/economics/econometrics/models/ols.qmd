@@ -23,10 +23,13 @@ Choose $\hat{\beta}$ to minimize the sum of squared error terms ($RSS$). By deri
 3. **Homoskedasticity**: $Var(e|X)$ is constant, not a function of ($X$). If not satisfied (heteroskedasticity) $\hat{\beta}$ is inefficient and standard errors are biased
 4. **Errors are uncorrelated**: $Cov(e_i, e_j|X) = 0$. This will not be satisfied if there is autocorrelation or spatial correlation. If so, $\hat{\beta}$ is inefficient and standard errors are biased.
 
+If (3) and (4) hold, error's variance-covariance matrix can be expressed as $\sigma^2I$
+
 ## Estimator properties
 
 1. $\hat\beta_i$ increases in variance with greater variance of $y$, lower variance of $x$, lower sample size $N$, and correlation with other variables
 2. If error is normally distributed, so is $\hat\beta_i$ (conditional on $X$)
+3. $Var(\hat\beta) = \sigma^2(X^TX)^{-1}$. Can be estimated with $\hat\sigma^2$
 
 ## Error
 
@@ -34,9 +37,11 @@ The error term represents all factors that we have not included in our regressio
 
 By nature of least-squares maximization, $\beta_0$ will be set so that $E(e) = 0$.
 
+Variance of error $\sigma^2$ can be estimated as $\hat\sigma^2 = \frac{RSS}{N - K}$
+
 ## Causality
 
-We can infer causality if **strict exogeneity** is true: $E(e|X) = 0$ as opposed to $e$ being a function of $X$.
+We can infer causality if **strict exogeneity** is true: $E(e|X) = 0$ ($X^Te = 0$) as opposed to $e$ being a function of $X$.
 
 ::: {.callout-note collapse="true"}
 ## Example
@@ -79,3 +84,21 @@ Three "sum of squares" measures:
 **Test statistic**: $\frac{\left(RSS_R - RSS_U\right) / J}{RSS_U / (n - k)}$, where $RSS_R$ is the $RSS$ of a regression where $H_0$ is assumed, $RSS_U$ is the $RSS$ of the normal regression, and $J$ is the number of restrictions
 
 **Distribution**: $F_{J, n-k}$ if errors are normally distributed, or $n$ is large
+
+## Tests
+
+### Homoskedasticity (White)
+
+**Hypothesis**: $H_0: Var(u) = \sigma^2$ (error is constant)
+
+**Test Statistic**: $nR^2$, where $R^2$ comes from the auxiliary regression of squared error on all original regressors, their squares, and all products of two regressors
+
+**Distribution**: $\chi^2_{P-1}$ where $P$ is the regressors in the auxiliary regression
+
+### Serial autocorrelation (Breusch-Pagan)
+
+**Hypothesis**: $H_0$: No serial autocorrelation in error, $H_1$: Error is dependent on the last $p$ error terms
+
+**Test statistic**: $nR^2$, where $R^2$ comes from the auxiliary regression of $u_t$ on $u_{t-1}$ through $u_{t-p}$ and original regressors
+
+**Distribution**: $\chi^2_p$

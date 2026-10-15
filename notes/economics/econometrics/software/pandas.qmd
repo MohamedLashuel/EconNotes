@@ -1,0 +1,55 @@
+---
+title: "Pandas"
+format: html
+---
+
+## Data
+
+**pd.read_{format}**(*file*): Reads a file with format {format}
+
+**pd.DataFrame.to_{format}**(*file*): Writes data to *file*
+
+## Attributes
+
+*df*.**shape**, *series*.**shape**: Dimensions of data 
+
+*df*.**index**, *df*.**columns**: Row/col labels
+
+*df*.**mean()**: Mean of numeric columns. Also **median**, **std**, **min**, **max**
+
+Series implements ==. Numeric series support mathematical operations with scalars or other series.
+
+*series*.isin(*values list*): Is each value is in the given list?
+
+*series*.notna(): Is each value not NA (or NaN, or None)?
+
+*series*.unique(): Returns unique values
+
+## Subsetting
+
+*df*[*colname*]: Retrieve a column as a series
+
+*df*[*colnames[]*]: Retrieve columns as a data frame
+
+*df*[*booleans[]*]: Retrieve rows corresponding to True
+
+*df*.**loc**[*row indexing*, ?*col indexing*]: Allows indexing for rows and columns simultaneously. Row labels can be used to index. Use : to mean "all rows/cols"
+
+*df*.**iloc**[*row indices*, *col indices*]: Uses integer indices to index rows and cols. Can be a number, slice, or list.
+
+Subsets support reassignment with =.
+
+*df*.**drop**(*index* | *columns* = *labels*): Drops specified labels
+
+## Mutation
+
+*df*[*colname*] = *series*: Creates a new column
+
+*df*.**apply**(*fun*, *axis* = 0 | 1): Applies *fun* to each column (axis = 0) or row (axis = 1) and returns the result
+
+*df*.**rename**(*index* | *columns* = *map*): Renames row or column labels using *map*, either a dict of old-name / new-name pairs or a function to transform names
+
+*df*.**groupby**(*colnames[]*): Creates a grouped data frame. Aggregations work automatically with functions like *df*.sum()
+
+*df*.agg(*fun*): Dplyr summarize. *fun* takes in a column series and outputs the result
+

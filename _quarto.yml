@@ -4,10 +4,7 @@ project:
 website:
   title: "NoteSite"
   sidebar:
-    - title: "Econometrics"
-      contents: "notes/econometrics"
-    - title: "Micro/Macro"
-      contents: "notes/micro-macro"
+    - contents: notes/**
 
 format:
   html:

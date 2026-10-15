@@ -2,7 +2,7 @@
 title: "Economic Indicators"
 ---
 
-## GDP
+## Gross Domestic Product (GDP)
 
 $$Y = C + I + G + NX$$
 
@@ -27,7 +27,7 @@ GDP is the economy's total expenditure, and also its total income.
 
 ## Inflation
 
-### CPI
+### Consumer Price Index (CPI)
 
 CPI is the price of a "basket" of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.
 
@@ -39,11 +39,15 @@ Issues:
 
 Because of these issues, CPI overstates inflation, probably by less than 1 percentage point
 
+#### Research CPI by equivalized income quintiles (R-CPI-I)
+
+R-CPI-I is CPI computed for each income quintile, to better reflect the inflation experience for different households. Quintiles are determined by final before-tax income divided by square root of household size.
+
 ### GDP Deflator
 
 **GDP deflator** is the ratio of nominal GDP to real GDP
 
-**PCE** is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.
+**PCE deflator** is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.
 
 ## Unemployment
 

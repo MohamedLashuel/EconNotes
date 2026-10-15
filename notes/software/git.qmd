@@ -1,0 +1,153 @@
+---
+title: "Git"
+---
+
+## Staging
+
+**git status**
+
+Get a summary of staged changes. Various formatting options exist.
+
+**git add** *file*
+
+Tracks *file* if it is untracked, and stages all changes made to it so far
+
+**git rm** [--cached] *file*
+
+Stages the deletion of *file* and deletes the file from your computer unless --cached is given
+
+**git mv** *file* *newname*
+
+Stages the renaming of *file* to *newname* and renames the file on your computer
+
+**git diff** [--staged]
+
+Shows changes made to files that haven't been staged yet. With --staged, instead shows changes that were staged but not committed yet
+
+## Committing
+
+**git commit** -m *msg* [-a]
+
+Creates a commit with message *msg*. If -a is specified, stages all tracked files
+
+**git commit** --amend
+
+Replaces the last commit with a new commit including all newly staged changes
+
+**git log** [-p] [-*n*]
+
+Shows the commit log. If -p is specified, shows the commit diffs. If -*n* is specified, shows the last *n* commits. Various other options exist for formatting output and filtering the log based on time, author, modified file, specific strings, etc.
+
+## Branching
+
+**git branch**
+
+Display all branches of the repository
+
+**git branch** *newbranch*
+
+Creates a local branch named *newbranch*
+
+**git push** *remote* *branch*
+
+Pushes the local branch *branch* to remote *remote*
+
+**git branch** -d *oldbranch*
+
+Deletes the branch *oldbranch*
+
+**git push** *remote* --delete *branch*
+
+Deletes the remote branch *remote*/*branch*
+
+**git checkout** *branch*
+
+Switches to branch *branch* and updates HEAD to point to that branch. Changes local files to *branch*'s progress
+
+**git checkout** --track *remote*/*remotebranch*
+
+Creates a local tracking branch which tracks the remote branch *remote*/*remotebranch*
+
+**git merge** *branch2*
+
+Merges branch2 into your current branch. If the merge can be done automatically, it will create a merge commit. Otherwise, files will be left in an unmerged state. **git status** will display these files. Fix the conflicts manually.
+
+**Renaming a Branch**
+
+::: {.callout-warning}
+Do not rename branches that other collaborators are working on. If you rename the master/main branch, expect to break integrations, services, or build/release scripts.
+:::
+
+Run the following commands:
+
+- git branch move *oldname* *newname*: Rename the branch locally
+- git push --set-upstream *remote* *newname*: Push the name change to the remote
+- git push *remote* --delete *oldname*: Delete the old branch from the remote origin
+
+## Getting a Repository
+
+**git init**
+
+Turns the current working directory into a git repository
+
+**git clone** *url* [*newname*]
+
+Clones a git repository from the given url. If *newname* is specified, renames the repository folder to that.
+
+## Remotes
+
+**git remote** -v
+
+Lists all remote repositories with URLs
+
+**git remote** add *name* *url*
+
+Adds a new remote with name *name* at url *url*. Also, **git remote** rename and **git remote** remove
+
+**git push** *remote* *branch*
+
+Pushes un-pushed commits to branch *branch* of remote *remote*
+
+**git fetch** *remote* *branch*
+
+Downloads data from remote *remote* and branch *branch* that you don't have, without merging it to your local work
+
+**git pull** *remote* [*branch*]
+
+Fetches data from remote *remote* and branch *branch* (if not specified, tries to use the upstream branch), then merges it with your work
+
+## Help
+
+Run **git help** *verb*, or **git** *verb* -h
+
+## Configuration
+
+**git config** [--global] *key* *value*
+
+Sets config option *key* to *value*. By default sets the option only for the current repository, if --global specified sets it for the user.
+
+**git config** [--show-origin] *key*
+
+Shows the configuration value for option *key*. If --show-origin specified, shows which file (repo, user, or system) had the final say in the option
+
+**git config** --list [--show-origin]
+
+Lists all configuration options and values. If --show-origin specified, shows which file (repo, user, or system) had the final say in the option
+
+## Tagging
+
+**git tag**
+
+Lists all tags in the repository
+
+**git tag** -a *tag* -m *msg* [*checksum*]
+
+Marks the current commit (or the commit specified by *checksum* if it's supplied) with tag *tag* and message *msg*
+
+**git tag** -d *tag*
+
+Deletes the tag *tag* on your local repository
+
+**git push** *remote* --delete *tag*
+
+Deletes the tag *tag* on a remote repository *remote*

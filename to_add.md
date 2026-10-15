@@ -1,5 +1,7 @@
 - Testing the stochastic assumptions
-- Distributions (book appendix B)
-- More tests (in that one doc)
-- Research about effects of corporate taxes
-- Minimum wage research / NIT, EITC, UBI
+- Propensity score matching
+- Cox proportional hazards
+- Logistic/logit/probit
+- Discrete choice
+
+- Minimum wage research - NIT, EITC, UBI

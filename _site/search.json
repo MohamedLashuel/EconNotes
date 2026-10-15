@@ -1,638 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "NoteSite",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "notes/about.html",
-    "href": "notes/about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Notes",
-      "About"
-    ]
-  },
-  {
-    "objectID": "econometrics/CopyOfindex.html",
-    "href": "econometrics/CopyOfindex.html",
-    "title": "About",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Econometrics",
-      "About"
-    ]
-  },
-  {
-    "objectID": "micro/CopyOfindex.html",
-    "href": "micro/CopyOfindex.html",
-    "title": "Micro",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Micro",
-      "Micro"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/CopyOfindex.html",
-    "href": "econometrics/models/CopyOfindex.html",
-    "title": "About",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "About"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/expected_value.html",
-    "href": "econometrics/math/expected_value.html",
-    "title": "Random Variables",
-    "section": "",
-    "text": "Expected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\n\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\) - Also equals \\(E(X^2) - \\mu_X^2\\) - \\(Var(aX + b) = a^2Var(X)\\)\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\n\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\((E(X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/refresh.html",
-    "href": "econometrics/math/refresh.html",
-    "title": "Refresher",
-    "section": "",
-    "text": "The order of any finite sum can be changed freely: \\(\\sum_{a \\in A}\\sum_{b \\in B} f(a, b) = \\sum_{b \\in B}\\sum_{a \\in A} f(a, b)\\)",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Refresher"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/refresh.html#summations",
-    "href": "econometrics/math/refresh.html#summations",
-    "title": "Refresher",
-    "section": "",
-    "text": "The order of any finite sum can be changed freely: \\(\\sum_{a \\in A}\\sum_{b \\in B} f(a, b) = \\sum_{b \\in B}\\sum_{a \\in A} f(a, b)\\)",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Refresher"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html",
-    "href": "econometrics/models/ols.html",
-    "title": "OLS Regression",
-    "section": "",
-    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/expected_value.html#expected-value",
-    "href": "econometrics/math/expected_value.html#expected-value",
-    "title": "Random Variables",
-    "section": "",
-    "text": "Expected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\n\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\) - Also equals \\(E(X^2) - \\mu_X^2\\) - \\(Var(aX + b) = a^2Var(X)\\)\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\n\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\((E(X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/probability_theory.html",
-    "href": "econometrics/math/probability_theory.html",
-    "title": "Probability Theory",
-    "section": "",
-    "text": "\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)*P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Probability Theory"
-    ]
-  },
-  {
-    "objectID": "econometrics/math/probability_theory.html#properties-of-probability",
-    "href": "econometrics/math/probability_theory.html#properties-of-probability",
-    "title": "Probability Theory",
-    "section": "",
-    "text": "\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)*P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
-    "crumbs": [
-      "Econometrics",
-      "Math",
-      "Probability Theory"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/tests.html",
-    "href": "econometrics/statistics/tests.html",
-    "title": "tests",
-    "section": "",
-    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "tests"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/tests.html#distribution-tests",
-    "href": "econometrics/statistics/tests.html#distribution-tests",
-    "title": "tests",
-    "section": "",
-    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "tests"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/distributions.html",
-    "href": "econometrics/statistics/distributions.html",
-    "title": "Distributions",
-    "section": "",
-    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Distributions"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/probaility_theory.html",
-    "href": "econometrics/statistics/probaility_theory.html",
-    "title": "Random Variables",
-    "section": "",
-    "text": "Probability Mass Function \\(p_X(x)\\) for a discrete variable \\(X\\) is defined as \\(P(X = x)\\)\nProbability Density Function \\(f_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(\\int_a^b f_X(x)dx = P(a \\le X \\le b)\\)\nCumulative Density Function \\(F_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(F(a) = P(X \\le a)\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/probaility_theory.html#properties-of-probability",
-    "href": "econometrics/statistics/probaility_theory.html#properties-of-probability",
-    "title": "Random Variables",
-    "section": "Properties of Probability",
-    "text": "Properties of Probability\n\n\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "econometrics/statistics/probaility_theory.html#expected-value",
-    "href": "econometrics/statistics/probaility_theory.html#expected-value",
-    "title": "Random Variables",
-    "section": "Expected Value",
-    "text": "Expected Value\nExpected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\nProperties of expected value:\n\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)\n\\(E(g(X)) = \\sum_{x \\in X} P(X = x)g(x)\\) or \\(\\int_{X} f_X(x)g(x)dx\\)\n\nConditional Expected Value \\(E(X | Y = y)\\) is a function of \\(y\\) which gives the expected value of \\(X\\) conditional to \\(Y = y\\). It is calculated as \\(\\sum_{x \\in X}xP(X = x | Y = y)\\) or \\(\\int_X xf_X(x | Y = y) dx\\)\n\nIf \\(X\\) and \\(Y\\) are independent, \\(E(X | Y) = E(X)\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\nOther moments of X\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\)\n\nAlso equals \\(E(X^2) - \\mu_X^2\\)\n\\(Var(aX + b) = a^2Var(X)\\)\n\\(Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)\\)\n\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\nCovariance\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\(E((X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html#model",
-    "href": "econometrics/models/ols.html#model",
-    "title": "OLS Regression",
-    "section": "",
-    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html#estimation",
-    "href": "econometrics/models/ols.html#estimation",
-    "title": "OLS Regression",
-    "section": "Estimation",
-    "text": "Estimation\nChoose \\(\\hat{\\beta}\\) to minimize the sum of squared error terms (\\(RSS\\)). By derivative, \\(\\hat{\\beta} = (X^TX)^{-1}X^Ty\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html#assumptions",
-    "href": "econometrics/models/ols.html#assumptions",
-    "title": "OLS Regression",
-    "section": "Assumptions",
-    "text": "Assumptions\n\nRandom Sample: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn’t really matter if you’re sampling a small fraction)\nX has full rank: None of \\(X\\)’s variables are linear combinations of each other. If this is not satisfied, \\(X^TX\\) is singular and \\(\\hat{\\beta}\\) cannot be computed\nHomoskedasticity: \\(Var(e|X)\\) is constant, not a function of (\\(X\\)). If not satisfied (heteroskedasticity) \\(\\hat{\\beta}\\) is inefficient and standard errors are biased\nErrors are uncorrelated: \\(Cov(e_i, e_j|X) = 0\\). This will not be satisfied if there is autocorrelation or spatial correlation. If so, \\(\\hat{\\beta}\\) is inefficient and standard errors are biased.",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html#error",
-    "href": "econometrics/models/ols.html#error",
-    "title": "OLS Regression",
-    "section": "Error",
-    "text": "Error\nThe error term represents all factors that we have not included in our regression.\nBy nature of least-squares maximization, \\(\\beta_0\\) will be set so that \\(E(e) = 0\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/models/ols.html#causality",
-    "href": "econometrics/models/ols.html#causality",
-    "title": "OLS Regression",
-    "section": "Causality",
-    "text": "Causality\nWe can infer causality if strict exogeneity is true: \\(E(e|X) = 0\\) as opposed to \\(e\\) being a function of \\(X\\).\n\n\n\n\n\n\nExample\n\n\n\n\n\nSuppose we regress ice cream sales (\\(y\\)) on shark attacks (\\(x\\)). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When \\(x\\) is high, error is high, and when \\(x\\) is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.\n\n\n\nIn practice, this means making sure there is no unaccounted for third variable correlated with \\(y\\) and \\(X\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html",
-    "href": "econometrics/software/stata.html",
-    "title": "Stata",
-    "section": "",
-    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#data",
-    "href": "econometrics/software/stata.html#data",
-    "title": "Stata",
-    "section": "",
-    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#options",
-    "href": "econometrics/software/stata.html#options",
-    "title": "Stata",
-    "section": "Options",
-    "text": "Options\nset option value\nCommon use cases:\n\nset more off: Stata stops asking you to inspect output page-by-page\n\ncd “dir”",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#processing",
-    "href": "econometrics/software/stata.html#processing",
-    "title": "Stata",
-    "section": "Processing",
-    "text": "Processing\nsample n\ngen var=expr\ndrop var\nDrops a variable\ndrop if cond\nDrops observations where cond is true\nreplace var=x if cond\nlabel var variable",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#investigation",
-    "href": "econometrics/software/stata.html#investigation",
-    "title": "Stata",
-    "section": "Investigation",
-    "text": "Investigation\nsum var",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#programming",
-    "href": "econometrics/software/stata.html#programming",
-    "title": "Stata",
-    "section": "Programming",
-    "text": "Programming\nglobal name [ = ] stuff\nCreates a macro: When name is seen in your program it will be substituted with stuff. Using = evaluates the right side first.\nprogram define *name*\n  args *arg1* *arg2* ...\n  *content*\nend\nDefines a program (basically a function)",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "econometrics/software/stata.html#analysis",
-    "href": "econometrics/software/stata.html#analysis",
-    "title": "Stata",
-    "section": "Analysis",
-    "text": "Analysis",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/macro/indicators.html",
-    "href": "notes/macro/indicators.html",
-    "title": "Economic Indicators",
-    "section": "",
-    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect \\(GDP\\)\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years."
-  },
-  {
-    "objectID": "notes/macro/indicators.html#gdp",
-    "href": "notes/macro/indicators.html#gdp",
-    "title": "Economic Indicators",
-    "section": "",
-    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect \\(GDP\\)\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years."
-  },
-  {
-    "objectID": "notes/macro/indicators.html#inflation",
-    "href": "notes/macro/indicators.html#inflation",
-    "title": "Economic Indicators",
-    "section": "Inflation",
-    "text": "Inflation\n\nCPI\nCPI is the price of a “basket” of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.\nIssues:\n\nSubstitution effect: If apples become more expensive, people will buy fewer apples, but the CPI assumes that apple consumption remains the same\nWhen the quality of goods increases, this is not reflected in the CPI\nNew goods are ignored by the CPI\n\nBecause of these issues, CPI overstates inflation, probably by less than 1 percentage point\n\n\nGDP Deflator\nGDP deflator is the ratio of nominal GDP to real GDP\nPCE is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real."
-  },
-  {
-    "objectID": "notes/macro/indicators.html#unemployment",
-    "href": "notes/macro/indicators.html#unemployment",
-    "title": "Economic Indicators",
-    "section": "Unemployment",
-    "text": "Unemployment\nAll adults (16 and older) are split into three categories:\n\nEmployed, including those on temporary leave, unpaid workers in family business, self-employed\nUnemployed: those who are not employed, available for work, and tried to find employment in the last four weeks or are waiting to be recalled to a job they had been laid off from\nNot in the labor force: Neither employed nor unemployed. For example, full-time students, homemakers, retirees, discouraged worker (someone who would be unemployed, but gave up on finding a job)\n\nThus, the labor force is equal to employed + unemployed\n\n\nUnemployment Rate: Percent of labor force that is unemployed\nLabor Force Participation Rate: Percent of adult population in the labor force"
-  },
-  {
-    "objectID": "notes/macro/indicators.html#interest",
-    "href": "notes/macro/indicators.html#interest",
-    "title": "Economic Indicators",
-    "section": "Interest",
-    "text": "Interest\nFederal Funds Rate (FFR): The interest rate banks give each other on overnight loans of federal funds (reserves they hold at the Fed). Most interest rates track the FFR\nInterest on Reserves Balances (IORB): The interest rate the Fed pays on reserves banks hold with it. The Fed manipulates this rate to change the FFR"
-  },
-  {
-    "objectID": "notes/econometrics/statistics/probaility_theory.html",
-    "href": "notes/econometrics/statistics/probaility_theory.html",
-    "title": "Random Variables",
-    "section": "",
-    "text": "Probability Mass Function \\(p_X(x)\\) for a discrete variable \\(X\\) is defined as \\(P(X = x)\\)\nProbability Density Function \\(f_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(\\int_a^b f_X(x)dx = P(a \\le X \\le b)\\)\nCumulative Density Function \\(F_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(F(a) = P(X \\le a)\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/statistics/probaility_theory.html#properties-of-probability",
-    "href": "notes/econometrics/statistics/probaility_theory.html#properties-of-probability",
-    "title": "Random Variables",
-    "section": "Properties of Probability",
-    "text": "Properties of Probability\n\n\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/statistics/probaility_theory.html#expected-value",
-    "href": "notes/econometrics/statistics/probaility_theory.html#expected-value",
-    "title": "Random Variables",
-    "section": "Expected Value",
-    "text": "Expected Value\nExpected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\nProperties of expected value:\n\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)\n\\(E(g(X)) = \\sum_{x \\in X} P(X = x)g(x)\\) or \\(\\int_{X} f_X(x)g(x)dx\\)\n\nConditional Expected Value \\(E(X | Y = y)\\) is a function of \\(y\\) which gives the expected value of \\(X\\) conditional to \\(Y = y\\). It is calculated as \\(\\sum_{x \\in X}xP(X = x | Y = y)\\) or \\(\\int_X xf_X(x | Y = y) dx\\)\n\nIf \\(X\\) and \\(Y\\) are independent, \\(E(X | Y) = E(X)\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\nOther moments of X\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\)\n\nAlso equals \\(E(X^2) - \\mu_X^2\\)\n\\(Var(aX + b) = a^2Var(X)\\)\n\\(Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)\\)\n\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\nCovariance\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\(E((X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Random Variables"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html",
-    "href": "notes/econometrics/software/stata.html",
-    "title": "Stata",
-    "section": "",
-    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#data",
-    "href": "notes/econometrics/software/stata.html#data",
-    "title": "Stata",
-    "section": "",
-    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#options",
-    "href": "notes/econometrics/software/stata.html#options",
-    "title": "Stata",
-    "section": "Options",
-    "text": "Options\nset option value\nCommon use cases:\n\nset more off: Stata stops asking you to inspect output page-by-page\n\ncd “dir”\nlog using “filepath”, replace\nStarts logging output to the file at filepath. If no file extension specified, uses the native .smcl format which has stata-specific features but can’t be viewed easily in other programs as plaintext\nlog (off | on)\nEnables or disables logging\nlog close\nCloses the log",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#processing",
-    "href": "notes/econometrics/software/stata.html#processing",
-    "title": "Stata",
-    "section": "Processing",
-    "text": "Processing\nsample n\ngen var=expr\ndrop [var]\nDrops a variable. The no-variable version is useful with if to drop observations\nreplace var=x\nlabel var variable\nformat %format …vars\ntsset var\nMarks the data as a time series with time index var",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#investigation",
-    "href": "notes/econometrics/software/stata.html#investigation",
-    "title": "Stata",
-    "section": "Investigation",
-    "text": "Investigation\nsummarize […vars]\nSummary statistics\ndescribe […vars]\nVariable data types, format, labels\nlist […vars]\ntab …vars\nCreates a frequency table\ntabstat …vars, [by(var) stats(…statistics)]\nLike summarize, but you specify variables, a var to group by, and statistics to display (default is just mean)",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#programming",
-    "href": "notes/econometrics/software/stata.html#programming",
-    "title": "Stata",
-    "section": "Programming",
-    "text": "Programming\nglobal name [ = ] stuff\nCreates a macro: When name is seen in your program it will be substituted with stuff. Using = evaluates the right side first.\nprogram define *name*\n  args *arg1* *arg2* ...\n  *content*\nend\nDefines a program (basically a function)",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/software/stata.html#analysis",
-    "href": "notes/econometrics/software/stata.html#analysis",
-    "title": "Stata",
-    "section": "Analysis",
-    "text": "Analysis\ncorr […vars]\nCreates a correlation matrix\n\nTests\nsktest var\nSkewness/kurtosis test for normality\n\n\nRegressions\nregress yvar …xvars",
-    "crumbs": [
-      "Econometrics",
-      "Software",
-      "Stata"
-    ]
-  },
-  {
-    "objectID": "notes/micro/CopyOfindex.html",
-    "href": "notes/micro/CopyOfindex.html",
-    "title": "Micro",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n[1] 2",
-    "crumbs": [
-      "Micro",
-      "Micro"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html",
-    "href": "notes/econometrics/models/ols.html",
-    "title": "OLS Regression",
-    "section": "",
-    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#model",
-    "href": "notes/econometrics/models/ols.html#model",
-    "title": "OLS Regression",
-    "section": "",
-    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#estimation",
-    "href": "notes/econometrics/models/ols.html#estimation",
-    "title": "OLS Regression",
-    "section": "Estimation",
-    "text": "Estimation\nChoose \\(\\hat{\\beta}\\) to minimize the sum of squared error terms (\\(RSS\\)). By derivative, \\(\\hat{\\beta} = (X^TX)^{-1}X^Ty\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#assumptions",
-    "href": "notes/econometrics/models/ols.html#assumptions",
-    "title": "OLS Regression",
-    "section": "Assumptions",
-    "text": "Assumptions\n\nRandom Sample: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn’t really matter if you’re sampling a small fraction)\nX has full rank: None of \\(X\\)’s variables are linear combinations of each other. If this is not satisfied, \\(X^TX\\) is singular and \\(\\hat{\\beta}\\) cannot be computed\nHomoskedasticity: \\(Var(e|X)\\) is constant, not a function of (\\(X\\)). If not satisfied (heteroskedasticity) \\(\\hat{\\beta}\\) is inefficient and standard errors are biased\nErrors are uncorrelated: \\(Cov(e_i, e_j|X) = 0\\). This will not be satisfied if there is autocorrelation or spatial correlation. If so, \\(\\hat{\\beta}\\) is inefficient and standard errors are biased.",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#error",
-    "href": "notes/econometrics/models/ols.html#error",
-    "title": "OLS Regression",
-    "section": "Error",
-    "text": "Error\nThe error term represents all factors that we have not included in our regression.\nBy nature of least-squares maximization, \\(\\beta_0\\) will be set so that \\(E(e) = 0\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#causality",
-    "href": "notes/econometrics/models/ols.html#causality",
-    "title": "OLS Regression",
-    "section": "Causality",
-    "text": "Causality\nWe can infer causality if strict exogeneity is true: \\(E(e|X) = 0\\) as opposed to \\(e\\) being a function of \\(X\\).\n\n\n\n\n\n\nExample\n\n\n\n\n\nSuppose we regress ice cream sales (\\(y\\)) on shark attacks (\\(x\\)). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When \\(x\\) is high, error is high, and when \\(x\\) is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.\n\n\n\nIn practice, this means making sure there is no unaccounted for third variable correlated with \\(y\\) and \\(X\\).",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/statistics/distributions.html",
-    "href": "notes/econometrics/statistics/distributions.html",
-    "title": "Distributions",
-    "section": "",
-    "text": "Normal\n\n\n\n\n\n\n\n\n\nA bell curve with mean \\(\\mu\\) and standard deviation \\(\\sigma^2\\). The sum or average of a large enough random sample is approximately normal.\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)\n\n\nBinomial\n\n\n\n\n\n\n\n\n\nThe sum of \\(n\\) i.i.d. Bernoulli variables with probability \\(p\\). A Bernoulli variable takes value 1 with probability \\(p\\) and 0 otherwise.\nPMF: \\(\\binom{n}{x}p^x(1-p)^{n-x}\\)\nExpected Value: \\(np\\)\nVariance: \\(np(1-p)\\)\n\n\nPoisson\n\n\n\n\n\n\n\n\n\nRepresents the number of events occuring over an interval of time or space where the events occur independently at a constant rate. The parameter \\(\\lambda\\) is the expected number of events over that interval.\nExpected Value: \\(\\lambda\\)\nVariance: \\(\\lambda\\)\nPMF: \\(\\frac{e^{-\\lambda}\\lambda^x}{x!}\\)\n\n\nChi-squared\n\n\n\n\n\n\n\n\n\nThe sum of \\(m\\) independent squared standard normal variables, with \\(m\\) degrees of freedom. Converges to a normal distribution by CLT\nExpected value: \\(m\\)\nVariance: \\(2m\\)\n\n\nt\n\n\n\n\n\n\n\n\n\nIf \\(Z \\sim N(0, 1)\\) and \\(V \\sim \\chi^2_m\\) and both are independent, then \\(\\frac{Z}{\\sqrt{V / m}}\\) is \\(t_m\\)\n\n\nF\n\n\n\n\n\n\n\n\n\nIf \\(V_1 \\sim \\chi^2_n\\) and \\(V_2 \\sim \\chi^2_M\\) and both are independent, then \\(\\frac{V_1/n}{V_2/m}\\) is \\(F_{n, m}\\)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "Distributions"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/statistics/tests.html",
-    "href": "notes/econometrics/statistics/tests.html",
-    "title": "tests",
-    "section": "",
-    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "tests"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/statistics/tests.html#distribution-tests",
-    "href": "notes/econometrics/statistics/tests.html#distribution-tests",
-    "title": "tests",
-    "section": "",
-    "text": "Test statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)",
-    "crumbs": [
-      "Econometrics",
-      "Statistics",
-      "tests"
-    ]
-  },
-  {
     "objectID": "notes/econometrics/statistics/inference.html",
     "href": "notes/econometrics/statistics/inference.html",
     "title": "Inference",
@@ -654,182 +21,6 @@
       "Econometrics",
       "Statistics",
       "Inference"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#cautions",
-    "href": "notes/econometrics/models/ols.html#cautions",
-    "title": "OLS Regression",
-    "section": "Cautions",
-    "text": "Cautions\n\nIf two regressors are highly correlated, the variance of their coefficients will be very high",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#measures",
-    "href": "notes/econometrics/models/ols.html#measures",
-    "title": "OLS Regression",
-    "section": "Measures",
-    "text": "Measures\nThree “sum of squares” measures:\n\nExplained sum of squares or \\(ESS\\) is \\(\\sum_i (\\hat{y}_i - y_i)^2\\)\nResidual sum of squares or \\(RSS\\) is \\(\\sum_i (\\hat{u}_i)^2\\)\nTotal sum of squares or \\(TSS\\) is \\(\\sum_i (y_i - \\bar{y})^2\\)\n\nR-squared or \\(R^2\\) is \\(\\frac{ESS}{TSS}\\) and measures goodness of fit. Should only be used to compare models if they have the same \\(K\\)\nAdjusted R-squared or \\(\\bar{R}^2\\) is \\(1 - \\frac{RSS/(N - K)}{TSS/(N - 1)}\\) and measures goodness of fit with a penalty for adding variables.\nVariable Inflation Factor (VIF) for variable \\(x_j\\) is \\(\\frac{1}{1-R_j^2}\\) where \\(R_j^2\\) is the \\(R^2\\) of \\(x_j\\) on all other independent variables. Measures multicollinearity, over 10 is bad and should be taken out",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/fiscal-policy.html",
-    "href": "notes/micro-macro/fiscal-policy.html",
-    "title": "Fiscal Policy",
-    "section": "",
-    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.",
-    "crumbs": [
-      "Micro Macro",
-      "Fiscal Policy"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/fiscal-policy.html#taxes",
-    "href": "notes/micro-macro/fiscal-policy.html#taxes",
-    "title": "Fiscal Policy",
-    "section": "",
-    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.",
-    "crumbs": [
-      "Micro Macro",
-      "Fiscal Policy"
-    ]
-  },
-  {
-    "objectID": "to_add.html",
-    "href": "to_add.html",
-    "title": "NoteSite",
-    "section": "",
-    "text": "Testing the stochastic assumptions\nDistributions (book appendix B)\nMore tests (in that one doc)\nResearch about effects of corporate taxes\nMinimum wage research / NIT, EITC, UBI"
-  },
-  {
-    "objectID": "notes/micro-macro/monetary-policy.html",
-    "href": "notes/micro-macro/monetary-policy.html",
-    "title": "Monetary Policy",
-    "section": "",
-    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
-    "crumbs": [
-      "Micro Macro",
-      "Monetary Policy"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/monetary-policy.html#inflation",
-    "href": "notes/micro-macro/monetary-policy.html#inflation",
-    "title": "Monetary Policy",
-    "section": "",
-    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
-    "crumbs": [
-      "Micro Macro",
-      "Monetary Policy"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/monetary-policy.html#unemployment",
-    "href": "notes/micro-macro/monetary-policy.html#unemployment",
-    "title": "Monetary Policy",
-    "section": "Unemployment",
-    "text": "Unemployment\nThe Fed targets maximum employment. But there is a tradeoff between inflation and unemployment. If aggregate demand is increased, due to supply and demand, output increases (more employment), but price increases (increased inflation rate). If aggregate demand is decreased, the reverse happens.\nThis tradeoff exists only in the short run. In the long run, employment and inflation return to normal levels.",
-    "crumbs": [
-      "Micro Macro",
-      "Monetary Policy"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/monetary-policy.html#interest-rate",
-    "href": "notes/micro-macro/monetary-policy.html#interest-rate",
-    "title": "Monetary Policy",
-    "section": "Interest Rate",
-    "text": "Interest Rate\nRaising the interest rate “tightens” the economy, slowing it down, generally leading to less inflation and more unemployment. Lowering the rate “eases” or “expands” it, generally leading to more inflation and less unemployment. The Fed has indirect control over the interest rate by targeting the federal funds rate:\n\nOpen market operations: Buying Treasury securities from banks, increasing their reserves, increases the supply for loanable funds, decreasing the interest rate\nChanging the discount rate, the rate the Fed gives to banks on overnight loans, to make more or less discount loans and change banks’ reserve amounts\nChanging the reserve requirements, the percent of deposits banks are required to hold on-hand\nInterest rate on reserve balances (IORB)",
-    "crumbs": [
-      "Micro Macro",
-      "Monetary Policy"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/indicators.html",
-    "href": "notes/micro-macro/indicators.html",
-    "title": "Economic Indicators",
-    "section": "",
-    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
-    "crumbs": [
-      "Micro Macro",
-      "Economic Indicators"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/indicators.html#gdp",
-    "href": "notes/micro-macro/indicators.html#gdp",
-    "title": "Economic Indicators",
-    "section": "",
-    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
-    "crumbs": [
-      "Micro Macro",
-      "Economic Indicators"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/indicators.html#inflation",
-    "href": "notes/micro-macro/indicators.html#inflation",
-    "title": "Economic Indicators",
-    "section": "Inflation",
-    "text": "Inflation\n\nCPI\nCPI is the price of a “basket” of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.\nIssues:\n\nSubstitution effect: If apples become more expensive, people will buy fewer apples, but the CPI assumes that apple consumption remains the same\nWhen the quality of goods increases, this is not reflected in the CPI\nNew goods are ignored by the CPI\n\nBecause of these issues, CPI overstates inflation, probably by less than 1 percentage point\n\n\nGDP Deflator\nGDP deflator is the ratio of nominal GDP to real GDP\nPCE is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.",
-    "crumbs": [
-      "Micro Macro",
-      "Economic Indicators"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/indicators.html#unemployment",
-    "href": "notes/micro-macro/indicators.html#unemployment",
-    "title": "Economic Indicators",
-    "section": "Unemployment",
-    "text": "Unemployment\nAll adults (16 and older) are split into three categories:\n\nEmployed, including those on temporary leave, unpaid workers in family business, self-employed\nUnemployed: those who are not employed, available for work, and tried to find employment in the last four weeks or are waiting to be recalled to a job they had been laid off from\nNot in the labor force: Neither employed nor unemployed. For example, full-time students, homemakers, retirees, discouraged worker (someone who would be unemployed, but gave up on finding a job)\n\nThus, the labor force is equal to employed + unemployed\n\n\nUnemployment Rate: Percent of labor force that is unemployed\nLabor Force Participation Rate: Percent of adult population in the labor force",
-    "crumbs": [
-      "Micro Macro",
-      "Economic Indicators"
-    ]
-  },
-  {
-    "objectID": "notes/micro-macro/indicators.html#interest",
-    "href": "notes/micro-macro/indicators.html#interest",
-    "title": "Economic Indicators",
-    "section": "Interest",
-    "text": "Interest\nFederal Funds Rate (FFR): The interest rate banks give each other on overnight loans of federal funds (reserves they hold at the Fed). Most interest rates track the FFR",
-    "crumbs": [
-      "Micro Macro",
-      "Economic Indicators"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#estimator-properties",
-    "href": "notes/econometrics/models/ols.html#estimator-properties",
-    "title": "OLS Regression",
-    "section": "Estimator properties",
-    "text": "Estimator properties\n\n\\(\\hat\\beta_i\\) increases in variance with greater variance of \\(y\\), lower variance of \\(x\\), lower sample size \\(N\\), and correlation with other variables\nIf error is normally distributed, so is \\(\\hat\\beta_i\\) (conditional on \\(X\\))",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
-    ]
-  },
-  {
-    "objectID": "notes/econometrics/models/ols.html#inference",
-    "href": "notes/econometrics/models/ols.html#inference",
-    "title": "OLS Regression",
-    "section": "Inference",
-    "text": "Inference\n\nA single coefficient / linear combination\nNull Hypothesis: \\(\\beta_i = c\\)\nTest statistic: \\(\\frac{\\hat\\beta_i - c}{\\textrm{se}(\\beta_i)}\\)\nDistribution: \\(t_{n - k}\\) if errors are normally distributed, or \\(n\\) is large\nFor a linear combination: \\(\\beta_i\\) can be replaced with \\(a_i\\beta_i + a_j\\beta_j + \\cdots\\)\n\n\nJoint hypotheses\nNull Hypothesis: \\(a_i\\beta_i = c_1,\\ a_j\\beta_j + a_k\\beta_k = c_2, \\cdots\\)\nTest statistic: \\(\\frac{\\left(RSS_R - RSS_U\\right) / J}{RSS_U / (n - k)}\\), where \\(RSS_R\\) is the \\(RSS\\) of a regression where \\(H_0\\) is assumed, \\(RSS_U\\) is the \\(RSS\\) of the normal regression, and \\(J\\) is the number of restrictions\nDistribution: \\(F_{J, n-k}\\) if errors are normally distributed, or \\(n\\) is large",
-    "crumbs": [
-      "Econometrics",
-      "Models",
-      "OLS Regression"
     ]
   },
   {
@@ -857,63 +48,135 @@
     ]
   },
   {
-    "objectID": "notes/econometrics/software/stata.html#common-features",
-    "href": "notes/econometrics/software/stata.html#common-features",
-    "title": "Stata",
-    "section": "Common features",
-    "text": "Common features\nThese are supported by most commands.\nif cond\nFilters rows to only those where cond is true\nin range\nOnly acts on rows in the range (usually of the form e.g. 2/10)\n_n\nHolds the number of the current observation\n_N\nHolds the total number of observations",
+    "objectID": "notes/econometrics/statistics/distributions.html",
+    "href": "notes/econometrics/statistics/distributions.html",
+    "title": "Distributions",
+    "section": "",
+    "text": "Normal\n\n\n\n\n\n\n\n\n\nA bell curve with mean \\(\\mu\\) and standard deviation \\(\\sigma^2\\). The sum or average of a large enough random sample is approximately normal.\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)\n\nJarque-Bera Test for Normality\nHypothesis: \\(H_0\\): The distribution is approximately normally distributed\nTest statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)\n\n\n\nBinomial\n\n\n\n\n\n\n\n\n\nThe sum of \\(n\\) i.i.d. Bernoulli variables with probability \\(p\\). A Bernoulli variable takes value 1 with probability \\(p\\) and 0 otherwise.\nPMF: \\(\\binom{n}{x}p^x(1-p)^{n-x}\\)\nExpected Value: \\(np\\)\nVariance: \\(np(1-p)\\)\n\n\nPoisson\n\n\n\n\n\n\n\n\n\nRepresents the number of events occuring over an interval of time or space where the events occur independently at a constant rate. The parameter \\(\\lambda\\) is the expected number of events over that interval.\nExpected Value: \\(\\lambda\\)\nVariance: \\(\\lambda\\)\nPMF: \\(\\frac{e^{-\\lambda}\\lambda^x}{x!}\\)\n\n\nChi-squared\n\n\n\n\n\n\n\n\n\nThe sum of \\(m\\) independent squared standard normal variables, with \\(m\\) degrees of freedom. Converges to a normal distribution by CLT\nExpected value: \\(m\\)\nVariance: \\(2m\\)\n\n\nt\n\n\n\n\n\n\n\n\n\nIf \\(Z \\sim N(0, 1)\\) and \\(V \\sim \\chi^2_m\\) and both are independent, then \\(\\frac{Z}{\\sqrt{V / m}}\\) is \\(t_m\\)\n\n\nF\n\n\n\n\n\n\n\n\n\nIf \\(V_1 \\sim \\chi^2_n\\) and \\(V_2 \\sim \\chi^2_M\\) and both are independent, then \\(\\frac{V_1/n}{V_2/m}\\) is \\(F_{n, m}\\)",
     "crumbs": [
       "Econometrics",
-      "Software",
-      "Stata"
+      "Statistics",
+      "Distributions"
     ]
   },
   {
-    "objectID": "notes/econometrics/software/stata.html#mathematical-expressions",
-    "href": "notes/econometrics/software/stata.html#mathematical-expressions",
-    "title": "Stata",
-    "section": "Mathematical Expressions",
-    "text": "Mathematical Expressions\n\nTime/Date\nmdy(m, d, y), hms, tq, etc.\nConvert time components to stata’s internal representation. All of these are also valid display formats.\nquarterly(str, mask), weekly, etc.\nFormats str to a time representation. mask gives the order of component appearances, e.g. YQ\nyear(date), month, hh, etc.\nExtracts the component from the date",
+    "objectID": "notes/econometrics/software/pandas.html",
+    "href": "notes/econometrics/software/pandas.html",
+    "title": "Pandas",
+    "section": "",
+    "text": "pd.read_{format}(file): Reads a file with format {format}\npd.DataFrame.to_{format}(file): Writes data to file",
     "crumbs": [
       "Econometrics",
       "Software",
-      "Stata"
+      "Pandas"
     ]
   },
   {
-    "objectID": "notes/econometrics/software/stata.html#graphing",
-    "href": "notes/econometrics/software/stata.html#graphing",
-    "title": "Stata",
-    "section": "Graphing",
-    "text": "Graphing\nhistogram var [, percent]\ntwoway(type var1 var2)\ntype can be scatter, line, etc.",
+    "objectID": "notes/econometrics/software/pandas.html#data",
+    "href": "notes/econometrics/software/pandas.html#data",
+    "title": "Pandas",
+    "section": "",
+    "text": "pd.read_{format}(file): Reads a file with format {format}\npd.DataFrame.to_{format}(file): Writes data to file",
     "crumbs": [
       "Econometrics",
       "Software",
-      "Stata"
+      "Pandas"
     ]
   },
   {
-    "objectID": "notes/econometrics/software/stata.html#post-regression",
-    "href": "notes/econometrics/software/stata.html#post-regression",
-    "title": "Stata",
-    "section": "Post-Regression",
-    "text": "Post-Regression\npredict var, residuals\nStores residuals in var\nestat hettest, iid\nTests for heteroskedasticity assuming error is i.i.d.\nestat dwatson\nTests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelation\nestat bgodfrey, lags(n)\nTests for autocorrelation with specified number n of lags",
+    "objectID": "notes/econometrics/software/pandas.html#attributes",
+    "href": "notes/econometrics/software/pandas.html#attributes",
+    "title": "Pandas",
+    "section": "Attributes",
+    "text": "Attributes\ndf.shape, series.shape: Dimensions of data\ndf.index, df.columns: Row/col labels\ndf.mean(): Mean of numeric columns. Also median, std, min, max\nSeries implements ==. Numeric series support mathematical operations with scalars or other series.\nseries.isin(values list): Is each value is in the given list?\nseries.notna(): Is each value not NA (or NaN, or None)?\nseries.unique(): Returns unique values",
     "crumbs": [
       "Econometrics",
       "Software",
-      "Stata"
+      "Pandas"
     ]
   },
   {
-    "objectID": "notes/econometrics/software/stata.html#variable-prefixes",
-    "href": "notes/econometrics/software/stata.html#variable-prefixes",
-    "title": "Stata",
-    "section": "Variable Prefixes",
-    "text": "Variable Prefixes\nD1.var\nCalculates the first difference of var",
+    "objectID": "notes/econometrics/software/pandas.html#subsetting",
+    "href": "notes/econometrics/software/pandas.html#subsetting",
+    "title": "Pandas",
+    "section": "Subsetting",
+    "text": "Subsetting\ndf[colname]: Retrieve a column as a series\ndf[colnames[]]: Retrieve columns as a data frame\ndf[booleans[]]: Retrieve rows corresponding to True\ndf.loc[row indexing, ?col indexing]: Allows indexing for rows and columns simultaneously. Row labels can be used to index. Use : to mean “all rows/cols”\ndf.iloc[row indices, col indices]: Uses integer indices to index rows and cols. Can be a number, slice, or list.\nSubsets support reassignment with =.\ndf.drop(index | columns = labels): Drops specified labels",
     "crumbs": [
       "Econometrics",
       "Software",
-      "Stata"
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/pandas.html#mutation",
+    "href": "notes/econometrics/software/pandas.html#mutation",
+    "title": "Pandas",
+    "section": "Mutation",
+    "text": "Mutation\ndf[colname] = series: Creates a new column\ndf.apply(fun, axis = 0 | 1): Applies fun to each column (axis = 0) or row (axis = 1) and returns the result\ndf.rename(index | columns = map): Renames row or column labels using map, either a dict of old-name / new-name pairs or a function to transform names\ndf.groupby(colnames[]): Creates a grouped data frame. Aggregations work automatically with functions like df.sum()\ndf.agg(fun): Dplyr summarize. fun takes in a column series and outputs the result",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ar.html",
+    "href": "notes/econometrics/models/ar.html",
+    "title": "Autoregressive Models",
+    "section": "",
+    "text": "Autoregressive (AR) models regress \\(y_t\\) on its lags, e.g. \\(y_t = \\delta + \\theta_1y_{t-1} + \\theta_2y_{t-2} + u\\). An \\(AR(p)\\) model uses lags up to \\(y_{t-p}\\). Useful when \\(y\\) depends on previous values (e.g. random walk)\nDistributed Lag (DL) models regress \\(y_t\\) on lagged variables, e.g. \\(y_t = \\alpha + \\beta_0x_t + \\beta_1x_{t-1} + u\\). A \\(DL(q)\\) model uses lags up to \\(x_{t-q}\\). Useful when changes in \\(x\\) have effects on \\(y\\) for multiple periods. Infinite Distributed Lag (IDL) models use an infinite amount of lags. One method is to set \\(\\beta_s = \\lambda^s\\beta_0\\) where \\(0 &lt; \\lambda &lt; 1\\) and \\(s = 0, 1, \\cdots\\)\n\\(T\\) represents the number of times observed",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ar.html#model",
+    "href": "notes/econometrics/models/ar.html#model",
+    "title": "Autoregressive Models",
+    "section": "",
+    "text": "Autoregressive (AR) models regress \\(y_t\\) on its lags, e.g. \\(y_t = \\delta + \\theta_1y_{t-1} + \\theta_2y_{t-2} + u\\). An \\(AR(p)\\) model uses lags up to \\(y_{t-p}\\). Useful when \\(y\\) depends on previous values (e.g. random walk)\nDistributed Lag (DL) models regress \\(y_t\\) on lagged variables, e.g. \\(y_t = \\alpha + \\beta_0x_t + \\beta_1x_{t-1} + u\\). A \\(DL(q)\\) model uses lags up to \\(x_{t-q}\\). Useful when changes in \\(x\\) have effects on \\(y\\) for multiple periods. Infinite Distributed Lag (IDL) models use an infinite amount of lags. One method is to set \\(\\beta_s = \\lambda^s\\beta_0\\) where \\(0 &lt; \\lambda &lt; 1\\) and \\(s = 0, 1, \\cdots\\)\n\\(T\\) represents the number of times observed",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ar.html#assumptions",
+    "href": "notes/econometrics/models/ar.html#assumptions",
+    "title": "Autoregressive Models",
+    "section": "Assumptions",
+    "text": "Assumptions\n\ni.i.d random sample\nX has full rank\nHomoskedasticity (or robust standard errors)\nStationary data\nWeakly dependent data: As the time between observations increases, autocorrelations become negligible\n\\(E(e_t | I_t) = 0\\): Error is not correlated with past information (all past values of \\(x\\) and \\(y\\)). Errors can feed forward to current/future values of \\(x\\). Required for consistency\nNo serial correlation in errors (the model is correctly specified and significant past variables are included). Needed for correct standard errors. In practice, low serial correlation is OK\n\nWith these assumptions, the OLS estimator is not unbiased, but consistency means it converges",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ar.html#autocorrelation",
+    "href": "notes/econometrics/models/ar.html#autocorrelation",
+    "title": "Autoregressive Models",
+    "section": "Autocorrelation",
+    "text": "Autocorrelation\nAutocorrelation is the correlation between \\(y_t\\) and its lags.\nAutocorrelation Function (ACF): \\(\\rho_s = \\frac{Cov(y_t, y_{t-s})}{\\sigma^2_{y_t}}\\)\nThe ACF can be estimated with the sample ACF: \\(r_s = \\frac{\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})}{\\sum_{i=1}^T(x_i-\\bar{x})^2}\\). Since each sum has a different number of observations, sometimes \\(r_s = \\frac{\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})}{\\sum_{i=s+1}^T(x_i-\\bar{x})^2}\\) or \\(r_s = \\frac{\\frac{1}{T-s}\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})} {\\frac{1}{T}\\sum_{i=1}^T(x_i-\\bar{x})^2}\\) is used instead\nPartial ACF (PACF): Measures correlation between \\(y_t\\) and \\(y_{t-s}\\) independent of all \\(y\\)-values in between",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ar.html#tests",
+    "href": "notes/econometrics/models/ar.html#tests",
+    "title": "Autoregressive Models",
+    "section": "Tests",
+    "text": "Tests\n\nSignificance of autocorrelation\nHypothesis: \\(\\rho_s = 0\\)\nTest statistic: \\(r_s\\sqrt T\\)\nDistribution: \\(N(0, 1)\\) if data is stationary and weakly dependent",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
     ]
   },
   {
@@ -965,15 +228,244 @@
     ]
   },
   {
-    "objectID": "notes/econometrics/models/simultaneous-equations.html#inference",
-    "href": "notes/econometrics/models/simultaneous-equations.html#inference",
+    "objectID": "notes/econometrics/models/simultaneous-equations.html#tests",
+    "href": "notes/econometrics/models/simultaneous-equations.html#tests",
     "title": "Simultaneous Equations",
-    "section": "Inference",
-    "text": "Inference\n\nExogeneity of regressor (Hausman test)\nNull Hypothesis: \\(x_i\\) is exogenous\nTest Statistic: \\(\\frac{\\hat\\beta_{i, 2SLS} - \\hat\\beta_{i, OLS}}{Var(\\hat\\beta_{i, 2SLS}) - Var(\\hat\\beta_{i, OLS})}\\) where \\(\\hat\\beta_{i, OLS}\\) is the estimate of \\(\\beta_i\\) using OLS, and the same for 2SLS\nDistribution: \\(\\chi^2_1\\)",
+    "section": "Tests",
+    "text": "Tests\n\nExogeneity of regressor (Hausman test)\nNull Hypothesis: \\(x_i\\) is exogenous\nTest Statistic: \\(\\frac{\\hat\\beta_{i, 2SLS} - \\hat\\beta_{i, OLS}}{Var(\\hat\\beta_{i, 2SLS}) - Var(\\hat\\beta_{i, OLS})}\\) where \\(\\hat\\beta_{i, OLS}\\) is the estimate of \\(\\beta_i\\) using OLS, and the same for 2SLS\nDistribution: \\(\\chi^2_1\\)",
     "crumbs": [
       "Econometrics",
       "Models",
       "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/models.html",
+    "href": "notes/econometrics/models/forecasting/models.html",
+    "title": "Forecasting Models",
+    "section": "",
+    "text": "Idea: Take all future forecasts as a weighted average of all observations with geometric weights biased towards more recent observations: \\(\\hat y_{t+h} = \\alpha y_t + \\alpha (1-\\alpha)y_{t-1} + \\alpha (1-\\alpha)^2y_{t-2}\\dots\\) where \\(0 &lt; \\alpha \\le 1\\). This creates the level. Then add trend and seasonality components\nTrend: There are two choices for this component:\n\nAdditive: the final trend (slope) is determined by a weighted average of all the slopes in the data, then that is assumed to be the slope for all future points\nAdditive damped: The slope at time \\(t+h\\) is forecasted to be \\(\\phi + \\phi^2 + \\dots + \\phi^h\\) where \\(0 &lt; \\phi \\le 1\\) (but in practice, \\(0.8 \\le \\phi \\le 0.98\\))\n\nSeasonality: There are two choices for this component:\n\nAdditive: The seasonal effect is constant and added to the level\nMultiplicative: The seasonal effect is proportional to the level and multiplied to the level + trend",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/models.html#exponential-smoothing-ets",
+    "href": "notes/econometrics/models/forecasting/models.html#exponential-smoothing-ets",
+    "title": "Forecasting Models",
+    "section": "",
+    "text": "Idea: Take all future forecasts as a weighted average of all observations with geometric weights biased towards more recent observations: \\(\\hat y_{t+h} = \\alpha y_t + \\alpha (1-\\alpha)y_{t-1} + \\alpha (1-\\alpha)^2y_{t-2}\\dots\\) where \\(0 &lt; \\alpha \\le 1\\). This creates the level. Then add trend and seasonality components\nTrend: There are two choices for this component:\n\nAdditive: the final trend (slope) is determined by a weighted average of all the slopes in the data, then that is assumed to be the slope for all future points\nAdditive damped: The slope at time \\(t+h\\) is forecasted to be \\(\\phi + \\phi^2 + \\dots + \\phi^h\\) where \\(0 &lt; \\phi \\le 1\\) (but in practice, \\(0.8 \\le \\phi \\le 0.98\\))\n\nSeasonality: There are two choices for this component:\n\nAdditive: The seasonal effect is constant and added to the level\nMultiplicative: The seasonal effect is proportional to the level and multiplied to the level + trend",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/models.html#arima",
+    "href": "notes/econometrics/models/forecasting/models.html#arima",
+    "title": "Forecasting Models",
+    "section": "ARIMA",
+    "text": "ARIMA\nIdea: Autoregressive and moving average models can be used to model a stationary time series. A non-stationary time series can be made stationary by differencing it.\nARIMA\\((p, d, q)\\) is a regression model that combines \\(AR(p)\\) and \\(MA(q)\\) and differences the data \\(d\\) times\nSeasonality: SARIMA\\((p, d, q)(P, D, Q)_m\\) includes a seasonal component relating observations to that of the last season instead of the last observation. E.g. \\(P = 1\\) means values in March are autoregressed on values in last March, \\(D=1\\) performs a seasonal difference\nARIMAX: Can use covariates (\\(x\\) regressors). Instead of \\(y_t\\) being modeled as an ARIMA process, we have e.g. \\(y_t = \\beta_0 + \\beta_1x_{1,t} + \\nu_t\\) where error \\(\\nu_t\\) is an ARIMA process. Note that all variables have to be stationary, usually done by differencing them all the same amount.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/indicators.html",
+    "href": "notes/micro-macro/indicators.html",
+    "title": "Economic Indicators",
+    "section": "",
+    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
+    "crumbs": [
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/indicators.html#gdp",
+    "href": "notes/micro-macro/indicators.html#gdp",
+    "title": "Economic Indicators",
+    "section": "",
+    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
+    "crumbs": [
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/indicators.html#inflation",
+    "href": "notes/micro-macro/indicators.html#inflation",
+    "title": "Economic Indicators",
+    "section": "Inflation",
+    "text": "Inflation\n\nCPI\nCPI is the price of a “basket” of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.\nIssues:\n\nSubstitution effect: If apples become more expensive, people will buy fewer apples, but the CPI assumes that apple consumption remains the same\nWhen the quality of goods increases, this is not reflected in the CPI\nNew goods are ignored by the CPI\n\nBecause of these issues, CPI overstates inflation, probably by less than 1 percentage point\n\n\nGDP Deflator\nGDP deflator is the ratio of nominal GDP to real GDP\nPCE deflator is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.",
+    "crumbs": [
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/indicators.html#unemployment",
+    "href": "notes/micro-macro/indicators.html#unemployment",
+    "title": "Economic Indicators",
+    "section": "Unemployment",
+    "text": "Unemployment\nAll adults (16 and older) are split into three categories:\n\nEmployed, including those on temporary leave, unpaid workers in family business, self-employed\nUnemployed: those who are not employed, available for work, and tried to find employment in the last four weeks or are waiting to be recalled to a job they had been laid off from\nNot in the labor force: Neither employed nor unemployed. For example, full-time students, homemakers, retirees, discouraged worker (someone who would be unemployed, but gave up on finding a job)\n\nThus, the labor force is equal to employed + unemployed\n\n\nUnemployment Rate: Percent of labor force that is unemployed\nLabor Force Participation Rate: Percent of adult population in the labor force",
+    "crumbs": [
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/indicators.html#interest",
+    "href": "notes/micro-macro/indicators.html#interest",
+    "title": "Economic Indicators",
+    "section": "Interest",
+    "text": "Interest\nFederal Funds Rate (FFR): The interest rate banks give each other on overnight loans of federal funds (reserves they hold at the Fed). Most interest rates track the FFR",
+    "crumbs": [
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/esg.html",
+    "href": "notes/micro-macro/esg.html",
+    "title": "ESG",
+    "section": "",
+    "text": "ESG performance is positively correlated with financial performance variables such as ROA or ROE, moreso in the long-term and moreso during times of crisis.1 It is also negatively correlated with systematic risk and legal risk2",
+    "crumbs": [
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/esg.html#effect-of-esg-performance-on-financials",
+    "href": "notes/micro-macro/esg.html#effect-of-esg-performance-on-financials",
+    "title": "ESG",
+    "section": "",
+    "text": "ESG performance is positively correlated with financial performance variables such as ROA or ROE, moreso in the long-term and moreso during times of crisis.1 It is also negatively correlated with systematic risk and legal risk2",
+    "crumbs": [
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/esg.html#esg-theories",
+    "href": "notes/micro-macro/esg.html#esg-theories",
+    "title": "ESG",
+    "section": "ESG Theories",
+    "text": "ESG Theories\n\nStakeholder Theory: As opposed to the traditional theory of the firm (a firm should produce value for shareholders) the stakeholder theory states a firm should work for the best interests of all of its stakeholders (customers, employees, community, shareholders, etc.)\nResource-Based View: ESG performance can help companies develop intangible assets such as trust, giving them a competitive advantage\nLegitimacy Theory: ESG performance helps increase company legitimacy, which can increase consumer demand and minimize harmful government action",
+    "crumbs": [
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/esg.html#footnotes",
+    "href": "notes/micro-macro/esg.html#footnotes",
+    "title": "ESG",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://www.stern.nyu.edu/sites/default/files/assets/documents/NYU-RAM_ESG-Paper_2021%20Rev_0.pdf↩︎\nhttps://onlinelibrary.wiley.com/doi/full/10.1002/ijfe.70027↩︎",
+    "crumbs": [
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/monetary-policy.html",
+    "href": "notes/micro-macro/monetary-policy.html",
+    "title": "Monetary Policy",
+    "section": "",
+    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
+    "crumbs": [
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/monetary-policy.html#inflation",
+    "href": "notes/micro-macro/monetary-policy.html#inflation",
+    "title": "Monetary Policy",
+    "section": "",
+    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
+    "crumbs": [
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/monetary-policy.html#unemployment",
+    "href": "notes/micro-macro/monetary-policy.html#unemployment",
+    "title": "Monetary Policy",
+    "section": "Unemployment",
+    "text": "Unemployment\nThe Fed targets maximum employment. But there is a tradeoff between inflation and unemployment. If aggregate demand is increased, due to supply and demand, output increases (more employment), but price increases (increased inflation rate). If aggregate demand is decreased, the reverse happens.\nThis tradeoff exists only in the short run. In the long run, employment and inflation return to normal levels.",
+    "crumbs": [
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/monetary-policy.html#interest-rate",
+    "href": "notes/micro-macro/monetary-policy.html#interest-rate",
+    "title": "Monetary Policy",
+    "section": "Interest Rate",
+    "text": "Interest Rate\nRaising the interest rate “tightens” the economy, slowing it down, generally leading to less inflation and more unemployment. Lowering the rate “eases” or “expands” it, generally leading to more inflation and less unemployment. The Fed has indirect control over the interest rate by targeting the federal funds rate:\n\nOpen market operations: Buying Treasury securities from banks, increasing their reserves, increases the supply for loanable funds, decreasing the interest rate\nChanging the discount rate, the rate the Fed gives to banks on overnight loans, to make more or less discount loans and change banks’ reserve amounts\nChanging the reserve requirements, the percent of deposits banks are required to hold on-hand\nInterest rate on reserve balances (IORB)",
+    "crumbs": [
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "to_add.html",
+    "href": "to_add.html",
+    "title": "NoteSite",
+    "section": "",
+    "text": "Testing the stochastic assumptions\nPropensity score matching\nCox proportional hazards\nLogistic/logit/probit\nDiscrete choice\nMinimum wage research - NIT, EITC, UBI"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NoteSite",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "notes/micro-macro/fiscal-policy.html",
+    "href": "notes/micro-macro/fiscal-policy.html",
+    "title": "Fiscal Policy",
+    "section": "",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.12",
+    "crumbs": [
+      "Micro Macro",
+      "Fiscal Policy"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/fiscal-policy.html#taxes",
+    "href": "notes/micro-macro/fiscal-policy.html#taxes",
+    "title": "Fiscal Policy",
+    "section": "",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.12",
+    "crumbs": [
+      "Micro Macro",
+      "Fiscal Policy"
+    ]
+  },
+  {
+    "objectID": "notes/micro-macro/fiscal-policy.html#footnotes",
+    "href": "notes/micro-macro/fiscal-policy.html#footnotes",
+    "title": "Fiscal Policy",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://home.treasury.gov/system/files/131/wp-101.pdf↩︎\nhttps://www.nber.org/system/files/working_papers/w27058/w27058.pdf↩︎",
+    "crumbs": [
+      "Micro Macro",
+      "Fiscal Policy"
     ]
   },
   {
@@ -1032,6 +524,229 @@
     ]
   },
   {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html",
+    "href": "notes/econometrics/models/forecasting/forecasting.html",
+    "title": "Forecasting",
+    "section": "",
+    "text": "A time series can be smoothed by taking a moving average of observations. The smoothed data \\(\\hat{T}\\) can be expressed as \\(\\frac 1 m \\sum_{j=-k}^k y_{t+j}\\), where \\(m\\) is the window size and is equal to \\(2k+1\\). This is called an \\(m\\)-MA.\nAn even moving average can be taken, but it is non symmetric. It can be made symmetric by taking a 2-MA after an even MA (a \\(2 \\times m\\)-MA or centered \\(m\\)-MA).\nMAs can also be weighted: \\(\\hat{T} = \\sum_{j=-k}^k a_jy_{t+j}\\) where weights \\(a_j\\) are symmetric around 0 and sum to 1. A simple MA is equivalent to all weights being \\(1/m\\). A \\(2 \\times 4\\)-MA is equivalent to a 5-MA with weights \\(\\left[\\frac 1 8, \\frac 1 4, \\frac 1 4, \\frac 1 4, \\frac 1 8\\right]\\) and leads to a smoother curve than a 5-MA.\n\n\nWarning: Removed 6 rows containing missing values or values outside the scale range\n(`geom_line()`).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#smoothing",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#smoothing",
+    "title": "Forecasting",
+    "section": "",
+    "text": "A time series can be smoothed by taking a moving average of observations. The smoothed data \\(\\hat{T}\\) can be expressed as \\(\\frac 1 m \\sum_{j=-k}^k y_{t+j}\\), where \\(m\\) is the window size and is equal to \\(2k+1\\). This is called an \\(m\\)-MA.\nAn even moving average can be taken, but it is non symmetric. It can be made symmetric by taking a 2-MA after an even MA (a \\(2 \\times m\\)-MA or centered \\(m\\)-MA).\nMAs can also be weighted: \\(\\hat{T} = \\sum_{j=-k}^k a_jy_{t+j}\\) where weights \\(a_j\\) are symmetric around 0 and sum to 1. A simple MA is equivalent to all weights being \\(1/m\\). A \\(2 \\times 4\\)-MA is equivalent to a 5-MA with weights \\(\\left[\\frac 1 8, \\frac 1 4, \\frac 1 4, \\frac 1 4, \\frac 1 8\\right]\\) and leads to a smoother curve than a 5-MA.\n\n\nWarning: Removed 6 rows containing missing values or values outside the scale range\n(`geom_line()`).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#decomposition",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#decomposition",
+    "title": "Forecasting",
+    "section": "Decomposition",
+    "text": "Decomposition\nA time-series can generally be decomposed into three parts:\n\nThe overall trend over time\nA seasonal effect (e.g. electricity demand rises in July, then falls by September every year)\nThe remainder/error\n\nThus giving us the model \\(y_t = S_t + T_t + R_t\\) or \\(y_t = S_t * T_t * R_t\\)\n\n\n\n\n\n\n\n\n\nSeasonally adjusted data removes the seasonal component, leaving trend and remainder.\nThe strength of trend is calculated as \\(F_T = \\max \\left(0, 1 - \\frac{Var(R_t)}{Var(T_t + R_t)}\\right)\\). Similarly, \\(F_S = \\max \\left(0, 1 - \\frac{Var(R_t)}{Var(S_t + R_t)}\\right)\\) is the strength of seasonality\n\nClassical decomposition\n(For multiplicative decomposition, divide instead of subtracting)\nLet \\(m\\) be the number of “seasons” in the data: 12 for monthly, 4 for quarterly, etc.\n\nCompute \\(\\hat{T}\\) with a moving average. If \\(m\\) is odd, use an \\(m\\)-MA, and if \\(m\\) is even, use a \\(2 \\times m\\)-MA.\nCalculate the detrended data \\(y - \\hat{T}_t\\). Compute \\(\\hat{S}_t\\) as the average of all detrended values for that season (e.g. the average of all March values)\nCompute \\(\\hat{R}_t\\) as \\(y_t - \\hat{T}_t - \\hat{S}_t\\).\n\nThis is a simple method for illustrative purposes, not designed for real-world use. It is not robust to outliers, tends to oversmooth sharp turns, and assumes the seasonal component is constant.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#prediction",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#prediction",
+    "title": "Forecasting",
+    "section": "Prediction",
+    "text": "Prediction\n\nAssumptions\n\nData are i.i.d.\nHomoskedasticity\nNo autocorrelation in residuals\nResiduals are normally distributed (or, bootstrapping)\n\nAssumptions 2 through 4 are needed for correct standard errors (and forecast intervals)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#stationarity",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#stationarity",
+    "title": "Forecasting",
+    "section": "Stationarity",
+    "text": "Stationarity\nStationary data has constant distribution at any point in time.\nData \\(y_t\\) can often be made stationary by taking its difference \\(y'_t = y_t - y_{t-1}\\). \\(y''_t\\) is fine also, but generally don’t go further than the second difference. There is also the seasonal difference \\(y'_t = y_t - y_{t-m}\\), where \\(m\\) is the number of seasons.\nUnit root tests can test for stationarity.",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#model-selection",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#model-selection",
+    "title": "Forecasting",
+    "section": "Model selection",
+    "text": "Model selection\nCorrected AIC (AICc): \\(AIC + \\frac{2(k+2)(k+3)}{T-k-3}\\) where \\(AIC = T\\log\\left({\\frac{RSS}{T}}\\right)\\). Corrects for AIC’s bias to choose too many predictors at low \\(T\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/forecasting/forecasting.html#evaluation",
+    "href": "notes/econometrics/models/forecasting/forecasting.html#evaluation",
+    "title": "Forecasting",
+    "section": "Evaluation",
+    "text": "Evaluation\n\nPoint forecasts\nMean Absolute Error (MAE): \\(\\mathrm{mean} (e_t)\\)\nRoot Mean Squared Error (RMSE): \\(\\sqrt{\\mathrm{mean} (e_t^2)}\\)\nScaled errors can be constructed using \\(q_t = \\frac{e_t}{\\frac{1}{T - m}\\sum_{t=m+1}^T |y_t - y_{t - m}|}\\) (error scaled by that of a seasonal one-step naive forecast on the training data) instead of \\(e_t\\). Similarly, \\(q_t^2 = \\frac{e_t^2}{\\frac{1}{T - m}\\sum_{t=m+1}^T (y_t - y_{t - m})^2}\\)\nMean Absolute Scaled Error (MASE): \\(\\mathrm{mean} (q_t)\\)\nRoot Mean Squared Scaled Error (RMSSE): \\(\\sqrt{\\mathrm{mean} (q_t^2)}\\)\n\n\nInterval forecasts\nQuantile Score: Scores how well a given percentile is predicted. For the \\(p\\)th percentile as a percentage (e.g. 0.10 to be 10th percentile), the quantile score for time \\(t\\) is:\n\\[Q_{p, t} = \\begin{cases} 2(1-p)(f_{p,t} - y_t) & y_t &lt; f_{p,t} \\\\ 2p(y_t - f_{p, t}) & y_t \\ge f_{p,t} \\end{cases}\\] Where \\(f_{p,t}\\) is our prediction of the \\(p\\)th percentile at time \\(t\\). Intuitively, if \\(p = 0.1\\), it weights errors above with 0.1 and errors below with 0.9, because the actual point is much more likely to be above than below.\nWinkler Score: Scores how well a prediction interval predicts data. For a \\((100-\\alpha)\\)% prediction interval at time \\(t\\), The Winkler score \\(W_{\\alpha, t}\\) is the length of the interval plus \\(\\frac 2 \\alpha\\) times the distance from \\(y_t\\) to the interval (if \\(y_t\\) is within the interval, the distance is 0)\nCRPS: Scores the whole prediction distribution. \\(CRPS\\) score is the area between the predicted CDF and the observed CDF (which is a jump from 0 to 1 at the true value)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html",
+    "href": "notes/econometrics/models/ols.html",
+    "title": "OLS Regression",
+    "section": "",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#model",
+    "href": "notes/econometrics/models/ols.html#model",
+    "title": "OLS Regression",
+    "section": "",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#estimation",
+    "href": "notes/econometrics/models/ols.html#estimation",
+    "title": "OLS Regression",
+    "section": "Estimation",
+    "text": "Estimation\nChoose \\(\\hat{\\beta}\\) to minimize the sum of squared error terms (\\(RSS\\)). By derivative, \\(\\hat{\\beta} = (X^TX)^{-1}X^Ty\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#cautions",
+    "href": "notes/econometrics/models/ols.html#cautions",
+    "title": "OLS Regression",
+    "section": "Cautions",
+    "text": "Cautions\n\nIf two regressors are highly correlated, the variance of their coefficients will be very high",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#assumptions",
+    "href": "notes/econometrics/models/ols.html#assumptions",
+    "title": "OLS Regression",
+    "section": "Assumptions",
+    "text": "Assumptions\n\nRandom Sample: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn’t really matter if you’re sampling a small fraction)\nX has full rank: None of \\(X\\)’s variables are linear combinations of each other. If this is not satisfied, \\(X^TX\\) is singular and \\(\\hat{\\beta}\\) cannot be computed\nHomoskedasticity: \\(Var(e|X)\\) is constant, not a function of (\\(X\\)). If not satisfied (heteroskedasticity) \\(\\hat{\\beta}\\) is inefficient and standard errors are biased\nErrors are uncorrelated: \\(Cov(e_i, e_j|X) = 0\\). This will not be satisfied if there is autocorrelation or spatial correlation. If so, \\(\\hat{\\beta}\\) is inefficient and standard errors are biased.\n\nIf (3) and (4) hold, error’s variance-covariance matrix can be expressed as \\(\\sigma^2I\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#estimator-properties",
+    "href": "notes/econometrics/models/ols.html#estimator-properties",
+    "title": "OLS Regression",
+    "section": "Estimator properties",
+    "text": "Estimator properties\n\n\\(\\hat\\beta_i\\) increases in variance with greater variance of \\(y\\), lower variance of \\(x\\), lower sample size \\(N\\), and correlation with other variables\nIf error is normally distributed, so is \\(\\hat\\beta_i\\) (conditional on \\(X\\))\n\\(Var(\\hat\\beta) = \\sigma^2(X^TX)^{-1}\\). Can be estimated with \\(\\hat\\sigma^2\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#error",
+    "href": "notes/econometrics/models/ols.html#error",
+    "title": "OLS Regression",
+    "section": "Error",
+    "text": "Error\nThe error term represents all factors that we have not included in our regression.\nBy nature of least-squares maximization, \\(\\beta_0\\) will be set so that \\(E(e) = 0\\).\nVariance of error \\(\\sigma^2\\) can be estimated as \\(\\hat\\sigma^2 = \\frac{RSS}{N - K}\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#causality",
+    "href": "notes/econometrics/models/ols.html#causality",
+    "title": "OLS Regression",
+    "section": "Causality",
+    "text": "Causality\nWe can infer causality if strict exogeneity is true: \\(E(e|X) = 0\\) (\\(X^Te = 0\\)) as opposed to \\(e\\) being a function of \\(X\\).\n\n\n\n\n\n\nNoteExample\n\n\n\n\n\nSuppose we regress ice cream sales (\\(y\\)) on shark attacks (\\(x\\)). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When \\(x\\) is high, error is high, and when \\(x\\) is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.\n\n\n\nIn practice, this means making sure there is no unaccounted for third variable correlated with \\(y\\) and \\(X\\).",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#measures",
+    "href": "notes/econometrics/models/ols.html#measures",
+    "title": "OLS Regression",
+    "section": "Measures",
+    "text": "Measures\nThree “sum of squares” measures:\n\nExplained sum of squares or \\(ESS\\) is \\(\\sum_i (\\hat{y}_i - y_i)^2\\)\nResidual sum of squares or \\(RSS\\) is \\(\\sum_i (\\hat{u}_i)^2\\)\nTotal sum of squares or \\(TSS\\) is \\(\\sum_i (y_i - \\bar{y})^2\\)\n\nR-squared or \\(R^2\\) is \\(\\frac{ESS}{TSS}\\) and measures goodness of fit. Should only be used to compare models if they have the same \\(K\\)\nAdjusted R-squared or \\(\\bar{R}^2\\) is \\(1 - \\frac{RSS/(N - K)}{TSS/(N - 1)}\\) and measures goodness of fit with a penalty for adding variables.\nVariable Inflation Factor (VIF) for variable \\(x_j\\) is \\(\\frac{1}{1-R_j^2}\\) where \\(R_j^2\\) is the \\(R^2\\) of \\(x_j\\) on all other independent variables. Measures multicollinearity, over 10 is bad and should be taken out",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#inference",
+    "href": "notes/econometrics/models/ols.html#inference",
+    "title": "OLS Regression",
+    "section": "Inference",
+    "text": "Inference\n\nA single coefficient / linear combination\nNull Hypothesis: \\(\\beta_i = c\\)\nTest statistic: \\(\\frac{\\hat\\beta_i - c}{\\textrm{se}(\\beta_i)}\\)\nDistribution: \\(t_{n - k}\\) if errors are normally distributed, or \\(n\\) is large\nFor a linear combination: \\(\\beta_i\\) can be replaced with \\(a_i\\beta_i + a_j\\beta_j + \\cdots\\)\n\n\nJoint hypotheses\nNull Hypothesis: \\(a_i\\beta_i = c_1,\\ a_j\\beta_j + a_k\\beta_k = c_2, \\cdots\\)\nTest statistic: \\(\\frac{\\left(RSS_R - RSS_U\\right) / J}{RSS_U / (n - k)}\\), where \\(RSS_R\\) is the \\(RSS\\) of a regression where \\(H_0\\) is assumed, \\(RSS_U\\) is the \\(RSS\\) of the normal regression, and \\(J\\) is the number of restrictions\nDistribution: \\(F_{J, n-k}\\) if errors are normally distributed, or \\(n\\) is large",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/models/ols.html#tests",
+    "href": "notes/econometrics/models/ols.html#tests",
+    "title": "OLS Regression",
+    "section": "Tests",
+    "text": "Tests\n\nHomoskedasticity (White)\nHypothesis: \\(H_0: Var(u) = \\sigma^2\\) (error is constant)\nTest Statistic: \\(nR^2\\), where \\(R^2\\) comes from the auxiliary regression of squared error on all original regressors, their squares, and all products of two regressors\nDistribution: \\(\\chi^2_{P-1}\\) where \\(P\\) is the regressors in the auxiliary regression\n\n\nSerial autocorrelation (Breusch-Pagan)\nHypothesis: \\(H_0\\): No serial autocorrelation in error, \\(H_1\\): Error is dependent on the last \\(p\\) error terms\nTest statistic: \\(nR^2\\), where \\(R^2\\) comes from the auxiliary regression of \\(u_t\\) on \\(u_{t-1}\\) through \\(u_{t-p}\\) and original regressors\nDistribution: \\(\\chi^2_p\\)",
+    "crumbs": [
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
     "objectID": "notes/econometrics/models/iv.html",
     "href": "notes/econometrics/models/iv.html",
     "title": "Instrumental Variables",
@@ -1077,6 +792,1402 @@
       "Econometrics",
       "Models",
       "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html",
+    "href": "notes/econometrics/software/stata.html",
+    "title": "Stata",
+    "section": "",
+    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#data",
+    "href": "notes/econometrics/software/stata.html#data",
+    "title": "Stata",
+    "section": "",
+    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#options",
+    "href": "notes/econometrics/software/stata.html#options",
+    "title": "Stata",
+    "section": "Options",
+    "text": "Options\nset option value\nCommon use cases:\n\nset more off: Stata stops asking you to inspect output page-by-page\n\ncd “dir”\nlog using “filepath”, replace\nStarts logging output to the file at filepath. If no file extension specified, uses the native .smcl format which has stata-specific features but can’t be viewed easily in other programs as plaintext\nlog (off | on)\nEnables or disables logging\nlog close\nCloses the log",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#common-features",
+    "href": "notes/econometrics/software/stata.html#common-features",
+    "title": "Stata",
+    "section": "Common features",
+    "text": "Common features\nThese are supported by most commands.\nif cond\nFilters rows to only those where cond is true\nin range\nOnly acts on rows in the range (usually of the form e.g. 2/10)\n_n\nHolds the number of the current observation\n_N\nHolds the total number of observations",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#processing",
+    "href": "notes/econometrics/software/stata.html#processing",
+    "title": "Stata",
+    "section": "Processing",
+    "text": "Processing\nsample n\ngen var=expr\ndrop [var]\nDrops a variable. The no-variable version is useful with if to drop observations\nreplace var=x\nlabel var variable\nformat %format …vars\nencode xvar, gen(newvar)\nEncodes xvar as a numeric variable with a string label\ntsset var\nMarks the data as a time series with time index var",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#investigation",
+    "href": "notes/econometrics/software/stata.html#investigation",
+    "title": "Stata",
+    "section": "Investigation",
+    "text": "Investigation\nsummarize […vars]\nSummary statistics\ndescribe […vars]\nVariable data types, format, labels\nlist […vars]\ntab …vars\nCreates a frequency table\ntabstat …vars, [by(var) stats(…statistics)]\nLike summarize, but you specify variables, a var to group by, and statistics to display (default is just mean)",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#mathematical-expressions",
+    "href": "notes/econometrics/software/stata.html#mathematical-expressions",
+    "title": "Stata",
+    "section": "Mathematical Expressions",
+    "text": "Mathematical Expressions\n\nTime/Date\nmdy(m, d, y), hms, tq, etc.\nConvert time components to stata’s internal representation. All of these are also valid display formats.\nquarterly(str, mask), weekly, etc.\nFormats str to a time representation. mask gives the order of component appearances, e.g. YQ\nyear(date), month, hh, etc.\nExtracts the component from the date",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#programming",
+    "href": "notes/econometrics/software/stata.html#programming",
+    "title": "Stata",
+    "section": "Programming",
+    "text": "Programming\nglobal name [ = ] stuff\nCreates a macro: When name is seen in your program it will be substituted with stuff. Using = evaluates the right side first.\nprogram define *name*\n  args *arg1* *arg2* ...\n  *content*\nend\nDefines a program (basically a function)",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#analysis",
+    "href": "notes/econometrics/software/stata.html#analysis",
+    "title": "Stata",
+    "section": "Analysis",
+    "text": "Analysis\ncorr […vars]\nCreates a correlation matrix\n\nTests\nsktest var\nSkewness/kurtosis test for normality\n\n\nRegressions\nregress yvar …xvars\nivregress 2sls yvar …xvars …(endog_xvar = instrument_var), [small first]\nWithout small, assumes the sample is large (since IV depends on it) and uses z-statistics. With first, displays the first stage as well",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#post-regression",
+    "href": "notes/econometrics/software/stata.html#post-regression",
+    "title": "Stata",
+    "section": "Post-Regression",
+    "text": "Post-Regression\npredict var, [residuals]\nStores \\(\\hat y\\) by default in var. Can also store residuals\ntest …(xvar = val)\nLinear joint hypothesis test. Can just use xvar to mean (xvar = 0)\nestat hettest, iid\nTests for heteroskedasticity assuming error is i.i.d.\nestat dwatson\nTests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelation\nestat bgodfrey, lags(n)\nTests for autocorrelation with specified number n of lags\nestat firststage\nTests for instrument validity, checking the \\(F\\)-statistic for the instrument is greater than 10",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#variable-prefixes",
+    "href": "notes/econometrics/software/stata.html#variable-prefixes",
+    "title": "Stata",
+    "section": "Variable Prefixes",
+    "text": "Variable Prefixes\nD1.var\nCalculates the first difference of var",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/stata.html#graphing",
+    "href": "notes/econometrics/software/stata.html#graphing",
+    "title": "Stata",
+    "section": "Graphing",
+    "text": "Graphing\nhistogram var [, percent]\ntwoway(type var1 var2)\ntype can be scatter, line, etc.",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/pytorch.html",
+    "href": "notes/econometrics/software/pytorch.html",
+    "title": "PyTorch",
+    "section": "",
+    "text": "A dataset is a subclass of torch.utils.data.Dataset that implements three functions:\n\ninit, called by user on initialization\nlen, returning the number of samples\ngetitem, which returns the sample and label at a given index\n\nDatasets can be automatically batched and shuffled using torch.utils.data.DataLoader(dataset object, batch size). It returns an enumerable which gives batches of data and labels",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/pytorch.html#datasets",
+    "href": "notes/econometrics/software/pytorch.html#datasets",
+    "title": "PyTorch",
+    "section": "",
+    "text": "A dataset is a subclass of torch.utils.data.Dataset that implements three functions:\n\ninit, called by user on initialization\nlen, returning the number of samples\ngetitem, which returns the sample and label at a given index\n\nDatasets can be automatically batched and shuffled using torch.utils.data.DataLoader(dataset object, batch size). It returns an enumerable which gives batches of data and labels",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/software/pytorch.html#training-a-model",
+    "href": "notes/econometrics/software/pytorch.html#training-a-model",
+    "title": "PyTorch",
+    "section": "Training a Model",
+    "text": "Training a Model\nPrep:\n\nCreate a model object (how depends on the model)\nCreate a loss function object e.g. loss_fn = nn.CrossEntropyLoss()\nCreate an optimizer object with model parameters e.g. optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)\n\nTraining:\n\nGet training data from the dataloader\nUse model(X) to generate predictions from data\nCalculate loss using loss_fn\nCall loss.backward() to update gradients\nCall optimizer.step() to do an optimization step and optimizer.zero_grad() to reset the gradient for the next batch",
+    "crumbs": [
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/statistics/probaility_theory.html",
+    "href": "notes/econometrics/statistics/probaility_theory.html",
+    "title": "Random Variables",
+    "section": "",
+    "text": "Probability Mass Function \\(p_X(x)\\) for a discrete variable \\(X\\) is defined as \\(P(X = x)\\)\nProbability Density Function \\(f_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(\\int_a^b f_X(x)dx = P(a \\le X \\le b)\\)\nCumulative Density Function \\(F_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(F(a) = P(X \\le a)\\)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "href": "notes/econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "title": "Random Variables",
+    "section": "Properties of Probability",
+    "text": "Properties of Probability\n\n\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/econometrics/statistics/probaility_theory.html#expected-value",
+    "href": "notes/econometrics/statistics/probaility_theory.html#expected-value",
+    "title": "Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\nExpected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\nProperties of expected value:\n\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)\n\\(E(g(X)) = \\sum_{x \\in X} P(X = x)g(x)\\) or \\(\\int_{X} f_X(x)g(x)dx\\)\n\nConditional Expected Value \\(E(X | Y = y)\\) is a function of \\(y\\) which gives the expected value of \\(X\\) conditional to \\(Y = y\\). It is calculated as \\(\\sum_{x \\in X}xP(X = x | Y = y)\\) or \\(\\int_X xf_X(x | Y = y) dx\\)\n\nIf \\(X\\) and \\(Y\\) are independent, \\(E(X | Y) = E(X)\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\nOther moments of X\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\)\n\nAlso equals \\(E(X^2) - \\mu_X^2\\)\n\\(Var(aX + b) = a^2Var(X)\\)\n\\(Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)\\)\n\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\nCovariance\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\(E((X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
+    "crumbs": [
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html",
+    "href": "notes/software/git.html",
+    "title": "Git",
+    "section": "",
+    "text": "git status\nGet a summary of staged changes. Various formatting options exist.\ngit add file\nTracks file if it is untracked, and stages all changes made to it so far\ngit rm [–cached] file\nStages the deletion of file and deletes the file from your computer unless –cached is given\ngit mv file newname\nStages the renaming of file to newname and renames the file on your computer\ngit diff [–staged]\nShows changes made to files that haven’t been staged yet. With –staged, instead shows changes that were staged but not committed yet",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#staging",
+    "href": "notes/software/git.html#staging",
+    "title": "Git",
+    "section": "",
+    "text": "git status\nGet a summary of staged changes. Various formatting options exist.\ngit add file\nTracks file if it is untracked, and stages all changes made to it so far\ngit rm [–cached] file\nStages the deletion of file and deletes the file from your computer unless –cached is given\ngit mv file newname\nStages the renaming of file to newname and renames the file on your computer\ngit diff [–staged]\nShows changes made to files that haven’t been staged yet. With –staged, instead shows changes that were staged but not committed yet",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#committing",
+    "href": "notes/software/git.html#committing",
+    "title": "Git",
+    "section": "Committing",
+    "text": "Committing\ngit commit -m msg [-a]\nCreates a commit with message msg. If -a is specified, stages all tracked files\ngit commit –amend\nReplaces the last commit with a new commit including all newly staged changes\ngit log [-p] [-n]\nShows the commit log. Various other options exist for formatting output and filtering the log based on time, author, modified file, specific strings, etc.",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#branching",
+    "href": "notes/software/git.html#branching",
+    "title": "Git",
+    "section": "Branching",
+    "text": "Branching\ngit branch\nDisplay all branches of the repository\ngit branch newbranch\nCreates a local branch named newbranch\ngit push remote branch\nPushes the local branch branch to remote remote\ngit branch -d oldbranch\nDeletes the branch oldbranch\ngit push remote –delete branch\nDeletes the remote branch remote/branch\ngit checkout branch\nSwitches to branch branch and updates HEAD to point to that branch. Changes local files to branch’s progress\ngit checkout –track remote/remotebranch\nCreates a local tracking branch which tracks the remote branch remote/remotebranch\ngit merge branch2\nMerges branch2 into your current branch. If the merge can be done automatically, it will create a merge commit. Otherwise, files will be left in an unmerged state. git status will display these files. Fix the conflicts manually.\nRenaming a Branch\n\n\n\n\n\n\nWarning\n\n\n\nDo not rename branches that other collaborators are working on. If you rename the master/main branch, expect to break integrations, services, or build/release scripts.\n\n\nRun the following commands:\n\ngit branch move oldname newname: Rename the branch locally\ngit push –set-upstream remote newname: Push the name change to the remote\ngit push remote –delete oldname: Delete the old branch from the remote origin",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#getting-a-repository",
+    "href": "notes/software/git.html#getting-a-repository",
+    "title": "Git",
+    "section": "Getting a Repository",
+    "text": "Getting a Repository\ngit init\nTurns the current working directory into a git repository\ngit clone url [newname]\nClones a git repository from the given url. If newname is specified, renames the repository folder to that.",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#remotes",
+    "href": "notes/software/git.html#remotes",
+    "title": "Git",
+    "section": "Remotes",
+    "text": "Remotes\ngit remote -v\nLists all remote repositories with URLs\ngit remote add name url\nAdds a new remote with name name at url url. Also, git remote rename and git remote remove\ngit push remote branch\nPushes un-pushed commits to branch branch of remote remote\ngit fetch remote branch\nDownloads data from remote remote and branch branch that you don’t have, without merging it to your local work\ngit pull remote [branch]\nFetches data from remote remote and branch branch (if not specified, tries to use the upstream branch), then merges it with your work",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#help",
+    "href": "notes/software/git.html#help",
+    "title": "Git",
+    "section": "Help",
+    "text": "Help\nRun git help verb, or git verb -h",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#configuration",
+    "href": "notes/software/git.html#configuration",
+    "title": "Git",
+    "section": "Configuration",
+    "text": "Configuration\ngit config [–global] key value\nSets config option key to value. By default sets the option only for the current repository, if –global specified sets it for the user.\ngit config [–show-origin] key\nShows the configuration value for option key. If –show-origin specified, shows which file (repo, user, or system) had the final say in the option\ngit config –list [–show-origin]\nLists all configuration options and values. If –show-origin specified, shows which file (repo, user, or system) had the final say in the option",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/software/git.html#tagging",
+    "href": "notes/software/git.html#tagging",
+    "title": "Git",
+    "section": "Tagging",
+    "text": "Tagging\ngit tag\nLists all tags in the repository\ngit tag -a tag -m msg [checksum]\nMarks the current commit (or the commit specified by checksum if it’s supplied) with tag tag and message msg\ngit tag -d tag\nDeletes the tag tag on your local repository\ngit push remote –delete tag\nDeletes the tag tag on a remote repository remote",
+    "crumbs": [
+      "Software",
+      "Git"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/probaility_theory.html",
+    "href": "notes/economics/econometrics/statistics/probaility_theory.html",
+    "title": "Random Variables",
+    "section": "",
+    "text": "Probability Mass Function \\(p_X(x)\\) for a discrete variable \\(X\\) is defined as \\(P(X = x)\\)\nProbability Density Function \\(f_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(\\int_a^b f_X(x)dx = P(a \\le X \\le b)\\)\nCumulative Density Function \\(F_X(x)\\) for a continuous variable \\(X\\) is defined such that \\(F(a) = P(X \\le a)\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "href": "notes/economics/econometrics/statistics/probaility_theory.html#properties-of-probability",
+    "title": "Random Variables",
+    "section": "Properties of Probability",
+    "text": "Properties of Probability\n\n\\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n\n\\(P(A \\cap B) = P(A) + P(B) - P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A \\cap B) = P(A)P(B)\\)\n\\(P(A | B) = \\frac{P(A \\cap B)}{P(B)}\\)\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(A | B) = P(A)\\)\n\n\\(P(A \\cap B^c) = P(A) - P(A \\cap B)\\)\nBayes Theorem: \\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/probaility_theory.html#expected-value",
+    "href": "notes/economics/econometrics/statistics/probaility_theory.html#expected-value",
+    "title": "Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\nExpected value of a random variable \\(X\\) denoted \\(E(X)\\) or \\(\\mu_X\\) is the average value X is expected to be.\n\n\\(E(X)\\) for a discrete random variable \\(X\\) is \\(\\sum_{x \\in X} P(X = x)x\\)\n\\(E(X)\\) for a continuous random variable \\(X\\) is \\(\\int_Xf(x)x\\)\n\nProperties of expected value:\n\n\\(E(X + Y) = E(X) + E(Y)\\)\n\\(E(aX + b) = aE(X) + b\\) (linearity of expectation)\n\\(E(a) = a\\)\nIf \\(X\\) and \\(Y\\) are independent, \\(E(XY) = E(X)E(Y)\\)\n\\(E(g(X)) = \\sum_{x \\in X} P(X = x)g(x)\\) or \\(\\int_{X} f_X(x)g(x)dx\\)\n\nConditional Expected Value \\(E(X | Y = y)\\) is a function of \\(y\\) which gives the expected value of \\(X\\) conditional to \\(Y = y\\). It is calculated as \\(\\sum_{x \\in X}xP(X = x | Y = y)\\) or \\(\\int_X xf_X(x | Y = y) dx\\)\n\nIf \\(X\\) and \\(Y\\) are independent, \\(E(X | Y) = E(X)\\)\n\nLaw of Iterated Expectations: \\(E(X) = E(E(X | Y))\\)\n\nOther moments of X\nVariance \\(\\sigma^2_X\\) or \\(Var(X)\\), the second central moment of \\(X\\), is a measure of spread of a random variable and is calculated as \\(E((X - E(X))^2)\\)\n\nAlso equals \\(E(X^2) - \\mu_X^2\\)\n\\(Var(aX + b) = a^2Var(X)\\)\n\\(Var(X + Y) = Var(X) + Var(Y) + 2Cov(X, Y)\\)\n\nSkewness \\(SK\\), the standardized third central moment of \\(X\\), is a measure of if \\(X\\) is symmetric or skewed and is calculated as \\(\\frac{E(X - E(X))^3}{\\sigma_X^3}\\)\n\nX is symmetric if \\(SK = 0\\), skewed right if \\(SK &gt; 0\\), and skewed left if \\(SK &lt; 0\\)\n\nKurtosis \\(K\\), the standardized fourth central moment of \\(X\\), is a measure of the weight of \\(X\\)’s tails and is calculated as \\(\\frac{E(X - E(X))^4}{\\sigma_X^4}\\)\n\nTails are considered heavy if \\(K &gt; 3\\) (leptokurtism) as opposed to \\(K = 3\\) (mesokurtic) or \\(K &lt; 3\\) (platykurtic)\n\n\n\nCovariance\nCovariance of random variables \\(X\\) and \\(Y\\) denoted \\(\\sigma_{X, Y}\\) measures how well \\(X\\) and \\(Y\\) vary together and is calculated as \\(E((X - \\mu_X)(Y - \\mu_Y))\\) or \\(E(XY) - \\mu_X\\mu_Y\\)\nCorrelation \\(\\rho_{X, Y}\\) is standardized covariance \\(\\frac{\\sigma_{X, Y}}{\\sigma_X\\sigma_Y}\\) and measures how related \\(X\\) and \\(Y\\) are",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Random Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pytorch.html",
+    "href": "notes/economics/econometrics/software/pytorch.html",
+    "title": "PyTorch",
+    "section": "",
+    "text": "A dataset is a subclass of torch.utils.data.Dataset that implements three functions:\n\ninit, called by user on initialization\nlen, returning the number of samples\ngetitem, which returns the sample and label at a given index\n\nDatasets can be automatically batched and shuffled using torch.utils.data.DataLoader(dataset object, batch size). It returns an enumerable which gives batches of data and labels",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pytorch.html#datasets",
+    "href": "notes/economics/econometrics/software/pytorch.html#datasets",
+    "title": "PyTorch",
+    "section": "",
+    "text": "A dataset is a subclass of torch.utils.data.Dataset that implements three functions:\n\ninit, called by user on initialization\nlen, returning the number of samples\ngetitem, which returns the sample and label at a given index\n\nDatasets can be automatically batched and shuffled using torch.utils.data.DataLoader(dataset object, batch size). It returns an enumerable which gives batches of data and labels",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pytorch.html#training-a-model",
+    "href": "notes/economics/econometrics/software/pytorch.html#training-a-model",
+    "title": "PyTorch",
+    "section": "Training a Model",
+    "text": "Training a Model\nPrep:\n\nCreate a model object (how depends on the model)\nCreate a loss function object e.g. loss_fn = nn.CrossEntropyLoss()\nCreate an optimizer object with model parameters e.g. optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)\n\nTraining:\n\nGet training data from the dataloader\nUse model(X) to generate predictions from data\nCalculate loss using loss_fn\nCall loss.backward() to update gradients\nCall optimizer.step() to do an optimization step and optimizer.zero_grad() to reset the gradient for the next batch",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "PyTorch"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html",
+    "href": "notes/economics/econometrics/software/stata.html",
+    "title": "Stata",
+    "section": "",
+    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#data",
+    "href": "notes/economics/econometrics/software/stata.html#data",
+    "title": "Stata",
+    "section": "",
+    "text": "use “datapath” [, clear]\nAssumes .dta if no extension on datapath. If clear specified, clears the current dataset first\nimport excel “datapath” [, clear sheet(sheet) firstrow]\nfirstrow causes the first row to be read as variable names\nsave “datapath” [,replace]\nIf replace specified, replaces the file currently at datapath\nclear\nClear the current dataset",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#options",
+    "href": "notes/economics/econometrics/software/stata.html#options",
+    "title": "Stata",
+    "section": "Options",
+    "text": "Options\nset option value\nCommon use cases:\n\nset more off: Stata stops asking you to inspect output page-by-page\n\ncd “dir”\nlog using “filepath”, replace\nStarts logging output to the file at filepath. If no file extension specified, uses the native .smcl format which has stata-specific features but can’t be viewed easily in other programs as plaintext\nlog (off | on)\nEnables or disables logging\nlog close\nCloses the log",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#common-features",
+    "href": "notes/economics/econometrics/software/stata.html#common-features",
+    "title": "Stata",
+    "section": "Common features",
+    "text": "Common features\nThese are supported by most commands.\nif cond\nFilters rows to only those where cond is true\nin range\nOnly acts on rows in the range (usually of the form e.g. 2/10)\n_n\nHolds the number of the current observation\n_N\nHolds the total number of observations",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#processing",
+    "href": "notes/economics/econometrics/software/stata.html#processing",
+    "title": "Stata",
+    "section": "Processing",
+    "text": "Processing\nsample n\ngen var=expr\ndrop [var]\nDrops a variable. The no-variable version is useful with if to drop observations\nreplace var=x\nlabel var variable\nformat %format …vars\nencode xvar, gen(newvar)\nEncodes xvar as a numeric variable with a string label\ntsset var\nMarks the data as a time series with time index var",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#investigation",
+    "href": "notes/economics/econometrics/software/stata.html#investigation",
+    "title": "Stata",
+    "section": "Investigation",
+    "text": "Investigation\nsummarize […vars]\nSummary statistics\ndescribe […vars]\nVariable data types, format, labels\nlist […vars]\ntab …vars\nCreates a frequency table\ntabstat …vars, [by(var) stats(…statistics)]\nLike summarize, but you specify variables, a var to group by, and statistics to display (default is just mean)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#mathematical-expressions",
+    "href": "notes/economics/econometrics/software/stata.html#mathematical-expressions",
+    "title": "Stata",
+    "section": "Mathematical Expressions",
+    "text": "Mathematical Expressions\n\nTime/Date\nmdy(m, d, y), hms, tq, etc.\nConvert time components to stata’s internal representation. All of these are also valid display formats.\nquarterly(str, mask), weekly, etc.\nFormats str to a time representation. mask gives the order of component appearances, e.g. YQ\nyear(date), month, hh, etc.\nExtracts the component from the date",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#programming",
+    "href": "notes/economics/econometrics/software/stata.html#programming",
+    "title": "Stata",
+    "section": "Programming",
+    "text": "Programming\nglobal name [ = ] stuff\nCreates a macro: When name is seen in your program it will be substituted with stuff. Using = evaluates the right side first.\nprogram define *name*\n  args *arg1* *arg2* ...\n  *content*\nend\nDefines a program (basically a function)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#analysis",
+    "href": "notes/economics/econometrics/software/stata.html#analysis",
+    "title": "Stata",
+    "section": "Analysis",
+    "text": "Analysis\ncorr […vars]\nCreates a correlation matrix\n\nTests\nsktest var\nSkewness/kurtosis test for normality\n\n\nRegressions\nregress yvar …xvars\nivregress 2sls yvar …xvars …(endog_xvar = instrument_var), [small first]\nWithout small, assumes the sample is large (since IV depends on it) and uses z-statistics. With first, displays the first stage as well",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#post-regression",
+    "href": "notes/economics/econometrics/software/stata.html#post-regression",
+    "title": "Stata",
+    "section": "Post-Regression",
+    "text": "Post-Regression\npredict var, [residuals]\nStores \\(\\hat y\\) by default in var. Can also store residuals\ntest …(xvar = val)\nLinear joint hypothesis test. Can just use xvar to mean (xvar = 0)\nestat hettest, iid\nTests for heteroskedasticity assuming error is i.i.d.\nestat dwatson\nTests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelation\nestat bgodfrey, lags(n)\nTests for autocorrelation with specified number n of lags\nestat firststage\nTests for instrument validity, checking the \\(F\\)-statistic for the instrument is greater than 10",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#variable-prefixes",
+    "href": "notes/economics/econometrics/software/stata.html#variable-prefixes",
+    "title": "Stata",
+    "section": "Variable Prefixes",
+    "text": "Variable Prefixes\nD1.var\nCalculates the first difference of var",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/stata.html#graphing",
+    "href": "notes/economics/econometrics/software/stata.html#graphing",
+    "title": "Stata",
+    "section": "Graphing",
+    "text": "Graphing\nhistogram var [, percent]\ntwoway(type var1 var2)\ntype can be scatter, line, etc.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Stata"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/iv.html",
+    "href": "notes/economics/econometrics/models/iv.html",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "We want to estimate the OLS equation \\(y = X\\beta + \\alpha w + u\\), where \\(X\\) are exogenous and \\(w\\) is endogenous. We have instruments \\(Z\\) where:\n\nEach \\(z_i\\) is exogenous\nEach \\(z_i\\) affects \\(y\\), but only indirectly through \\(w\\)\n\nThe idea is to extract the exogenous part of \\(w\\) using \\(Z\\) to get an unbiased estimate of \\(\\alpha\\).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/iv.html#model",
+    "href": "notes/economics/econometrics/models/iv.html#model",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "We want to estimate the OLS equation \\(y = X\\beta + \\alpha w + u\\), where \\(X\\) are exogenous and \\(w\\) is endogenous. We have instruments \\(Z\\) where:\n\nEach \\(z_i\\) is exogenous\nEach \\(z_i\\) affects \\(y\\), but only indirectly through \\(w\\)\n\nThe idea is to extract the exogenous part of \\(w\\) using \\(Z\\) to get an unbiased estimate of \\(\\alpha\\).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/iv.html#estimation",
+    "href": "notes/economics/econometrics/models/iv.html#estimation",
+    "title": "Instrumental Variables",
+    "section": "Estimation",
+    "text": "Estimation\nSet up the first-stage regression \\(w = X\\beta + Z\\gamma + v\\) to obtain \\(\\hat{w}\\). Then solve the second-stage regression \\(y = X\\beta + \\alpha \\hat{w} + u\\). Note that normal standard errors will be wrong.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/iv.html#inference",
+    "href": "notes/economics/econometrics/models/iv.html#inference",
+    "title": "Instrumental Variables",
+    "section": "Inference",
+    "text": "Inference\n\nInstrument Strength\nNull Hypothesis: \\(\\gamma_1 = 0, \\gamma_2 = 0 ...\\) (None of the instruments are strong)\nUse an \\(F\\)-test, reject the null if \\(F &gt; 10\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html",
+    "href": "notes/economics/econometrics/models/ols.html",
+    "title": "OLS Regression",
+    "section": "",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#model",
+    "href": "notes/economics/econometrics/models/ols.html#model",
+    "title": "OLS Regression",
+    "section": "",
+    "text": "Let \\(y_{n\\times1} = \\beta_0 + \\beta_1 {x_1}_{n\\times1} + \\cdots + \\beta_kx_k + e_{n\\times1}\\) where \\(x_i\\) are independent variables which explain the dependent variable \\(y\\) and \\(e\\) represents the error term.\nFormulate this as \\(y = \\beta X + e\\) (instead of having a constant term, one independent variable is a vector of all ones)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#estimation",
+    "href": "notes/economics/econometrics/models/ols.html#estimation",
+    "title": "OLS Regression",
+    "section": "Estimation",
+    "text": "Estimation\nChoose \\(\\hat{\\beta}\\) to minimize the sum of squared error terms (\\(RSS\\)). By derivative, \\(\\hat{\\beta} = (X^TX)^{-1}X^Ty\\).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#cautions",
+    "href": "notes/economics/econometrics/models/ols.html#cautions",
+    "title": "OLS Regression",
+    "section": "Cautions",
+    "text": "Cautions\n\nIf two regressors are highly correlated, the variance of their coefficients will be very high",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#assumptions",
+    "href": "notes/economics/econometrics/models/ols.html#assumptions",
+    "title": "OLS Regression",
+    "section": "Assumptions",
+    "text": "Assumptions\n\nRandom Sample: Data is the result of an i.i.d random sample. (Technically has to be with replacement, but doesn’t really matter if you’re sampling a small fraction)\nX has full rank: None of \\(X\\)’s variables are linear combinations of each other. If this is not satisfied, \\(X^TX\\) is singular and \\(\\hat{\\beta}\\) cannot be computed\nHomoskedasticity: \\(Var(e|X)\\) is constant, not a function of (\\(X\\)). If not satisfied (heteroskedasticity) \\(\\hat{\\beta}\\) is inefficient and standard errors are biased\nErrors are uncorrelated: \\(Cov(e_i, e_j|X) = 0\\). This will not be satisfied if there is autocorrelation or spatial correlation. If so, \\(\\hat{\\beta}\\) is inefficient and standard errors are biased.\n\nIf (3) and (4) hold, error’s variance-covariance matrix can be expressed as \\(\\sigma^2I\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#estimator-properties",
+    "href": "notes/economics/econometrics/models/ols.html#estimator-properties",
+    "title": "OLS Regression",
+    "section": "Estimator properties",
+    "text": "Estimator properties\n\n\\(\\hat\\beta_i\\) increases in variance with greater variance of \\(y\\), lower variance of \\(x\\), lower sample size \\(N\\), and correlation with other variables\nIf error is normally distributed, so is \\(\\hat\\beta_i\\) (conditional on \\(X\\))\n\\(Var(\\hat\\beta) = \\sigma^2(X^TX)^{-1}\\). Can be estimated with \\(\\hat\\sigma^2\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#error",
+    "href": "notes/economics/econometrics/models/ols.html#error",
+    "title": "OLS Regression",
+    "section": "Error",
+    "text": "Error\nThe error term represents all factors that we have not included in our regression.\nBy nature of least-squares maximization, \\(\\beta_0\\) will be set so that \\(E(e) = 0\\).\nVariance of error \\(\\sigma^2\\) can be estimated as \\(\\hat\\sigma^2 = \\frac{RSS}{N - K}\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#causality",
+    "href": "notes/economics/econometrics/models/ols.html#causality",
+    "title": "OLS Regression",
+    "section": "Causality",
+    "text": "Causality\nWe can infer causality if strict exogeneity is true: \\(E(e|X) = 0\\) (\\(X^Te = 0\\)) as opposed to \\(e\\) being a function of \\(X\\).\n\n\n\n\n\n\nNoteExample\n\n\n\n\n\nSuppose we regress ice cream sales (\\(y\\)) on shark attacks (\\(x\\)). The error includes and is mainly based on the variable of temperature (ice cream sales are not caused by shark attacks, but both are caused by hot weather). When \\(x\\) is high, error is high, and when \\(x\\) is low, error is low. Strict exogeneity is not fulfilled, so we correctly determine we cannot infer causality.\n\n\n\nIn practice, this means making sure there is no unaccounted for third variable correlated with \\(y\\) and \\(X\\).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#measures",
+    "href": "notes/economics/econometrics/models/ols.html#measures",
+    "title": "OLS Regression",
+    "section": "Measures",
+    "text": "Measures\nThree “sum of squares” measures:\n\nExplained sum of squares or \\(ESS\\) is \\(\\sum_i (\\hat{y}_i - y_i)^2\\)\nResidual sum of squares or \\(RSS\\) is \\(\\sum_i (\\hat{u}_i)^2\\)\nTotal sum of squares or \\(TSS\\) is \\(\\sum_i (y_i - \\bar{y})^2\\)\n\nR-squared or \\(R^2\\) is \\(\\frac{ESS}{TSS}\\) and measures goodness of fit. Should only be used to compare models if they have the same \\(K\\)\nAdjusted R-squared or \\(\\bar{R}^2\\) is \\(1 - \\frac{RSS/(N - K)}{TSS/(N - 1)}\\) and measures goodness of fit with a penalty for adding variables.\nVariable Inflation Factor (VIF) for variable \\(x_j\\) is \\(\\frac{1}{1-R_j^2}\\) where \\(R_j^2\\) is the \\(R^2\\) of \\(x_j\\) on all other independent variables. Measures multicollinearity, over 10 is bad and should be taken out",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#inference",
+    "href": "notes/economics/econometrics/models/ols.html#inference",
+    "title": "OLS Regression",
+    "section": "Inference",
+    "text": "Inference\n\nA single coefficient / linear combination\nNull Hypothesis: \\(\\beta_i = c\\)\nTest statistic: \\(\\frac{\\hat\\beta_i - c}{\\textrm{se}(\\beta_i)}\\)\nDistribution: \\(t_{n - k}\\) if errors are normally distributed, or \\(n\\) is large\nFor a linear combination: \\(\\beta_i\\) can be replaced with \\(a_i\\beta_i + a_j\\beta_j + \\cdots\\)\n\n\nJoint hypotheses\nNull Hypothesis: \\(a_i\\beta_i = c_1,\\ a_j\\beta_j + a_k\\beta_k = c_2, \\cdots\\)\nTest statistic: \\(\\frac{\\left(RSS_R - RSS_U\\right) / J}{RSS_U / (n - k)}\\), where \\(RSS_R\\) is the \\(RSS\\) of a regression where \\(H_0\\) is assumed, \\(RSS_U\\) is the \\(RSS\\) of the normal regression, and \\(J\\) is the number of restrictions\nDistribution: \\(F_{J, n-k}\\) if errors are normally distributed, or \\(n\\) is large",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ols.html#tests",
+    "href": "notes/economics/econometrics/models/ols.html#tests",
+    "title": "OLS Regression",
+    "section": "Tests",
+    "text": "Tests\n\nHomoskedasticity (White)\nHypothesis: \\(H_0: Var(u) = \\sigma^2\\) (error is constant)\nTest Statistic: \\(nR^2\\), where \\(R^2\\) comes from the auxiliary regression of squared error on all original regressors, their squares, and all products of two regressors\nDistribution: \\(\\chi^2_{P-1}\\) where \\(P\\) is the regressors in the auxiliary regression\n\n\nSerial autocorrelation (Breusch-Pagan)\nHypothesis: \\(H_0\\): No serial autocorrelation in error, \\(H_1\\): Error is dependent on the last \\(p\\) error terms\nTest statistic: \\(nR^2\\), where \\(R^2\\) comes from the auxiliary regression of \\(u_t\\) on \\(u_{t-1}\\) through \\(u_{t-p}\\) and original regressors\nDistribution: \\(\\chi^2_p\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "OLS Regression"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html",
+    "title": "Forecasting",
+    "section": "",
+    "text": "A time series can be smoothed by taking a moving average of observations. The smoothed data \\(\\hat{T}\\) can be expressed as \\(\\frac 1 m \\sum_{j=-k}^k y_{t+j}\\), where \\(m\\) is the window size and is equal to \\(2k+1\\). This is called an \\(m\\)-MA.\nAn even moving average can be taken, but it is non symmetric. It can be made symmetric by taking a 2-MA after an even MA (a \\(2 \\times m\\)-MA or centered \\(m\\)-MA).\nMAs can also be weighted: \\(\\hat{T} = \\sum_{j=-k}^k a_jy_{t+j}\\) where weights \\(a_j\\) are symmetric around 0 and sum to 1. A simple MA is equivalent to all weights being \\(1/m\\). A \\(2 \\times 4\\)-MA is equivalent to a 5-MA with weights \\(\\left[\\frac 1 8, \\frac 1 4, \\frac 1 4, \\frac 1 4, \\frac 1 8\\right]\\) and leads to a smoother curve than a 5-MA.\n\n\nWarning: Removed 6 rows containing missing values or values outside the scale range\n(`geom_line()`).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#smoothing",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#smoothing",
+    "title": "Forecasting",
+    "section": "",
+    "text": "A time series can be smoothed by taking a moving average of observations. The smoothed data \\(\\hat{T}\\) can be expressed as \\(\\frac 1 m \\sum_{j=-k}^k y_{t+j}\\), where \\(m\\) is the window size and is equal to \\(2k+1\\). This is called an \\(m\\)-MA.\nAn even moving average can be taken, but it is non symmetric. It can be made symmetric by taking a 2-MA after an even MA (a \\(2 \\times m\\)-MA or centered \\(m\\)-MA).\nMAs can also be weighted: \\(\\hat{T} = \\sum_{j=-k}^k a_jy_{t+j}\\) where weights \\(a_j\\) are symmetric around 0 and sum to 1. A simple MA is equivalent to all weights being \\(1/m\\). A \\(2 \\times 4\\)-MA is equivalent to a 5-MA with weights \\(\\left[\\frac 1 8, \\frac 1 4, \\frac 1 4, \\frac 1 4, \\frac 1 8\\right]\\) and leads to a smoother curve than a 5-MA.\n\n\nWarning: Removed 6 rows containing missing values or values outside the scale range\n(`geom_line()`).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#decomposition",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#decomposition",
+    "title": "Forecasting",
+    "section": "Decomposition",
+    "text": "Decomposition\nA time-series can generally be decomposed into three parts:\n\nThe overall trend over time\nA seasonal effect (e.g. electricity demand rises in July, then falls by September every year)\nThe remainder/error\n\nThus giving us the model \\(y_t = S_t + T_t + R_t\\) or \\(y_t = S_t * T_t * R_t\\)\n\n\n\n\n\n\n\n\n\nSeasonally adjusted data removes the seasonal component, leaving trend and remainder.\nThe strength of trend is calculated as \\(F_T = \\max \\left(0, 1 - \\frac{Var(R_t)}{Var(T_t + R_t)}\\right)\\). Similarly, \\(F_S = \\max \\left(0, 1 - \\frac{Var(R_t)}{Var(S_t + R_t)}\\right)\\) is the strength of seasonality\n\nClassical decomposition\n(For multiplicative decomposition, divide instead of subtracting)\nLet \\(m\\) be the number of “seasons” in the data: 12 for monthly, 4 for quarterly, etc.\n\nCompute \\(\\hat{T}\\) with a moving average. If \\(m\\) is odd, use an \\(m\\)-MA, and if \\(m\\) is even, use a \\(2 \\times m\\)-MA.\nCalculate the detrended data \\(y - \\hat{T}_t\\). Compute \\(\\hat{S}_t\\) as the average of all detrended values for that season (e.g. the average of all March values)\nCompute \\(\\hat{R}_t\\) as \\(y_t - \\hat{T}_t - \\hat{S}_t\\).\n\nThis is a simple method for illustrative purposes, not designed for real-world use. It is not robust to outliers, tends to oversmooth sharp turns, and assumes the seasonal component is constant.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#prediction",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#prediction",
+    "title": "Forecasting",
+    "section": "Prediction",
+    "text": "Prediction\n\nAssumptions\n\nData are i.i.d.\nHomoskedasticity\nNo autocorrelation in residuals\nResiduals are normally distributed (or, bootstrapping)\n\nAssumptions 2 through 4 are needed for correct standard errors (and forecast intervals)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#stationarity",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#stationarity",
+    "title": "Forecasting",
+    "section": "Stationarity",
+    "text": "Stationarity\nStationary data has constant distribution at any point in time.\nData \\(y_t\\) can often be made stationary by taking its difference \\(y'_t = y_t - y_{t-1}\\). \\(y''_t\\) is fine also, but generally don’t go further than the second difference. There is also the seasonal difference \\(y'_t = y_t - y_{t-m}\\), where \\(m\\) is the number of seasons.\nUnit root tests can test for stationarity.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#model-selection",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#model-selection",
+    "title": "Forecasting",
+    "section": "Model selection",
+    "text": "Model selection\nCorrected AIC (AICc): \\(AIC + \\frac{2(k+2)(k+3)}{T-k-3}\\) where \\(AIC = T\\log\\left({\\frac{RSS}{T}}\\right)\\). Corrects for AIC’s bias to choose too many predictors at low \\(T\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/forecasting.html#evaluation",
+    "href": "notes/economics/econometrics/models/forecasting/forecasting.html#evaluation",
+    "title": "Forecasting",
+    "section": "Evaluation",
+    "text": "Evaluation\n\nPoint forecasts\nMean Absolute Error (MAE): \\(\\mathrm{mean} (e_t)\\)\nRoot Mean Squared Error (RMSE): \\(\\sqrt{\\mathrm{mean} (e_t^2)}\\)\nScaled errors can be constructed using \\(q_t = \\frac{e_t}{\\frac{1}{T - m}\\sum_{t=m+1}^T |y_t - y_{t - m}|}\\) (error scaled by that of a seasonal one-step naive forecast on the training data) instead of \\(e_t\\). Similarly, \\(q_t^2 = \\frac{e_t^2}{\\frac{1}{T - m}\\sum_{t=m+1}^T (y_t - y_{t - m})^2}\\)\nMean Absolute Scaled Error (MASE): \\(\\mathrm{mean} (q_t)\\)\nRoot Mean Squared Scaled Error (RMSSE): \\(\\sqrt{\\mathrm{mean} (q_t^2)}\\)\n\n\nInterval forecasts\nQuantile Score: Scores how well a given percentile is predicted. For the \\(p\\)th percentile as a percentage (e.g. 0.10 to be 10th percentile), the quantile score for time \\(t\\) is:\n\\[Q_{p, t} = \\begin{cases} 2(1-p)(f_{p,t} - y_t) & y_t &lt; f_{p,t} \\\\ 2p(y_t - f_{p, t}) & y_t \\ge f_{p,t} \\end{cases}\\] Where \\(f_{p,t}\\) is our prediction of the \\(p\\)th percentile at time \\(t\\). Intuitively, if \\(p = 0.1\\), it weights errors above with 0.1 and errors below with 0.9, because the actual point is much more likely to be above than below.\nWinkler Score: Scores how well a prediction interval predicts data. For a \\((100-\\alpha)\\)% prediction interval at time \\(t\\), The Winkler score \\(W_{\\alpha, t}\\) is the length of the interval plus \\(\\frac 2 \\alpha\\) times the distance from \\(y_t\\) to the interval (if \\(y_t\\) is within the interval, the distance is 0)\nCRPS: Scores the whole prediction distribution. \\(CRPS\\) score is the area between the predicted CDF and the observed CDF (which is a jump from 0 to 1 at the true value)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/elasticity.html",
+    "href": "notes/economics/micro-macro/elasticity.html",
+    "title": "Elasticity and Goods",
+    "section": "",
+    "text": "Elasticity represents the proportional change of one variable to another at a point, expressed in absolute value. For example, suppose that when price is 5, when price increases by 1% then demand decreases by 2%. Then at the price of 5, the price elasticity of demand is |-2/1| = 2.",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/elasticity.html#formulas",
+    "href": "notes/economics/micro-macro/elasticity.html#formulas",
+    "title": "Elasticity and Goods",
+    "section": "Formulas",
+    "text": "Formulas\nIf we want to find the elasticity of \\(y\\) with respect to \\(x\\):\nArc formula: Calculate % change from \\(y_1\\) to \\(y_2\\) as \\(\\frac{y_2 - y_1}{y_1}\\) (and same with \\(x\\), then divide)\nPoint formula: The elasticity at a point \\((x, y)\\) is \\(\\frac{dy}{dx} * \\frac{x}{y}\\)",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/elasticity.html#demand-elasticity",
+    "href": "notes/economics/micro-macro/elasticity.html#demand-elasticity",
+    "title": "Elasticity and Goods",
+    "section": "Demand elasticity",
+    "text": "Demand elasticity\nPrice elasticity of demand: % change in quantity demanded / % change in price\nIncome elasticity of demand: % change in quantity demanded / % change in income\nCross-elasticity of demand: % change in quantity demanded / % change in price of other good",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/elasticity.html#determinants-of-demand-elasticity",
+    "href": "notes/economics/micro-macro/elasticity.html#determinants-of-demand-elasticity",
+    "title": "Elasticity and Goods",
+    "section": "Determinants of demand elasticity",
+    "text": "Determinants of demand elasticity\n\nSubstitutability: Goods with closer substitutes are more elastic\nPercentage of income: Goods that cost a higher percentage of income tend to be more elastic, because people are less indifferent on spending money on them\nNecessity vs. luxury: Necessities are less elastic than luxury goods, but the availability of substitutes matter more: if you have many food options, you will be highly responsive to changes in price of any given one\nWidth of market: Bread produced by a specific bakery is more elastic than bread in general\nTime: Whether a short-run or long-run view is taken. E.g. Motorists can’t respond quickly to an increase in the price of oil because they are “locked in” to having their cars",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/elasticity.html#types-of-goods",
+    "href": "notes/economics/micro-macro/elasticity.html#types-of-goods",
+    "title": "Elasticity and Goods",
+    "section": "Types of goods",
+    "text": "Types of goods\n\nInferior good: As income increases, demand decreases (e.g. generic brand)\n\nGiffen good: As price increases, demand increases (e.g. staple foods crowd out other options)\n\nNormal good: As income increases, demand increases\n\nLuxury/superior good: Price elasticity of demand &gt; 1 (e.g. a luxury car)\nBasic/necessity good: Price elasticity of demand &lt; 1 but positive (e.g. shoe polish)",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Elasticity and Goods"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/fiscal-policy.html",
+    "href": "notes/economics/micro-macro/fiscal-policy.html",
+    "title": "Fiscal Policy",
+    "section": "",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.12",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Fiscal Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/fiscal-policy.html#taxes",
+    "href": "notes/economics/micro-macro/fiscal-policy.html#taxes",
+    "title": "Fiscal Policy",
+    "section": "",
+    "text": "Corporate taxes materialize as lowered wages, increased prices, or reduced profits. It’s generally agreed that the first two are bigger effects than the third.12",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Fiscal Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/fiscal-policy.html#footnotes",
+    "href": "notes/economics/micro-macro/fiscal-policy.html#footnotes",
+    "title": "Fiscal Policy",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://home.treasury.gov/system/files/131/wp-101.pdf↩︎\nhttps://www.nber.org/system/files/working_papers/w27058/w27058.pdf↩︎",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Fiscal Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/monetary-policy.html",
+    "href": "notes/economics/micro-macro/monetary-policy.html",
+    "title": "Monetary Policy",
+    "section": "",
+    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/monetary-policy.html#inflation",
+    "href": "notes/economics/micro-macro/monetary-policy.html#inflation",
+    "title": "Monetary Policy",
+    "section": "",
+    "text": "The Fed targets inflation at 2 percent. This is an arbitrary but low value so prices remain stable. They don’t set it to 0 percent mainly because:\n\nA positive target acts as a buffer against deflation. Light deflation is worse than medium inflation\nThe economy can be stimulated easily by lowering the nominal interest rate (making borrowing to finance business more attractive). Having a positive inflation target gives wiggle room to lower the nominal interest rate, since the nominal rate = the real rate + inflation (approximately)",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/monetary-policy.html#unemployment",
+    "href": "notes/economics/micro-macro/monetary-policy.html#unemployment",
+    "title": "Monetary Policy",
+    "section": "Unemployment",
+    "text": "Unemployment\nThe Fed targets maximum employment. But there is a tradeoff between inflation and unemployment. If aggregate demand is increased, due to supply and demand, output increases (more employment), but price increases (increased inflation rate). If aggregate demand is decreased, the reverse happens.\nThis tradeoff exists only in the short run. In the long run, employment and inflation return to normal levels.",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/monetary-policy.html#interest-rate",
+    "href": "notes/economics/micro-macro/monetary-policy.html#interest-rate",
+    "title": "Monetary Policy",
+    "section": "Interest Rate",
+    "text": "Interest Rate\nRaising the interest rate “tightens” the economy, slowing it down, generally leading to less inflation and more unemployment. Lowering the rate “eases” or “expands” it, generally leading to more inflation and less unemployment. The Fed has indirect control over the interest rate by targeting the federal funds rate:\n\nOpen market operations: Buying Treasury securities from banks, increasing their reserves, increases the supply for loanable funds, decreasing the interest rate\nChanging the discount rate, the rate the Fed gives to banks on overnight loans, to make more or less discount loans and change banks’ reserve amounts\nChanging the reserve requirements, the percent of deposits banks are required to hold on-hand\nInterest rate on reserve balances (IORB)",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Monetary Policy"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/esg.html",
+    "href": "notes/economics/micro-macro/esg.html",
+    "title": "ESG",
+    "section": "",
+    "text": "ESG performance is positively correlated with financial performance variables such as ROA or ROE, moreso in the long-term and moreso during times of crisis.1 It is also negatively correlated with systematic risk and legal risk2",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/esg.html#effect-of-esg-performance-on-financials",
+    "href": "notes/economics/micro-macro/esg.html#effect-of-esg-performance-on-financials",
+    "title": "ESG",
+    "section": "",
+    "text": "ESG performance is positively correlated with financial performance variables such as ROA or ROE, moreso in the long-term and moreso during times of crisis.1 It is also negatively correlated with systematic risk and legal risk2",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/esg.html#esg-theories",
+    "href": "notes/economics/micro-macro/esg.html#esg-theories",
+    "title": "ESG",
+    "section": "ESG Theories",
+    "text": "ESG Theories\n\nStakeholder Theory: As opposed to the traditional theory of the firm (a firm should produce value for shareholders) the stakeholder theory states a firm should work for the best interests of all of its stakeholders (customers, employees, community, shareholders, etc.)\nResource-Based View: ESG performance can help companies develop intangible assets such as trust, giving them a competitive advantage\nLegitimacy Theory: ESG performance helps increase company legitimacy, which can increase consumer demand and minimize harmful government action",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/esg.html#footnotes",
+    "href": "notes/economics/micro-macro/esg.html#footnotes",
+    "title": "ESG",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://www.stern.nyu.edu/sites/default/files/assets/documents/NYU-RAM_ESG-Paper_2021%20Rev_0.pdf↩︎\nhttps://onlinelibrary.wiley.com/doi/full/10.1002/ijfe.70027↩︎",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "ESG"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/indicators.html",
+    "href": "notes/economics/micro-macro/indicators.html",
+    "title": "Economic Indicators",
+    "section": "",
+    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/indicators.html#gdp",
+    "href": "notes/economics/micro-macro/indicators.html#gdp",
+    "title": "Economic Indicators",
+    "section": "",
+    "text": "\\[Y = C + I + G + NX\\]\nWhere:\n\n\\(Y\\) is GDP\n\\(C\\) is dollar value of consumption\n\\(I\\) is value of investment (only investment which creates capital, not like buying real estate)\n\\(G\\) is value of government spending\n\\(NX\\) is value of net exports, exports - imports\n\nNote that imports are already counted in consumption, so imports don’t affect GDP\n\n\nGDP is the economy’s total expenditure, and also its total income.\n\nIntermediate goods are not counted. The sale of a burger only counts the burger, not the meat bought by the restaurant\nThe sale of used goods is not counted\nTransfer payments (e.g. taxes, welfare) are not counted\nUnsold production put into inventory is counted as investment. Its sale later is not counted because the purchase cancels out the negative investment\nSome goods/services not sold in markets use imputed (estimated) values. Housing is one example.\n\nReal GDP is GDP controlled for prices. The current method is chain-weighting: use last year’s prices to calculate the value for this year’s output to make a “chain” which can be used to compare any two years.",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/indicators.html#inflation",
+    "href": "notes/economics/micro-macro/indicators.html#inflation",
+    "title": "Economic Indicators",
+    "section": "Inflation",
+    "text": "Inflation\n\nCPI\nCPI is the price of a “basket” of goods relative to the price of that same basket in the base year. The basket is determined by BLS surveys.\nIssues:\n\nSubstitution effect: If apples become more expensive, people will buy fewer apples, but the CPI assumes that apple consumption remains the same\nWhen the quality of goods increases, this is not reflected in the CPI\nNew goods are ignored by the CPI\n\nBecause of these issues, CPI overstates inflation, probably by less than 1 percentage point\n\n\nGDP Deflator\nGDP deflator is the ratio of nominal GDP to real GDP\nPCE deflator is the same using only the consumption part of GDP. In other words, the ratio of nominal consumer spending to real.",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/indicators.html#unemployment",
+    "href": "notes/economics/micro-macro/indicators.html#unemployment",
+    "title": "Economic Indicators",
+    "section": "Unemployment",
+    "text": "Unemployment\nAll adults (16 and older) are split into three categories:\n\nEmployed, including those on temporary leave, unpaid workers in family business, self-employed\nUnemployed: those who are not employed, available for work, and tried to find employment in the last four weeks or are waiting to be recalled to a job they had been laid off from\nNot in the labor force: Neither employed nor unemployed. For example, full-time students, homemakers, retirees, discouraged worker (someone who would be unemployed, but gave up on finding a job)\n\nThus, the labor force is equal to employed + unemployed\n\n\nUnemployment Rate: Percent of labor force that is unemployed\nLabor Force Participation Rate: Percent of adult population in the labor force",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/economics/micro-macro/indicators.html#interest",
+    "href": "notes/economics/micro-macro/indicators.html#interest",
+    "title": "Economic Indicators",
+    "section": "Interest",
+    "text": "Interest\nFederal Funds Rate (FFR): The interest rate banks give each other on overnight loans of federal funds (reserves they hold at the Fed). Most interest rates track the FFR",
+    "crumbs": [
+      "Economics",
+      "Micro Macro",
+      "Economic Indicators"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/models.html",
+    "href": "notes/economics/econometrics/models/forecasting/models.html",
+    "title": "Forecasting Models",
+    "section": "",
+    "text": "Idea: Take all future forecasts as a weighted average of all observations with geometric weights biased towards more recent observations: \\(\\hat y_{t+h} = \\alpha y_t + \\alpha (1-\\alpha)y_{t-1} + \\alpha (1-\\alpha)^2y_{t-2}\\dots\\) where \\(0 &lt; \\alpha \\le 1\\). This creates the level. Then add trend and seasonality components\nTrend: There are two choices for this component:\n\nAdditive: the final trend (slope) is determined by a weighted average of all the slopes in the data, then that is assumed to be the slope for all future points\nAdditive damped: The slope at time \\(t+h\\) is forecasted to be \\(\\phi + \\phi^2 + \\dots + \\phi^h\\) where \\(0 &lt; \\phi \\le 1\\) (but in practice, \\(0.8 \\le \\phi \\le 0.98\\))\n\nSeasonality: There are two choices for this component:\n\nAdditive: The seasonal effect is constant and added to the level\nMultiplicative: The seasonal effect is proportional to the level and multiplied to the level + trend",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/models.html#exponential-smoothing-ets",
+    "href": "notes/economics/econometrics/models/forecasting/models.html#exponential-smoothing-ets",
+    "title": "Forecasting Models",
+    "section": "",
+    "text": "Idea: Take all future forecasts as a weighted average of all observations with geometric weights biased towards more recent observations: \\(\\hat y_{t+h} = \\alpha y_t + \\alpha (1-\\alpha)y_{t-1} + \\alpha (1-\\alpha)^2y_{t-2}\\dots\\) where \\(0 &lt; \\alpha \\le 1\\). This creates the level. Then add trend and seasonality components\nTrend: There are two choices for this component:\n\nAdditive: the final trend (slope) is determined by a weighted average of all the slopes in the data, then that is assumed to be the slope for all future points\nAdditive damped: The slope at time \\(t+h\\) is forecasted to be \\(\\phi + \\phi^2 + \\dots + \\phi^h\\) where \\(0 &lt; \\phi \\le 1\\) (but in practice, \\(0.8 \\le \\phi \\le 0.98\\))\n\nSeasonality: There are two choices for this component:\n\nAdditive: The seasonal effect is constant and added to the level\nMultiplicative: The seasonal effect is proportional to the level and multiplied to the level + trend",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/forecasting/models.html#arima",
+    "href": "notes/economics/econometrics/models/forecasting/models.html#arima",
+    "title": "Forecasting Models",
+    "section": "ARIMA",
+    "text": "ARIMA\nIdea: Autoregressive and moving average models can be used to model a stationary time series. A non-stationary time series can be made stationary by differencing it.\nARIMA\\((p, d, q)\\) is a regression model that combines \\(AR(p)\\) and \\(MA(q)\\) and differences the data \\(d\\) times\nSeasonality: SARIMA\\((p, d, q)(P, D, Q)_m\\) includes a seasonal component relating observations to that of the last season instead of the last observation. E.g. \\(P = 1\\) means values in March are autoregressed on values in last March, \\(D=1\\) performs a seasonal difference\nARIMAX: Can use covariates (\\(x\\) regressors). Instead of \\(y_t\\) being modeled as an ARIMA process, we have e.g. \\(y_t = \\beta_0 + \\beta_1x_{1,t} + \\nu_t\\) where error \\(\\nu_t\\) is an ARIMA process. Note that all variables have to be stationary, usually done by differencing them all the same amount.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Forecasting",
+      "Forecasting Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/simultaneous-equations.html",
+    "href": "notes/economics/econometrics/models/simultaneous-equations.html",
+    "title": "Simultaneous Equations",
+    "section": "",
+    "text": "We have \\(M\\) endogenous variables \\(y_{1..M}\\), \\(K\\) exogenous variables \\(x_{1..K}\\), and \\(M\\) simultaneous equations of the form:\n\\[y_i = \\sum_{j\\neq i}^M \\alpha_j y_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\] (Where variables can be excluded by setting the corresponding coefficient to 0)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/simultaneous-equations.html#model",
+    "href": "notes/economics/econometrics/models/simultaneous-equations.html#model",
+    "title": "Simultaneous Equations",
+    "section": "",
+    "text": "We have \\(M\\) endogenous variables \\(y_{1..M}\\), \\(K\\) exogenous variables \\(x_{1..K}\\), and \\(M\\) simultaneous equations of the form:\n\\[y_i = \\sum_{j\\neq i}^M \\alpha_j y_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\] (Where variables can be excluded by setting the corresponding coefficient to 0)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/simultaneous-equations.html#estimation",
+    "href": "notes/economics/econometrics/models/simultaneous-equations.html#estimation",
+    "title": "Simultaneous Equations",
+    "section": "Estimation",
+    "text": "Estimation\nSuppose we want to estimate the parameters of \\(y_1\\). In order to do this, \\(y_1\\) must be identified.\nOLS will be biased due to endogeneity. Rearrange the equations to solve the other \\(y_i\\) in terms of only exogenous variables:\n\\[y_i = \\sum_{j=1}^K \\pi_ij x_j + \\nu_i\\]\n(Reduced-form equations can be solved with regular OLS, but they do not allow you to estimate coefficients for the other endogenous variables).\nNow solve all reduced-form equations with OLS to get \\[\\hat{y_2}, \\hat{y_3}\\], etc.\nFinally, estimate the TSLS:\n\\[y_1 = \\sum_{j\\neq i}^M \\alpha_j \\hat{y}_j + \\sum_{j=1}^K \\beta_j x_j + e_i\\]",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/simultaneous-equations.html#identification",
+    "href": "notes/economics/econometrics/models/simultaneous-equations.html#identification",
+    "title": "Simultaneous Equations",
+    "section": "Identification",
+    "text": "Identification\nThere are two main ways to tell if an equation is identified. The order condition, which is necessary, and the rank condition, which is necessary and sufficient.\nThe order condition is that the equation should exclude at least \\(M - 1\\) regressors, endogenous or exogenous.",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/simultaneous-equations.html#tests",
+    "href": "notes/economics/econometrics/models/simultaneous-equations.html#tests",
+    "title": "Simultaneous Equations",
+    "section": "Tests",
+    "text": "Tests\n\nExogeneity of regressor (Hausman test)\nNull Hypothesis: \\(x_i\\) is exogenous\nTest Statistic: \\(\\frac{\\hat\\beta_{i, 2SLS} - \\hat\\beta_{i, OLS}}{Var(\\hat\\beta_{i, 2SLS}) - Var(\\hat\\beta_{i, OLS})}\\) where \\(\\hat\\beta_{i, OLS}\\) is the estimate of \\(\\beta_i\\) using OLS, and the same for 2SLS\nDistribution: \\(\\chi^2_1\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Simultaneous Equations"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ar.html",
+    "href": "notes/economics/econometrics/models/ar.html",
+    "title": "Autoregressive Models",
+    "section": "",
+    "text": "Autoregressive (AR) models regress \\(y_t\\) on its lags, e.g. \\(y_t = \\delta + \\theta_1y_{t-1} + \\theta_2y_{t-2} + u\\). An \\(AR(p)\\) model uses lags up to \\(y_{t-p}\\). Useful when \\(y\\) depends on previous values (e.g. random walk)\nDistributed Lag (DL) models regress \\(y_t\\) on lagged variables, e.g. \\(y_t = \\alpha + \\beta_0x_t + \\beta_1x_{t-1} + u\\). A \\(DL(q)\\) model uses lags up to \\(x_{t-q}\\). Useful when changes in \\(x\\) have effects on \\(y\\) for multiple periods. Infinite Distributed Lag (IDL) models use an infinite amount of lags. One method is to set \\(\\beta_s = \\lambda^s\\beta_0\\) where \\(0 &lt; \\lambda &lt; 1\\) and \\(s = 0, 1, \\cdots\\)\n\\(T\\) represents the number of times observed",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ar.html#model",
+    "href": "notes/economics/econometrics/models/ar.html#model",
+    "title": "Autoregressive Models",
+    "section": "",
+    "text": "Autoregressive (AR) models regress \\(y_t\\) on its lags, e.g. \\(y_t = \\delta + \\theta_1y_{t-1} + \\theta_2y_{t-2} + u\\). An \\(AR(p)\\) model uses lags up to \\(y_{t-p}\\). Useful when \\(y\\) depends on previous values (e.g. random walk)\nDistributed Lag (DL) models regress \\(y_t\\) on lagged variables, e.g. \\(y_t = \\alpha + \\beta_0x_t + \\beta_1x_{t-1} + u\\). A \\(DL(q)\\) model uses lags up to \\(x_{t-q}\\). Useful when changes in \\(x\\) have effects on \\(y\\) for multiple periods. Infinite Distributed Lag (IDL) models use an infinite amount of lags. One method is to set \\(\\beta_s = \\lambda^s\\beta_0\\) where \\(0 &lt; \\lambda &lt; 1\\) and \\(s = 0, 1, \\cdots\\)\n\\(T\\) represents the number of times observed",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ar.html#assumptions",
+    "href": "notes/economics/econometrics/models/ar.html#assumptions",
+    "title": "Autoregressive Models",
+    "section": "Assumptions",
+    "text": "Assumptions\n\ni.i.d random sample\nX has full rank\nHomoskedasticity (or robust standard errors)\nStationary data\nWeakly dependent data: As the time between observations increases, autocorrelations become negligible\n\\(E(e_t | I_t) = 0\\): Error is not correlated with past information (all past values of \\(x\\) and \\(y\\)). Errors can feed forward to current/future values of \\(x\\). Required for consistency\nNo serial correlation in errors (the model is correctly specified and significant past variables are included). Needed for correct standard errors. In practice, low serial correlation is OK\n\nWith these assumptions, the OLS estimator is not unbiased, but consistency means it converges",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ar.html#autocorrelation",
+    "href": "notes/economics/econometrics/models/ar.html#autocorrelation",
+    "title": "Autoregressive Models",
+    "section": "Autocorrelation",
+    "text": "Autocorrelation\nAutocorrelation is the correlation between \\(y_t\\) and its lags.\nAutocorrelation Function (ACF): \\(\\rho_s = \\frac{Cov(y_t, y_{t-s})}{\\sigma^2_{y_t}}\\)\nThe ACF can be estimated with the sample ACF: \\(r_s = \\frac{\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})}{\\sum_{i=1}^T(x_i-\\bar{x})^2}\\). Since each sum has a different number of observations, sometimes \\(r_s = \\frac{\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})}{\\sum_{i=s+1}^T(x_i-\\bar{x})^2}\\) or \\(r_s = \\frac{\\frac{1}{T-s}\\sum_{i=s+1}^T(x_i - \\bar{x})(x_{i-s}-\\bar{x})} {\\frac{1}{T}\\sum_{i=1}^T(x_i-\\bar{x})^2}\\) is used instead\nPartial ACF (PACF): Measures correlation between \\(y_t\\) and \\(y_{t-s}\\) independent of all \\(y\\)-values in between",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/models/ar.html#tests",
+    "href": "notes/economics/econometrics/models/ar.html#tests",
+    "title": "Autoregressive Models",
+    "section": "Tests",
+    "text": "Tests\n\nSignificance of autocorrelation\nHypothesis: \\(\\rho_s = 0\\)\nTest statistic: \\(r_s\\sqrt T\\)\nDistribution: \\(N(0, 1)\\) if data is stationary and weakly dependent",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Models",
+      "Autoregressive Models"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pandas.html",
+    "href": "notes/economics/econometrics/software/pandas.html",
+    "title": "Pandas",
+    "section": "",
+    "text": "pd.read_{format}(file): Reads a file with format {format}\npd.DataFrame.to_{format}(file): Writes data to file",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pandas.html#data",
+    "href": "notes/economics/econometrics/software/pandas.html#data",
+    "title": "Pandas",
+    "section": "",
+    "text": "pd.read_{format}(file): Reads a file with format {format}\npd.DataFrame.to_{format}(file): Writes data to file",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pandas.html#attributes",
+    "href": "notes/economics/econometrics/software/pandas.html#attributes",
+    "title": "Pandas",
+    "section": "Attributes",
+    "text": "Attributes\ndf.shape, series.shape: Dimensions of data\ndf.index, df.columns: Row/col labels\ndf.mean(): Mean of numeric columns. Also median, std, min, max\nSeries implements ==. Numeric series support mathematical operations with scalars or other series.\nseries.isin(values list): Is each value is in the given list?\nseries.notna(): Is each value not NA (or NaN, or None)?\nseries.unique(): Returns unique values",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pandas.html#subsetting",
+    "href": "notes/economics/econometrics/software/pandas.html#subsetting",
+    "title": "Pandas",
+    "section": "Subsetting",
+    "text": "Subsetting\ndf[colname]: Retrieve a column as a series\ndf[colnames[]]: Retrieve columns as a data frame\ndf[booleans[]]: Retrieve rows corresponding to True\ndf.loc[row indexing, ?col indexing]: Allows indexing for rows and columns simultaneously. Row labels can be used to index. Use : to mean “all rows/cols”\ndf.iloc[row indices, col indices]: Uses integer indices to index rows and cols. Can be a number, slice, or list.\nSubsets support reassignment with =.\ndf.drop(index | columns = labels): Drops specified labels",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/software/pandas.html#mutation",
+    "href": "notes/economics/econometrics/software/pandas.html#mutation",
+    "title": "Pandas",
+    "section": "Mutation",
+    "text": "Mutation\ndf[colname] = series: Creates a new column\ndf.apply(fun, axis = 0 | 1): Applies fun to each column (axis = 0) or row (axis = 1) and returns the result\ndf.rename(index | columns = map): Renames row or column labels using map, either a dict of old-name / new-name pairs or a function to transform names\ndf.groupby(colnames[]): Creates a grouped data frame. Aggregations work automatically with functions like df.sum()\ndf.agg(fun): Dplyr summarize. fun takes in a column series and outputs the result",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Software",
+      "Pandas"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/distributions.html",
+    "href": "notes/economics/econometrics/statistics/distributions.html",
+    "title": "Distributions",
+    "section": "",
+    "text": "Normal\n\n\n\n\n\n\n\n\n\nA bell curve with mean \\(\\mu\\) and standard deviation \\(\\sigma^2\\). The sum or average of a large enough random sample is approximately normal.\nStatistics: Has skewness 0 (symmetric) and kurtosis 3\nPDF: \\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left(\\frac{-(x-\\mu)^2}{2\\sigma^2}\\right)\\)\n\nJarque-Bera Test for Normality\nHypothesis: \\(H_0\\): The distribution is approximately normally distributed\nTest statistic \\(JB = \\frac{N}{6}\\left(S^2 + \\frac{(K-3)^2}{4}\\right)\\) where \\(N\\) is number of observations or degrees of freedom, \\(S\\) is skewness, and \\(K\\) is kurtosis\nStatistic Distribution: \\(\\chi^2_{2}\\) with sufficient sample size (MATLAB uses over 2000)\n\n\n\nBinomial\n\n\n\n\n\n\n\n\n\nThe sum of \\(n\\) i.i.d. Bernoulli variables with probability \\(p\\). A Bernoulli variable takes value 1 with probability \\(p\\) and 0 otherwise.\nPMF: \\(\\binom{n}{x}p^x(1-p)^{n-x}\\)\nExpected Value: \\(np\\)\nVariance: \\(np(1-p)\\)\n\n\nPoisson\n\n\n\n\n\n\n\n\n\nRepresents the number of events occuring over an interval of time or space where the events occur independently at a constant rate. The parameter \\(\\lambda\\) is the expected number of events over that interval.\nExpected Value: \\(\\lambda\\)\nVariance: \\(\\lambda\\)\nPMF: \\(\\frac{e^{-\\lambda}\\lambda^x}{x!}\\)\n\n\nChi-squared\n\n\n\n\n\n\n\n\n\nThe sum of \\(m\\) independent squared standard normal variables, with \\(m\\) degrees of freedom. Converges to a normal distribution by CLT\nExpected value: \\(m\\)\nVariance: \\(2m\\)\n\n\nt\n\n\n\n\n\n\n\n\n\nIf \\(Z \\sim N(0, 1)\\) and \\(V \\sim \\chi^2_m\\) and both are independent, then \\(\\frac{Z}{\\sqrt{V / m}}\\) is \\(t_m\\)\n\n\nF\n\n\n\n\n\n\n\n\n\nIf \\(V_1 \\sim \\chi^2_n\\) and \\(V_2 \\sim \\chi^2_M\\) and both are independent, then \\(\\frac{V_1/n}{V_2/m}\\) is \\(F_{n, m}\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Distributions"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/inference.html",
+    "href": "notes/economics/econometrics/statistics/inference.html",
+    "title": "Inference",
+    "section": "",
+    "text": "The sample mean \\(\\bar{x} = (\\sum_i x_i)/N\\) is an unbiased estimator of the population mean \\(\\mu\\).\nStandard Error: \\(\\hat{\\sigma}/\\sqrt{N}\\)\nDistribution: Normal if \\(x\\) is normally distributed\nThe Central Limit Theorem (CLT): \\(\\bar{x} \\overset{a}{\\sim} N(\\mu, \\sigma^2/N)\\). In practice \\(N \\ge 30\\) is good enough\n\n\n\nSample variance \\(\\hat{\\sigma}^2 = \\frac{\\sum_i (x_i - \\bar{x})^2}{N - 1}\\) is an unbiased estimator of the population variance \\(\\sigma^2\\).\n\n\n\nWith sufficiently large sample sizes (law of large numbers), the \\(a\\)th standardized central moment (like skewness or kurtosis) can be estimated as \\(\\frac{ \\sum_i (x_i - \\bar{x})^a}{N\\hat{\\sigma}^a}\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Inference"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/inference.html#estimating-statistics",
+    "href": "notes/economics/econometrics/statistics/inference.html#estimating-statistics",
+    "title": "Inference",
+    "section": "",
+    "text": "The sample mean \\(\\bar{x} = (\\sum_i x_i)/N\\) is an unbiased estimator of the population mean \\(\\mu\\).\nStandard Error: \\(\\hat{\\sigma}/\\sqrt{N}\\)\nDistribution: Normal if \\(x\\) is normally distributed\nThe Central Limit Theorem (CLT): \\(\\bar{x} \\overset{a}{\\sim} N(\\mu, \\sigma^2/N)\\). In practice \\(N \\ge 30\\) is good enough\n\n\n\nSample variance \\(\\hat{\\sigma}^2 = \\frac{\\sum_i (x_i - \\bar{x})^2}{N - 1}\\) is an unbiased estimator of the population variance \\(\\sigma^2\\).\n\n\n\nWith sufficiently large sample sizes (law of large numbers), the \\(a\\)th standardized central moment (like skewness or kurtosis) can be estimated as \\(\\frac{ \\sum_i (x_i - \\bar{x})^a}{N\\hat{\\sigma}^a}\\)",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Inference"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/inference.html#inference",
+    "href": "notes/economics/econometrics/statistics/inference.html#inference",
+    "title": "Inference",
+    "section": "Inference",
+    "text": "Inference\n\nConfidence intervals\nA confidence interval for \\(a\\) can be constructed as \\(a \\pm c*\\textrm{se}(a)\\) where \\(c\\) is the critical value according to the chosen level of confidence \\(\\alpha\\)\n\n\nHypothesis testing\nThe \\(p\\)-value is the probability that a value as or more extreme than the one we observed occurs, assuming \\(H_0\\) is true. In practice, this is usually done by knowing the distribution the value follows if \\(H_0\\) is true and testing the probability of the value on that distribution.\n“Extreme” takes into account the direction we intended at the start: if we want to test \\(H_a: \\mu &gt; c\\), only values larger than \\(\\bar{x}\\) count as more extreme. In the case of a two-tailed test, the probability of a more extreme value on both tails needs to be computed.\nReject the null hypothesis if \\(p &lt; \\alpha\\).",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Inference"
+    ]
+  },
+  {
+    "objectID": "notes/economics/econometrics/statistics/inference.html#testing-statistics",
+    "href": "notes/economics/econometrics/statistics/inference.html#testing-statistics",
+    "title": "Inference",
+    "section": "Testing statistics",
+    "text": "Testing statistics\n\nTesting the population mean\nHypothesis: \\(H_0: \\mu = c\\)\nTest statistic: \\(\\frac{\\bar x - c}{\\textrm{se}(\\bar{x})}\\)\nDistribution: \\(t_{N - 1}\\) if the population is normal or the CLT applies.\nIf the population standard deviation is known: Use the normal distribution instead",
+    "crumbs": [
+      "Economics",
+      "Econometrics",
+      "Statistics",
+      "Inference"
     ]
   }
 ]

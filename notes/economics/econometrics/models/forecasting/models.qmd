@@ -1,0 +1,28 @@
+---
+title: "Forecasting Models"
+format: html
+---
+
+## Exponential Smoothing (ETS)
+
+*Idea*: Take all future forecasts as a weighted average of all observations with geometric weights biased towards more recent observations: $\hat y_{t+h} = \alpha y_t + \alpha (1-\alpha)y_{t-1} + \alpha (1-\alpha)^2y_{t-2}\dots$ where $0 < \alpha \le 1$. This creates the **level**. Then add trend and seasonality components
+
+**Trend**: There are two choices for this component: 
+
+- *Additive*: the final trend (slope) is determined by a weighted average of all the slopes in the data, then that is assumed to be the slope for all future points
+- *Additive damped*: The slope at time $t+h$ is forecasted to be $\phi + \phi^2 + \dots + \phi^h$ where $0 < \phi \le 1$ (but in practice, $0.8 \le \phi \le 0.98$)
+
+**Seasonality**: There are two choices for this component:
+
+- *Additive*: The seasonal effect is constant and added to the level
+- *Multiplicative*: The seasonal effect is proportional to the level and multiplied to the level + trend
+
+## ARIMA
+
+*Idea*: Autoregressive and moving average models can be used to model a stationary time series. A non-stationary time series can be made stationary by differencing it.
+
+ARIMA$(p, d, q)$ is a regression model that combines $AR(p)$ and $MA(q)$ and differences the data $d$ times
+
+**Seasonality**: SARIMA$(p, d, q)(P, D, Q)_m$ includes a seasonal component relating observations to that of the last season instead of the last observation. E.g. $P = 1$ means values in March are autoregressed on values in last March, $D=1$ performs a seasonal difference
+
+**ARIMAX**: Can use covariates ($x$ regressors). Instead of $y_t$ being modeled as an ARIMA process, we have e.g. $y_t = \beta_0 + \beta_1x_{1,t} + \nu_t$ where error $\nu_t$ is an ARIMA process. Note that all variables have to be stationary, usually done by differencing them all the same amount.

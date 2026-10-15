@@ -1,0 +1,30 @@
+---
+title: "PyTorch"
+format: html
+---
+
+## Datasets
+
+A dataset is a subclass of **torch.utils.data.Dataset** that implements three functions: 
+
+- *__init__*, called by user on initialization
+- *__len__*, returning the number of samples
+- *__getitem__*, which returns the sample and label at a given index
+
+Datasets can be automatically batched and shuffled using **torch.utils.data.DataLoader**(*dataset object*, *batch size*). It returns an enumerable which gives batches of data and labels
+
+## Training a Model
+
+Prep:
+
+1. Create a *model object* (how depends on the model)
+2. Create a *loss function object* e.g. `loss_fn = nn.CrossEntropyLoss()`
+3. Create an *optimizer object* with model parameters e.g. `optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)`
+
+Training:
+
+1. Get training data from the dataloader
+2. Use `model(X)` to generate predictions from data
+3. Calculate loss using `loss_fn`
+4. Call `loss.backward()` to update gradients
+5. Call `optimizer.step()` to do an optimization step and `optimizer.zero_grad()` to reset the gradient for the next batch

@@ -78,6 +78,10 @@ Drops a variable. The no-variable version is useful with *if* to drop observatio
 
 **format** *%format* *...vars*
 
+**encode** *xvar*, gen(*newvar*)
+
+Encodes *xvar* as a numeric variable with a string label
+
 **tsset** *var*
 
 Marks the data as a time series with time index *var*
@@ -149,11 +153,19 @@ Skewness/kurtosis test for normality
 
 **regress** *yvar* *...xvars*
 
+**ivregress** 2sls *yvar* *...xvars* *...(endog_xvar = instrument_var)*, [small first]
+
+Without small, assumes the sample is large (since IV depends on it) and uses z-statistics. With first, displays the first stage as well
+
 ## Post-Regression
 
-**predict** *var*, residuals
+**predict** *var*, [residuals]
 
-Stores residuals in *var*
+Stores $\hat y$ by default in *var*. Can also store residuals
+
+**test** *...(xvar = val)*
+
+Linear joint hypothesis test. Can just use *xvar* to mean *(xvar = 0)*
 
 **estat hettest**, iid
 
@@ -166,6 +178,10 @@ Tests for autocorrelation. Value from 0-4, close to 2 suggests no autocorrelatio
 **estat bgodfrey**, lags(*n*)
 
 Tests for autocorrelation with specified number *n* of lags
+
+**estat firststage**
+
+Tests for instrument validity, checking the $F$-statistic for the instrument is greater than 10
 
 ## Variable Prefixes
 

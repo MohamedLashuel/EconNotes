@@ -42,6 +42,15 @@ A bell curve with mean $\mu$ and standard deviation $\sigma^2$. The sum or avera
 
 **PDF:** $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-(x-\mu)^2}{2\sigma^2}\right)$
 
+#### Jarque-Bera Test for Normality
+
+**Hypothesis**: $H_0$: The distribution is approximately normally distributed 
+
+**Test statistic** $JB = \frac{N}{6}\left(S^2 + \frac{(K-3)^2}{4}\right)$ where $N$ is number of observations or degrees of freedom, $S$ is skewness, and $K$ is kurtosis
+
+**Statistic Distribution**: $\chi^2_{2}$ with sufficient sample size (MATLAB uses over 2000)
+
+
 ### Binomial
 
 ```{r}

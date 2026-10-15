@@ -1,0 +1,44 @@
+---
+title: "Autoregressive Models"
+---
+
+## Model
+
+**Autoregressive (AR)** models regress $y_t$ on its lags, e.g. $y_t = \delta + \theta_1y_{t-1} + \theta_2y_{t-2} + u$. An $AR(p)$ model uses lags up to $y_{t-p}$. Useful when $y$ depends on previous values (e.g. random walk)
+
+**Distributed Lag (DL)** models regress $y_t$ on lagged variables, e.g. $y_t = \alpha + \beta_0x_t + \beta_1x_{t-1} + u$. A $DL(q)$ model uses lags up to $x_{t-q}$. Useful when changes in $x$ have effects on $y$ for multiple periods. 
+**Infinite Distributed Lag (IDL)** models use an infinite amount of lags. One method is to set $\beta_s = \lambda^s\beta_0$ where $0 < \lambda < 1$ and $s = 0, 1, \cdots$
+
+$T$ represents the number of times observed
+
+## Assumptions
+
+- i.i.d random sample
+- X has full rank
+- Homoskedasticity (or robust standard errors)
+- **Stationary** data
+- **Weakly dependent** data: As the time between observations increases, autocorrelations become negligible
+- $E(e_t | I_t) = 0$: Error is not correlated with past information (all past values of $x$ and $y$). Errors can feed forward to current/future values of $x$. Required for consistency
+- No serial correlation in errors (the model is correctly specified and significant past variables are included). Needed for correct standard errors. In practice, low serial correlation is OK
+
+With these assumptions, the OLS estimator is not unbiased, but consistency means it converges
+
+## Autocorrelation
+
+Autocorrelation is the correlation between $y_t$ and its lags.
+
+**Autocorrelation Function (ACF)**: $\rho_s = \frac{Cov(y_t, y_{t-s})}{\sigma^2_{y_t}}$
+
+The ACF can be estimated with the *sample ACF*: $r_s = \frac{\sum_{i=s+1}^T(x_i - \bar{x})(x_{i-s}-\bar{x})}{\sum_{i=1}^T(x_i-\bar{x})^2}$. Since each sum has a different number of observations, sometimes $r_s = \frac{\sum_{i=s+1}^T(x_i - \bar{x})(x_{i-s}-\bar{x})}{\sum_{i=s+1}^T(x_i-\bar{x})^2}$ or $r_s = \frac{\frac{1}{T-s}\sum_{i=s+1}^T(x_i - \bar{x})(x_{i-s}-\bar{x})} {\frac{1}{T}\sum_{i=1}^T(x_i-\bar{x})^2}$ is used instead
+
+**Partial ACF (PACF)**: Measures correlation between $y_t$ and $y_{t-s}$ independent of all $y$-values in between
+
+## Tests
+
+### Significance of autocorrelation
+
+**Hypothesis**: $\rho_s = 0$
+
+**Test statistic**: $r_s\sqrt T$
+
+**Distribution**: $N(0, 1)$ if data is stationary and weakly dependent
