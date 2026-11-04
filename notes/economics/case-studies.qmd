@@ -1,0 +1,36 @@
+---
+  title: "Case Studies"
+---
+
+### Why is healthcare so expensive in the U.S.?
+
+- Price negotiation happens in a fragmented and complex system between the government, insurers, and providers
+
+- American physicians are paid much more than other countries. The U.S. government limits the supply of doctors
+
+- Administration costs are much higher in the U.S. due to the complex insurance system and regulations
+
+- The U.S. spends little on preventative health. 90% of health care costs go to chronic conditions which are often treatable with lifestyle changes
+
+- Health care providers and insurers are often monopolistic, with no effective government control to taper this effect
+
+- The U.S. often adopts expensive technologies even if they provide little additional benefit (lower ROI)
+
+- Work healthcare programs are tax-advantaged, increasing demand
+
+Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC12920308/
+
+#### What about drug prices?
+
+- There is little competition for an effective, patented drug - once generics are allowed to come out, prices go down significantly
+
+- In some cases, drug companies have abused patents or used anticompetitive practices to maintain monopolistic control. Drugs like insulin are "biosimilars" and are more heavily regulated, so generics are harder to make
+
+- R&D costs are sky-high
+
+- There are definitely some cases of drug companies making high profits on drugs, but on average, drug profits are similar to those of other industries
+
+Sources: 
+
+- https://en.wikipedia.org/wiki/Prescription_drug_prices_in_the_United_States
+- https://www.cbo.gov/publication/57772
