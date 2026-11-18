@@ -151,3 +151,12 @@ Deletes the tag *tag* on your local repository
 **git push** *remote* --delete *tag*
 
 Deletes the tag *tag* on a remote repository *remote*
+
+## Reset
+
+**git reset** *commit* [ --soft / --hard]
+
+Performs the following steps:
+1. The current branch now points to *commit* as the current commit. (If --soft specified, stops here)
+2. The staging area is overwritten with *commit*'s data
+3. (Only if --hard specified) The current working directory is overwritten with *commit*'s data
